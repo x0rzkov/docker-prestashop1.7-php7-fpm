@@ -1,0 +1,11 @@
+.DS_Store
+node_modules
+logs
+*.log
+npm-debug.log*
+lib
+stats.json
+.expo/
+*.swp
+.next/
+packages/web/src/types.js.map
