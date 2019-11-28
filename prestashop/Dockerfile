@@ -1,10 +1,12 @@
 FROM alpine:latest as get-prestashop
 
+ARG PRESTASHOP_VERSION=${PRESTASHOP_VERSION:-"1.7.6.2"}
+
 RUN apk --no-cache add wget
 RUN mkdir /tmp/app /tmp/download && \
     cd /tmp/download && \
-    wget https://github.com/PrestaShop/PrestaShop/releases/download/1.7.5.1/prestashop_1.7.5.1.zip && \
-    unzip -q prestashop_1.7.5.1.zip -d . && \
+    wget https://github.com/PrestaShop/PrestaShop/releases/download/${PRESTASHOP_VERSION}/prestashop_${PRESTASHOP_VERSION}.zip && \
+    unzip -q prestashop_${PRESTASHOP_VERSION}.zip -d . && \
     unzip -q prestashop.zip -d /tmp/app
 
 FROM alpine:latest
