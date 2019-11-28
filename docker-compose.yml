@@ -103,6 +103,20 @@ services:
       ports:
         - 5601:5601
 
+    phpmyadmin:
+      image: phpmyadmin/phpmyadmin
+      container_name: phpmyadmin
+      environment:
+      # - pma_arbitrary=1
+      # - pma_host=mariadb
+        PMA_HOST: "mariadb"
+        PMA_USER: ${MYSQL_USER}
+        PMA_PASSWORD: ${MYSQL_PASSWORD}
+      depends_on:
+      - db
+      ports:
+      - 8080:80
+
 volumes:
     app:
       #driver: local
