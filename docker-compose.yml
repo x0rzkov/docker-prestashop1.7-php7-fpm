@@ -1,6 +1,5 @@
 ---
 version: '3.7'
-
 services:
 
     prestashop:
@@ -117,6 +116,15 @@ services:
       ports:
       - 8080:80
 
+    mailhog:
+      image: mailhog/mailhog:v1.0.0
+      ports:
+      - 1025:1025
+      - 4025:8025
+      #networks:
+      #- back-tier
+      #- front-tier
+
 volumes:
     app:
       #driver: local
@@ -127,3 +135,20 @@ volumes:
     db-data:
     esdata:
       driver: local
+
+#networks:
+#  front-tier:
+#    driver: bridge
+#  back-tier:
+#    driver: bridge
+#  elk:
+#    driver: bridge
+
+
+### Refs
+# - https://github.com/tonyyb/docker-prestashop-php-apache/blob/master/docker-compose.yml
+# - https://github.com/tomas862/docker-prestashop
+# - https://github.com/yobasystems/alpine-prestashop
+# - https://github.com/mathieulesniak/prestashop-php7-nginx-docker
+# - https://github.com/youngmikee/prestashop-docker-testshop
+# - https://github.com/jagui/prestashop-docker-debugging/blob/master/docker/docker-compose.yml

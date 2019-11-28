@@ -1,0 +1,11 @@
+.git
+.git/**
+.github/
+.github/**
+.gitignore
+.dockerignore
+*.yml
+*.md
+Dockerfile
+data
+data/**
