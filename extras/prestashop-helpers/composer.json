@@ -1,0 +1,34 @@
+{
+  "name": "zapalm/prestashopHelpers",
+  "type": "library",
+  "description": "Helper classes for Prestashop CMS.",
+  "keywords": [
+    "prestashop",
+    "helpers"
+  ],
+  "homepage": "https://prestashop.modulez.ru/en/tools-scripts/53-helper-classes-for-prestashop.html",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Maksim T.",
+      "email": "zapalm@yandex.com",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "ext-json": "*",
+    "php": ">=5.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "zapalm\\prestashopHelpers\\": ""
+    }
+  },
+  "config": {
+    "platform": {
+      "php": "5.5"
+    },
+    "preferred-install": "dist"
+  }
+}
