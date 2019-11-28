@@ -1,0 +1,180 @@
+/**
+ * Copyright (c) 2016-2017 Invertus, JSC
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"),
+ * to deal in the Software without restriction,
+ * including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
+ * and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so,
+ * subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+ * INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+ * IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+ * TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+
+/**
+ * ----------------------------------------------------------------------
+ * BRAD search input
+ * ----------------------------------------------------------------------
+ */
+#bradSearchBlockTop {
+    padding-top: 50px;
+}
+
+#bradSearchBlockTop #bradSearchBox {
+    float: left;
+    width: 100%;
+}
+
+form#bradSearchBox {
+    position: relative;
+}
+
+#bradSearchBlockTop #bradSearchQuery {
+    display: inline;
+    padding: 13px 60px 13px 13px;
+    height: 45px;
+    background: #fbfbfb;
+    margin-right: 1px;
+}
+
+#bradSearchBlockTop .btn.button-search {
+    background: #333;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    color: #fff;
+    width: 50px;
+    text-align: center;
+    padding: 10px 0 11px 0;
+}
+
+#bradSearchBlockTop .btn.button-search:before {
+    content: "\f002";
+    display: block;
+    font-family: "FontAwesome";
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
+}
+
+#bradSearchBlockTop .btn.button-search:hover {
+    color: #6f6f6f;
+}
+
+#bradSearchBlockTop .button-search span {
+    display: none;
+}
+
+#bradInstantSearchResults {
+    z-index: 1000;
+    position: absolute;
+    width: 100%;
+}
+
+/**
+ * ----------------------------------------------------------------------
+ * BRAD autocomplete styles
+ * ----------------------------------------------------------------------
+ */
+#bradInstantSearchResults .brad-autocomplete-block {
+    z-index: 1000 !important;
+    border: 1px solid #a0a0a0;
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px rgba(100, 100, 100, 0.9);
+    width: auto !important;
+    min-width: 300px;
+}
+
+#bradInstantSearchResults .brad-autocomplete-block li+li:before {
+    content: ' ';
+    display: block;
+    width:75%;
+    height: 1px;
+    margin-left: 50px;
+    margin-right: auto;
+    margin-top: 1px;
+    border-top: 1px solid #dddddd;
+}
+
+#bradInstantSearchResults .brad-autocomplete-item {
+    position: relative;
+    background-color: #ffffff;
+}
+
+#bradInstantSearchResults a {
+    padding: 2px;
+}
+
+#bradInstantSearchResults a:hover {
+    background: #333333 none repeat scroll 0 0;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+#bradSearchBlockTop .brad-autocomplete-info-block {
+    position: relative;
+    display: inline-block;
+    overflow: visible;
+    padding: 0 3px 0 3px;
+}
+
+#bradSearchBlockTop .brad-autocomplete-info-block span {
+    padding-top: 2px;
+    font-size: 1.0em;
+}
+
+#bradInstantSearchResults .brad-autocomplete-item-image {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    max-width: 45px;
+    max-height: 45px;
+}
+
+#bradInstantSearchResults span.brad-autocomplete-item-name {
+    display: inline-block;
+}
+
+#bradInstantSearchResults span.brad-autocomplete-item-category {
+    color: #a0a0a0;
+    position: relative;
+    display: block;
+}
+
+#bradInstantSearchResults a.brad-autocomplete-item-border {
+    border: 1px solid transparent;
+    display: block;
+}
+
+.brad-cirteria-color {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+
+.brad-slider-input {
+    border:0;
+    color:#777;
+    font-weight:bold;
+}
+
+.brad-selected-filter:hover {
+    text-decoration: line-through;
+}
+
+#bradSelectedFilters {
+    background-color: #f6f6f6;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    margin-top: 10px;
+}

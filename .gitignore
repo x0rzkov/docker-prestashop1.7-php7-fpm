@@ -1,0 +1,4 @@
+*.xml
+logs/*
+!logs/.gitkeep
+tests/vendor
