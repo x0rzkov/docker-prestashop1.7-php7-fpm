@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.card .badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.border-top-2 {
+  border-top: 2px solid rgba(0, 0, 0, 0.125);
+}
+
+footer .list-group-item {
+  padding-left: 0;
+  padding-right: 0;
+  border: none;
+}
+
+.image-slider figure {
+  position: relative;
+  margin-bottom: 0;
+
+}
+
+.image-slider figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+.image-slider .caption-description {
+  max-width: 500px;
+}
+
+.image-slider {
+  position: relative;
+}
+
+.image-slider .prev, .image-slider .next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 7%;
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  opacity: .5;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  text-align: center;
+  background-image: linear-gradient(90deg,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001));
+  background-repeat: repeat-x;
+}
+
+.image-slider .next {
+  right: 0;
+  left: auto;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5));
+  background-repeat: repeat-x;
+
+}
+
+.product-page-slider {
+  position: relative;
+}
+
+.product-page-slider .prev, .product-page-slider .next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 7%;
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  opacity: .5;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  text-align: center;
+  background-image: linear-gradient(90deg,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001));
+  background-repeat: repeat-x;
+}
+
+
+.product-page-slider .next {
+  right: 0;
+  left: auto;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5));
+  background-repeat: repeat-x;
+}
+
+header{
+  background-color: #fff;
+  box-shadow:  0 0 10px #ccc;
+}
+
+main{
+  background-color: #fafafa;
+}
+
+.loading{
+  background-image: url(./img/ajax-loader.gif);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
