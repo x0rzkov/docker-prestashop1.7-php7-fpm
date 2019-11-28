@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>dmuadminrecherche</name>
+	<displayName><![CDATA[DMU Quick administration of Product]]></displayName>
+	<version><![CDATA[4.1.3]]></version>
+	<description><![CDATA[You can search, filter and edit your products quickly from back-office]]></description>
+	<author><![CDATA[Dream me up]]></author>
+	<tab><![CDATA[administration]]></tab>
+	<confirmUninstall><![CDATA[Are you sure you want to uninstall?]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

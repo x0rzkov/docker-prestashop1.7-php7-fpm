@@ -1,0 +1,25 @@
+/**
+ * We offer the best and most useful modules PrestaShop and modifications for your online store.
+ *
+ * We are experts and professionals in PrestaShop
+ *
+ * @category  PrestaShop
+ * @category  Module
+ * @author    PresTeamShop.com <support@presteamshop.com>
+ * @copyright 2011-2019 PresTeamShop
+ * @license   see file: LICENSE.txt
+ */
+
+.page-heading.step-num,
+.carrier_title,
+.order_carrier_content > div > p,
+#message {
+    display: none;
+}
+
+.order_carrier_content {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+}

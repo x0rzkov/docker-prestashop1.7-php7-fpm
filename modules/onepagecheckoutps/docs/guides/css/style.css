@@ -1,0 +1,61 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 28/07/2015, 04:25:05 PM
+    Author     : PresTeamShop
+*/
+/*#how_to_paypal img {
+    border: 1px solid #23527c !important;
+}*/
+
+img#img_logo{
+    height: 80px;
+    width: 88px;
+    float: left;
+}
+
+h3#tabs_menu {
+    padding: 17px 0 0px !important;
+}
+section img {
+    width: 100%;
+
+}
+
+.img_miniature {
+    width: 50% !important;
+}
+
+article{
+    margin: 5px 0;
+}
+
+.box-content section ul {
+    list-style: initial !important;
+}
+
+.icons {
+    width: auto;
+}
+
+.quote {
+    color: rgba(0,0,0,.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+li.sub_tab ul.list {
+    padding: 0px;
+    margin: 0px;
+}
+
+li.sub_tab dl dt a {
+    margin: 0;
+    padding: 4px 0;
+}
+dd {
+    height: auto;
+}

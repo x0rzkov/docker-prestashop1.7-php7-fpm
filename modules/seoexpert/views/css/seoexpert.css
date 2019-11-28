@@ -1,0 +1,242 @@
+.tab-pane.panel {
+	margin: 0px;
+}
+
+.adv-table table tr td {
+	padding: 10px;
+}
+
+.adv-table table.display thead th {
+	border-bottom: 1px solid #DDDDDD;
+	padding: 10px;
+}
+
+.icon-trophy-svg {
+    display: none!important;
+}
+
+.adv-table table.display tr.odd.gradeA {
+	background-color: #F9F9F9;
+}
+
+.adv-table table.display tr.even.gradeA {
+	background-color: #FFFFFF;
+}
+
+.adv-table .dataTables_filter label input {
+	float: right;
+	margin-left: 10px;
+	width: 78%;
+}
+
+.adv-table .dataTables_filter label {
+	line-height: 33px;
+	width: 100%;
+}
+
+.adv-table .dataTables_length select {
+	display: inline-block;
+	margin: 0 10px 0 0;
+	padding: 5px 8px;
+	width: 65px;
+}
+
+.adv-table .dataTables_info,.dataTables_paginate {
+	padding: 15px 0;
+}
+
+.adv-table .dataTables_length,.adv-table .dataTables_filter {
+	padding: 15px 0;
+}
+
+.hidden-table-info i {
+	border: 1px solid #dbdce4;
+	color: #1fb5ad;
+	padding: 5px;
+}
+
+.hidden-table-info i.icon-minus {
+	color: #DF7B7B;
+}
+
+.hidden-table-info {
+	width: 10px;
+	cursor: pointer;
+}
+
+.modal-footer {
+	clear: both;
+}
+
+/*
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+	background-color: transparent !important;
+}
+*/
+
+.bootstrap-select.btn-group .dropdown-menu li:not(.disabled)>a:hover small, .bootstrap-select.btn-group .dropdown-menu li:not(.disabled)>a:focus small, .bootstrap-select.btn-group .dropdown-menu li.active:not(.disabled)>a small {
+	color:inherit!important;
+}
+
+.dataTableHidden td {
+	vertical-align: middle!important;
+}
+
+.swMain > ul {
+	display: table;
+	list-style: none;
+	margin: 0 0 20px 0;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+
+.swMain > ul li {
+	display: table-cell;	text-align: center;
+	width: 1%;
+}
+
+.swMain > ul li > a:before {
+	border-top: 4px solid #CED1D6;
+	content: "";
+	display: block;
+	font-size: 0;
+	height: 1px;
+	overflow: hidden;
+	position: relative;
+	top: 21px;
+	width: 100%;
+	z-index: 1;
+}
+
+.swMain > ul li:first-child > a:before {
+	left: 50%;
+	max-width: 51%;
+}
+
+.swMain > ul li:last-child > a:before {
+	max-width: 50%;
+	width: 50%;
+}
+.swMain > ul li > a.selected:before, .swMain li > a.done:before {
+	border-color: #5293C4;
+}
+
+.swMain > ul .stepNumber {
+	background-color: #FFFFFF;
+	border: 5px solid #CED1D6;
+	border-radius: 100% 100% 100% 100%;
+	color: #546474;
+	display: inline-block;
+	font-size: 15px;
+	height: 40px;
+	line-height: 30px;
+	position: relative;
+	text-align: center;
+	width: 40px;
+	z-index: 2;
+}
+.swMain > ul li > a.selected .stepNumber {
+	border-color: #5293C4;
+}
+
+.swMain ul li > a.done .stepNumber {
+	border-color: #5293C4;
+	background-color: #5293C4;
+	color: #fff;
+	text-indent: -9999px;
+}
+
+.swMain ul li > a.done .stepNumber:before {
+	content: "\f00c";
+	display: inline;
+	float: right;
+	font-family: FontAwesome;
+	font-weight: 300;
+	height: auto;
+	text-shadow: none;
+	margin-right: 7px;
+	text-indent: 0;
+}
+
+.swMain > ul li .stepDesc {
+	color: #949EA7;
+	display: block;
+	font-size: 14px;
+	max-width: 100%;
+	table-layout: fixed;
+	text-align: center;
+	word-wrap: break-word;
+	z-index: 104;
+}
+
+.swMain > ul li > a.selected .stepDesc, .swMain li > a.done .stepDesc {
+	color: #2B3D53;
+}
+
+.swMain > ul li > a:hover {
+	text-decoration: none;
+}
+
+.swMain > ul li > a.disabled {
+	cursor: default;
+}
+
+.swMain .progress {
+	margin-bottom: 30px;
+}
+
+.swMain .stepContainer {
+	height: auto !important;
+}
+
+.swMain .loader {
+	display: none;
+}
+
+.swMain [class^="button"], .swMain [class*=" button"] {
+	display: none;
+}
+
+.swMain .actionBar {
+	display: none;
+}
+
+.pattern-btn {cursor: pointer;}
+
+#jstree {margin-bottom: 1.25em;}
+#button_tree {margin-bottom: 1.25em;}
+
+.modal-footer .btn:first-child {
+	margin-left:5px;
+}
+
+.process-icon-magic:before { content: "\f0d0"; }
+
+#content.bootstrap .panel {margin: 0 5px;}
+
+.bootstrap .panel .panel-footer, .bootstrap #dash_version .panel-footer, .bootstrap .message-item-initial .message-item-initial-body .panel-footer, .bootstrap .timeline .timeline-item .timeline-caption .timeline-panel .panel-footer
+{
+	height: 72px;
+	border-color: #eeeeee;
+	background-color: #fcfdfe;
+	margin: 2px -20px -20px;
+	border-top: 1px solid #dddddd;
+}
+
+.tab-pane .alert.alert-warning {
+	margin: 0 5px 10px;
+}
+
+.tags_select {
+	list-style: none;
+}
+
+.bootstrap .progress {
+	margin-top: 4px;
+}
+
+.bootstrap .progress-bar {
+	text-align: right;
+	padding-right: 5px;
+}

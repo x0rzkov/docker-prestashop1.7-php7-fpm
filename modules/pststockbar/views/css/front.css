@@ -1,0 +1,53 @@
+.pstStockBar {
+    margin-bottom: 15px;
+    clear: both;
+    float: none;
+}
+
+.pstStockBar.psb-highlight {
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+}
+
+.pstStockBar.hidden,
+.pstStockBar .hidden {
+    display: none !important;
+}
+.psb-sales-number {
+    min-height: 20px;
+    background: url(../img/fire.png) no-repeat left top;
+    padding-left: 28px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    display: inline-block;
+}
+.psb-sn-added {
+    margin-top: 5px;
+}
+.psb-sales-number b {
+    color: #d43908;
+}
+.pst-bar {
+    -webkit-transition: width 0.2s;
+    -moz-transition: width 0.2s;
+    -ms-transition: width 0.2s;
+    -o-transition: width 0.2s;
+    transition: width 0.2s;
+}
+.psb-oos {
+    font-size: 0.9em;
+    color: #999;
+}
+#product_list .pstStockBar,
+.product_list .pstStockBar,
+.ajax_block_product .pstStockBar {
+    padding: 0 10px;
+}
+.pstStockBar .pst-bar-info {
+    margin-bottom: 8px;
+}
+.pstStockBar .pst-bar-info-lvl {
+    margin-bottom: 2px;
+}

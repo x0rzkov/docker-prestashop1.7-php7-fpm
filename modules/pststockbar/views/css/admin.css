@@ -1,0 +1,88 @@
+#CUSTOM_CSS {
+    resize: vertical !important;
+    width: 100%;
+    min-height: 50px;
+}
+.theme-img {
+    position: relative;
+    top: -3px;
+}
+.psb_more_options_row {
+    display: none;
+}
+.themes-wrp-15 {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.themes-wrp-15 .theme-item label {
+    width: auto;
+    padding-right: 30px;
+}
+.themes-wrp-15 input[type=radio] {
+    vertical-align: top;
+    margin-right: 5px;
+}
+.ps15 #module_form_submit_btn {
+    margin-top: 40px;
+    padding: 10px 25px;
+    background: #6cbf12;
+    color: white;
+    text-shadow: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.ps15 #psb_hide_more_options {
+    margin-bottom: 10px;
+}
+#psb-hook-instructions.ps15 ol {
+    list-style: decimal inside;
+}
+#psb-hook-instructions .psb-ins-toggle {
+    text-decoration: none;
+    border-bottom: 1px dashed;
+}
+.themes-wrp-15 .theme-img {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+#module_form .psb-sl-wrp .psb-lvl-qty-sign {
+    font-family: monospace;
+    font-size: 16px;
+    margin-right: 3px;
+}
+#module_form .psb-sl-wrp .psb-lvl-qty {
+    width: 40px;
+    display: inline-block;
+}
+.psb-sl-wrp-16 .psb-lvl-add,
+.psb-sl-wrp-17 .psb-lvl-add {
+    min-width: 30px;
+}
+#pststockbar.pstab15 .psb_csl_wrp {
+    margin-top: 10px;
+}
+#pststockbar.pstab15 .psb_csl_btn_wrp {
+    margin-left: 256px;
+    margin-top: 10px;
+}
+#pststockbar.pstab16 .psb-lvl-qty,
+#pststockbar.pstab17 .psb-lvl-qty {
+    width: 100%;
+    max-width: 50px;
+    float: none;
+    display: inline-block;
+}
+#pststockbar .psb_qty_td {
+    white-space: nowrap;
+}
+#pststockbar.pstab17 .psb-lvl-del {
+    margin-left: 45px;
+}
+#pststockbar.pstab17 .psb-level-text {
+    width: 100%;
+}
+.psb_loading {
+    opacity: 0.4;
+}

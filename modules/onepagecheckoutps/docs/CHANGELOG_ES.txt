@@ -1,0 +1,341 @@
+[ADD] = Adiciones de funcionalidades
+[MOD] = Modificaciones y actualizaciones
+[FIX] = Correccion de problemas o errores (Bugs)
+
+V4.0.5 (11/09/2019)
+
+- Bug:
+  - #OPC-234: Error al cargar el resumen del carrito en versiones menores a 1.7.4.X.
+  - #OPC-231: Valida campos de contraseña sin estar marcado el checkbox correspondiente.
+  - #OPC-236: En algunas plantillas se descuadran las imágenes de métodos de pago y transportistas.
+  - #OPC-237: No elimina todas las direcciones vacías.
+- Compatibilidad módulo:
+  - #OPC-239: No actualiza correctamente el total del pedido - stripe_official - v2.0.4 - 202 ecommerce.
+- Mejora:
+  - #OPC-187: Icono informativo para opción "Auto-generar contraseña".
+  - #OPC-175: Icono informativo para opción "Mostrar disponibilidad".
+
+V4.0.4 (30/08/2019)
+
+- Bug:
+  - #OPC-154: Permite actualizar la versión del módulo cuando exiten overrides.
+  - #OPC-157: Crea direcciones vacías al registrarse con redes sociales con la opción "Mostrar dirección de entrega para productos virtuales" activa.
+  - #OPC-116: Permite seleccionar un transportista con la opción "Habilitar compatibilidad para módulos de envío" activa y los campos ciudad y código postal requeridos y vacíos.
+  - #OPC-167: No asocia la dirección de facturación pre-seleccionada al pedido.
+  - #OPC-208: No permite comprar al registrarse como invitado teniendo redes sociales activas.
+  - #OPC-206: Cambia los grupos del cliente logueado al realizar una compra.
+  - #OPC-213: Permite activar opciones de aceptación cuando el CMS  no tiene contenido en algún idioma.
+  - #OPC-210: Con la opción "Mostrar en lista los grupos de clientes" activa no asigna el grupo cliente o invitado al registrarse.
+  - #OPC-215: Mensaje de contraseña incorrecta sin seleccionar "Quiero cambiar mi contraseña".
+  - #OPC-174: Error al administrar campos personalizados.
+  - #OPC-93: Cierra sesión al cambiar la contraseña el cliente.
+- Compatibilidad módulo:
+  - #OPC-217: pakkelabels_shipping - v1.3.0 - Pakkelabels.dk.
+- Nueva caracteristica:
+  - #OPC-148: Opción "Requerir antes de comprar" para mostrar políticas de privacidad en el resumen del carrito.
+- Mejora:
+  - #OPC-171: Icono informativo para opción "Mostrar lista de ciudades usando Geonames.org".
+  - #OPC-187: Icono informativo para opción "Auto-generar contraseña".
+  - #OPC-175: Icono informativo para opción "Mostrar disponibilidad".
+
+V4.0.3 (20/08/2019)
+[+] ADD: Compatibilidad con módulo deliverydate - V1.6.2 de MARICHAL Emmanuel.
+
+V4.0.2 (09/08/2019)
+[+] ADD: COMPATIBILIDAD CON PRESTASHOP 1.7.6.
+[+] ADD: Compatibilidad con módulo idxvalidatinguser - v2.9.6 de innovadeluxe.
+[+] ADD: Compatibilidad con módulo estimateshippingcost - V4.0.0 de PresTeamShop para mostrar los días de entrega estimados para cada transportista.
+[+] ADD: Compatibilidad con módulo boxtalconnect - v1.0.5 - de Boxtal.
+[+] ADD: Compatibilidad con módulo orderfees - V1.8.51 de motionSeed.
+[+] ADD: Compatibilidad con módulo zipmoneypayment - V1.0.1 de Zip.
+[+] ADD: Compatibilidad con módulo ppoperties - v.3.0.3 de psandmore.
+[+] ADD: Compatibilidad con módulo tobewebto Fattura Elettronica - V1.0.6 de 2beweb2.
+[+] ADD: Compatibilidad con módulo cashondeliveryfeeplus - v4.5.4 - Prestalia.
+[+] ADD: Ahora es posible ver los campos personalizados de Direcciones en la factura y el correo electrónico.
+[+] ADD: Funcionalidad para cambiar la contraseña del cliente.
+[+] ADD: Mostrar botón "Volver mi cuenta" en la sección de direcciones e información personal.
+[+] ADD: Mostrar advertencia cuando los CMS de las opciones "Requerir aceptar términos y condiciones antes de la compra" y "Requerir aceptar políticas de privacidad antes de la compra" no tienen contenido guardado.
+[+] ADD: Pestaña para visualizar estadísticas de conexiones por redes sociales
+[+] ADD: Nueva opción para activar o desactivar las redes sociales sin necesidad de tener que borrar las credenciales.
+[+] ADD: Los enlaces de la opción "Requerir aceptar términos y condiciones antes de la compra" ahora se muestran en una ventana modal.
+[+] ADD: Modo prueba para los métodos de pago, con el fin de probarlos antes de mostrarlos a los clientes.
+[*] MOD: Al hacer iniciar sesión con Biocryptology va a volver a solicitar el código QR para hacer login.
+[*] MOD: Mejora de diseño al mostrar el dinero faltante para el envío gratis.
+[*] MOD: Al activar el guest checkout va a mantener marcado para que se haga una compra siempre como registrado.
+[*] MOD: Modificado el ícono de facebook de redes sociales.
+[*] MOD: Mostrar siempre la caja de descuento y el total de productos y descuentos en el resumen del checkout.
+[*] MOD: Es eliminada opción "vacía" de la lista de grupos de cliente mostrada en el checkout.
+[-] FIX: Problema cuando se tiene activa la opción "Insertar automáticamente el código ISO del país en los dos primeros caracteres de la identificación" y el campo DNI no está activo.
+[-] FIX: Problema de compatibilidad con el módulo "Ei Captcha - v.2.0.4 - hennes". No valida el captcha cuando la opción Mostrar el botón "Guardar información" está desactivada.
+[-] FIX: Cuando se tiene activa la opción de "Insertar automáticamente el código ISO del país en los dos primeros caracteres de la identificación" para la dirección de entrega y/o facturación, si no se elige un país, da un error 500.
+[-] FIX: Cuando se habilita la opción "Validar identificación de España y Chile" junto con la opción "Insertar automáticamente el código ISO del país en los dos primeros caracteres de la identificación" para la dirección de entrega y/o facturación, invalida la identificación.
+[-] FIX: Validar en el BackOffice si el empleado está logueado para evitar Hacking.
+[-] FIX: En las multitiendas, cuando se trabajando en "Todas las tiendas" y se modifican las opciones "activo" y "requerido" para los campos del registro, no guarda los nuevos valores.
+[-] FIX: Validación para que el número de caracteres que se pueden ingresar en un campo de texto no sea mayor al tamaño de éste.
+[-] FIX: Cuando el cliente volvía atrás desde el navegador se guardaba la dirección del cliente con puntos.
+[-] FIX: Cuando se editan los datos del Cliente, éstos no se cambian en el título al lado de Bienvenido.
+[-] FIX: Error 500 al editar la información del cliente.
+[-] FIX: Problema de diseño: métodos de pago no alineados.
+[-] FIX: Cuando se presiona el botón "Recargar" en la sección de transportistas no mostraba las provincias del país seleccionado.
+
+V4.0.1 (27/04/2019)
+[-] FIX: [Importante] Se soluciona problema al hacer compatibilidad con iOS 12 y Redsysoficial.
+[+] ADD: [Importante] Se añaden validaciones en el módulo para  evitar spam en el registro de cliente.
+[-] FIX: Cuando se activa la opción "Mostrar en lista los grupos de clientes", se procede a comprar un producto virtual y el cliente no elije un grupo, daba error y no permitía seguir con la compra.
+
+V4.0.0 (23/04/2019)
+[+] ADD: Compatibilidad: iqitthemeeditor - V4.2.1 de IQIT-COMMERCE.COM.
+[+] ADD: Compatibilidad con módulo paypalplus - V1.7.13 de terracode.
+[+] ADD: Compatibilidad con módulo orderfees_payment -V1.8.14 de motionSeed.
+[+] ADD: Compatibilidad con módulo Ei Captcha - v.2.0.3 - hhennes.
+[+] ADD: Compatibilidad rg_correoschile(Correos chile) - Rolige - V2.0.0.
+[+] ADD: Se adiciona ciertas traducciones al Ucraniano.
+[*] MOD: Actualización del idioma CS.
+[-] FIX: [Importante] No era posible finalizar el pedido en movíl con iOS 12 y Redsysoficial.
+[-] FIX: Se añade validación para que el número de caracteres que se pueden ingresar en un campo de texto no sea mayor al tamaño de éste.
+[-] FIX: En algunas tiendas no funciona el login con Google debido a la plantilla.
+[-] FIX: Error compatibilidad con módulo "MegaProduct" v17.0.1.1 - alabazweb.com.
+[-] FIX: Problema de visualización en dispostivos móviles.
+[-] FIX: Solución a compatibilidad con módulo: rg_chilexpress - v2.1.0.
+[-] FIX: Problema de compatibilidad con módulo: quantitydiscountpro.
+[-] FIX: Recargaba la página en vez de finalizar o confirmar el pago, cuando aún no se es cliente.
+[-] FIX: Error cuando se tiene activa la opción "Mostrar tiempo de entrega del producto" y no se tiene configurado un tiempo de entrega daba error 500 porque la variable estaba indefinida.
+[-] FIX: Se soluciona problema de incompatibilidad con módulo: VATNumberCleaner - v1.3.8 - MassonVincent.
+[-] FIX: Al crear un campo personalizado tipo "checkbox" como requerido, no obligaba su seleccion.
+
+V3.0.0 (21/02/2019)
+[+] ADD: Compatibilidad con nuestra nueva versión del módulo: Customer Type OPC - v3.0.0.
+[+] ADD: Compatibilidad con módulo de envío: Seur - v2.0.3 - Linea Grafica.
+[+] ADD: Compatibilidad con módulo: ValidateVatNumber - v2.1.7 - ActiveDesign.
+[+] ADD: Compatibilidad con módulo: QuantityDiscountPro - v2.1.27 - IdNovate.
+[+] ADD: Se agrega el llamado al hook: actionSubmitCustomerAddressForm.
+[*] MOD: Se mejoran los textos del tiempo de entrega de los productos que es mostrado en el resumen de carrito.
+[*] MOD: Actualización del idioma RO.
+[*] MOD: En algunos metodos de pago que tengan un "action" de "javascript" ahora hace un "eval" en vez de un "submit".
+[*] MOD: Ahora se acumulan las conexiones por redes sociales para luego tener estadisticas de conexión.
+[-] FIX: Se corrige compatibilidad con módulo envialiacarrier - v1.0.0 - miguel.cejas.
+[-] FIX: Se corrige compatibilidad con módulo: Atribute Wizard Pro - v2.0.4 - Presto-Changeo.
+[-] FIX: No mostraba el popup de "continuar y comprar ahora" al hacer scroll.
+[-] FIX: La compatibilidad de "paypalplus" interferia con otro módulo llamado igual.
+[-] FIX: No funciona la opción "Insertar automáticamente el código ISO del país en los dos primeros caracteres de la identificación en la dirección de entrega/factura".
+[-] FIX: Problema con la opción "Mostrar tiempo de entrega del producto" del Resumen de carrito en PrestaShop 1.7.5.
+[-] FIX: Cuando se tiene activa la opción "Confirmar la dirección de envío antes de hacer checkout" y desde el FrontOffice el cliente cierra la ventana modal de confirmación, no le permite al cliente continuar con la compra.
+[-] FIX: Problema de compatiblidad con módulo Sisow Betaalmethoden - v5.2.0 - de Sisow, no permitía registrarse a los clientes.
+
+V1.2.4 (27/12/2018)
+[-] FIX: IMPORTANTE - No permitia finalizar la compra.
+
+V1.2.3 (21/12/2018)
+[+] ADD: Registro y login por medio de Biocryptology.
+[+] ADD: Opción para hacer compatibles aquellos métodos de envió que no funcionan dentro de nuestro checkout.
+[+] ADD: Se agrega link para configurar tarea CRON para eliminar las direcciones vacías creadas por el módulo.
+[*] MOD: Ahora se puede hacer sobre-escritura de las plantillas.
+[*] MOD: Limita la compra de más stock disponible que tenga el producto.
+[-] FIX: Error al cargar transportes si se tenia un módulo de envío instalado.
+[-] FIX: Si existia un carrito con productos sin stock, sucedia una redirección infinica en el checkout.
+[-] FIX: Si no se tenia activo la compra por invitado y desactivado el forzar iniciar sesion a cliente registrado, de igual manenra arrojaba error de cuenta de registrada y no dejaba continuar la compra.
+[-] FIX: Al tener activo el autocompletar de google y seleccionar un dirección sugerida de un país no disponible, el estado de la dirección que tenia, no era seleccionado.
+[-] FIX: Al no coincidir los campos del correo electrónico era mostrado un mensaje en ingles y no en español.
+[-] FIX: Se corrige error que no permite ingresar el simbolo "/" en las direcciones.
+
+V1.2.2 (29/11/2018)
+[+] ADD: Compatibilidad con el módulo: StripePro - v5.3.3 - NTS.
+[+] ADD: Compatibilidad temporal con módulo: EnvialiaCarrier - v1.0.0 - miguel.cejas.
+[+] ADD: Se añade confirmación antes de que un intente eliminar una dirección.
+[+] ADD: Ahora al crear un campo personalizado, el nombre del campo es formateado automatico: Sin espacios, tildes, simbolos.
+[+] ADD: Se añade botón para seleccionar una dirección de envío o facturación, que facilitará el actuar del cliente.
+[+] ADD: Se añade idioma Birmano.
+[*] MOD: Validación para no eliminar una dirección de facturación que este puesta igualmente como dirección de envío por algún error.
+[*] MOD: Se coloca el mismo diseño del botón de la red social "Google" en la ventana modal de iniciar sesión.
+[*] MOD: Cuando un campo se vuelve requerido y no esta lleno en una dirección de cliente, ahora ya no se obliga a llenar a menos que se intente realizar una compra.
+[-] FIX: Al crear un campo personalizado con opciones, estan se duplicaban al dar clic varias veces al guardar.
+[-] FIX: Corrección a compatibilidad con módulo: CodFee - v3.2.9 - IdNovate.
+[-] FIX: Mostraba el aceptar políticas de privacidad estando logueado.
+
+V1.2.0 & 1.2.1 (17/11/2018)
+[+] ADD: Integración con módulo: Customer Type OPC - PresTeamShop.
+[+] ADD: Compatibilidad con el modulo codpro v1.9.0.
+[+] ADD: Compatibilidad con el modulo eupago_payshop v1.7.0 - euPago.
+[+] ADD: Compatibilidad con el modulo eupago_multibanco v1.7.0 - euPago.
+[+] ADD: Compatibilidad con el modulo mondialrelay v2.3.3 - PrestaShop.
+[+] ADD: Compatibilidad con el modulo idxcodfees - v4.1.0 - innovaDeluxe.
+[+] ADD: Compatibilidad con el modulo cashondeliverywithfee - v7.2.6 - de zIO_o.
+[+] ADD: Compatibilidad con el modulo pm_crosssellingoncart - v2.4.3 - Presta-Module.
+[+] ADD: Opcion de requerir el inicio de sesion si el cliente ya esta registrado.
+[+] ADD: Opcion de reemplazar el formulario de registro nativo por el del checkout.
+[+] ADD: Opcion de mostrar el formulario de registro del checkout en el apartado de Mi cuenta -> Mis direcciones.
+[+] ADD: Opcion de mostrar el formulario de registro del checkout en el apartado de Mi cuenta -> Mi informacion personal.
+[+] ADD: Opcion para elegir transportista por defecto.
+[+] ADD: Se anade icono cuando la direccion esta seleccionada en el FrontOffice.
+[+] ADD: Opcion de colocar la direccion sugerida por google maps en el campo direccion o dejar lo escrito por el cliente.
+[+] ADD: Se agrega opcion para insertar automáticamente el código ISO del pais en los dos primeros caracteres de la identificacion.
+[+] ADD: Validación al crear opciones de campos personalizados sin descripción en el idioma predeterminado.
+[*] MOD: Se modifica boton de inicio de sesion de google segun la guia de identidad de google.
+[*] MOD: Ahora es posible editar solo direcciones o solo la informacion del cliente logueado con los formularios del checkout, sin mezclar informacion del cliente y direccion en el mismo formulario.
+[*] MOD: No permite cambiar las posiciones de los campos del registro entre "cliente", "envio" o "facturacion".
+[*] MOD: Se cambia la traduccion de "mostrar total de productos" por "mostrar subtotal de productos".
+[*] MOD: El requerido del "Codigo postal" se basa en la configuracion de los campos del registro y no sobre lo puesto en cada pais.
+[*] MOD: Se oculta el salir de sesion al estar logueado como Invitado.
+[-] FIX: Se muestran los calendarios en el idioma de la tienda.
+[-] FIX: Se arregla compatibilidad con el modulo stripe official 1.5.2 de 202 ecommerce.
+[-] FIX: Se soluciona bug al mostrar el texto de los productos en y sin stock.
+[-] FIX: Se soluciona bug con nueva opcion pra mostrar plazo de entrega, no calculaba el plazo cuando la cantidad de producto en el carrito sobrepasaba el stock.
+[-] FIX: Se soluciona error con productos customizados, que generaba que apareciera codigo html en el resumen.
+[-] FIX: Compatibilidad con modulo stripejs v3.5.5 - by NTS. Pedidos duplicados. Se deshabilita boton COMPRAR AHORA al igual que con stripe_official.
+[-] FIX: Ocultar checkbox de politicas de privacidad cuando se guarde informacion como invitado.
+[-] FIX: Se carga el valor de los campos personalizados al dar clic en guardar informacion o regarcar la pagina, ya que no se estaban manteniendo y no era posible realizar un pedido al tener esos campos como requeridos.
+[-] FIX: Al guardar una dirección que tiene código postal y ciudad y luego quitar estos campos en el backoffice, para los usuarios registrados las nuevas direcciones quedaban con la ciudad y código postal de la ultima direccion guardada.
+[-] FIX: En la tab Editor no permitia guardar contenido html en el override de js.
+[-] FIX: Solucion a error javascript que sale en el backoffice al cargar el CHANGELOG.
+[-] FIX: La opcion de ocultar la caja de texto de comentario de pedido no funcionaba.
+[-] FIX: Al cambiar los colores del texto de los bloques seleccionados no funcionaba.
+[-] FIX: Error al mostrar el formulario del checkout en vez del nativo.
+[-] FIX: No carga los metodos de pago y resumen cuando se intentaba comprar productos virtuales. Solo en algunos casos sucedia.
+[-] FIX: Al crear un dirección de facturación estando logueado como invitado, esta no era asociada al invitado, pero si con el OPC.
+[-] FIX: No permitia crearse como cliente una vez se estaba logueado como invitado.
+
+V1.1.9 (25/09/2018)
+[+] ADD: Compatibilidad con el modulo Maximum product quantity per customer de MyPresta.eu.
+[+] ADD: Se anade opcion para mostrar el plazo de entrega del producto segun la configuracion del producto.
+[-] FIX: Se soluciona bug, cuando se tiene activa la opción Eliminar el enlace de los productos, no eliminaba el enlace.
+[-] FIX: Se soluciona bug, no funcionaba opcion de Mostrar compatibilidad del resumen.
+[-] FIX: Se soluciona problema de compatibilidad Stripe JS.
+[-] FIX: Cuando el cliente elimina una direccion, se eliminaba de la base de datos aunque estuviera en uso, ahora solo se marca como eliminada en la base de datos.
+[-] FIX: Se corrige y anade compatibilidad con el modulo stripe_official v1.5.2 - by 202. Al pagar no deshabilitaba el boton ni mostraba proceso de stripe permitiendo dar mas clic al boton de pago, generando pedidos duplicados.
+
+V1.1.8 (08/09/2018)
+[+] ADD: Opcion de redirigir directamente al checkout sin pasar por el carrito.
+[+] ADD: Compatibilidad con modulo Braintree, v3.1.1 - Bellini Services.
+[+] ADD: Se anade hook additionalCustomerFormFields.
+[+] ADD: Se ordena direcciones por fecha de creacion descendente.
+[*] MOD: Se modifica el modulo para que cuando se edita una direccion que no esta seleccionada, no vuelva a cargar metodos de envio y pago.
+[-] FIX: Se elimina cookie de la opcion (Deseo configurar otra direccion para mi facturacion), ya que causaba problema al realizar un segunda pedido (No guardaba direccion de envio, solo facturacion).
+[-] FIX: Se muestran correctamente las direcciones cuando el formulario no tiene codigo postal o ciudad.
+[-] FIX: Ocasionaba error por address1 invalido, cuando se pegaba direccion con caracteres especiales no validos.
+[-] FIX: Se limpiaban los campos personalizados al presionar en editar y atras de las tarjetas de direccion.
+[-] FIX: Al cambiar mas de tres veces el metodo de pago, el anterior quedaba seleccionado y no cambiaba.
+[-] FIX: Se soluciona bug, no mostraba loading en moviles.
+[-] FIX: Al eliminar direcciones desde las tarjetas del OPC se eliminaba direccion de la base de datos ocasionando que no se visualizaran los pedidos que contubieran esa direccion.
+[-] FIX: Actualiza compatibilidad con paypal, v7.4.2.0 - AlabazWeb Pro.
+[-] FIX: Se soluciona bug, cuando un cliente invitado va a pagar y se devuelve al checkout pide aceptar politicas de privacidad pero no se muestra checkbox.
+
+V1.1.7 (28/07/2018)
+[-] FIX: Al guardar direcciones desde el Front o Back generaba un error.
+[-] FIX: Ahora muestra los mensajes de pedido en el resumen cuando tienen informacion previamente guardada.
+
+V1.1.6 (26/07/2018)
+[-] FIX: Problema con puntos en la direccion cuando se hace login desde el prestashop nativo y se crea un pedido.
+[-] FIX: No permitia seleccionar una direccion de facturacion.
+[-] FIX: Problema al comprar productos virtuales sin tener activo las direcciones de facturacion y envio.
+[-] FIX: Al tener desactivado el campo pais y usar el auto-completar de google, no se seleccionaba el estado.
+[-] FIX: La opcion de confirmar direccion de envio no estaba funcionando.
+
+V1.1.5 (18/07/2018)
+[+] ADD: Compatibilidad con modulo "MegaProduct" v17.0.1.1 - alabazweb.com.
+[*] MOD: Mejora visual en la carga de los pasos, ahora muestra un solo loading.
+[*] MOD: Ya no se re-utilizan direcciones creadas por el OPC, para evitar posibles problema de cruce de informacion.
+[-] FIX: Se soluciona problema de compatibilidad con el calculo del fee del modulo "codfee".
+[-] FIX: Problema al procesar pedidos con total: 0.
+[-] FIX: Se quita redirección al checkout cuando se entra al carrito.
+[-] FIX: Al crear la primer direccion de facturacion, daba problema pues dejaba puesta la direccion de envio como facturacion.
+
+V1.1.4 (20/06/2018)
+[*] MOD: Cambio en el manejo de los overrides.
+
+V1.1.2 & V1.1.3 (18/06/2018)
+[+] ADD: Compatibilidad con modulo "VatNumberCleaner" v1.2.8 - MassoVincent.
+[+] ADD: Compatibilidad con modulo "M4GDPR" v1.2.1 - PrestaAddons.
+[+] ADD: Compatibilidad con modulo "Quantity Discount Pro".
+[*] MOD: Ahora se hace distinsion entre las direcciones de facturacion y envio en el checkout.
+[*] MOD: Mejora de compatibilidad con modulo Carrier Pickup Store.
+[*] MOD: Se aplican menores cambios visuales y compatibilidades con otras plantillas.
+[*] MOD: Solo muestra el aceptar politicas de privacidad si no se esta logueado o es un invitado.
+[-] FIX: Se soluciona un problema cuando no tenia direcciones el cliente.
+[-] FIX: Se soluciona bug mostraba mensaje de provincia requerida en ingles siempre.
+[-] FIX: Se soluciona bug cuando los campos adicionales estaban requeridos no dejaba guardar la direccion de entrega.
+[-] FIX: Se soluciona problema de contenedor en la búsqueda de direcciones, no dejaba añadir nueva direccion en moviles.
+[-] FIX: Se soluciona bug duplicaba el mostrar el hook create account top.
+
+V1.1.0 & V1.1.1 (25/05/2018)
+[+] ADD: COMPATIBILIDAD CON MODULO: Official GDPR compliance v1.0.0 - PrestaShop.
+[+] ADD: Permite agregar un label abajo de cada campo de registro para dar mas informacion en caso de ser necesario.
+[+] ADD: Al eliminar todos los productos del carrito se refresca la pagina para mostrar el mensaje de carrito vacio.
+[*] MOD: Optimizacion del manejo de direcciones.
+[*] MOD: Se aplican mejoras y cambios de la version 1.6.
+[*] MOD: Muestra las disponibilidades personalizadas de los productos en el resumen de carrito.
+[*] MOD: Se actualiza traduccion al Holandes.
+[-] FIX: Al ocultar las imagenes y descripciones de los transportes, no se mostraba el precio del transporte.
+[-] FIX: No cambia el color del transporte seleccionado, quedando siempre el por defecto.
+[-] FIX: Se mostraban transportes no correspondientes al pais y estado auto-seleccionado. Solo pasaba con visitantes.
+[-] FIX: Problema en cambiar los colores de las tarjetas de las direcciones seleccionadas.
+[-] FIX: No se podia cambiar la opcion de compra invitado desde la configuración.
+
+V1.0.9 (19/04/2018)
+[-] FIX: Notice al ir al checkout cuando estan los campos deshabilitados de la direccion de entrega o facturacion.
+[-] FIX: Soluciona problema con Google Analitycs.
+[+] ADD: Ahora son mostradas las personalizaciones del producto en el resumen.
+[+] ADD: Se eliminan espacios vacios al inicio y final de las casillas de texto que pueden causar problemas al validar el formulario.
+[+] ADD: Compatibilidad con modulo de pago CodFee (IdNovate).
+[+] ADD: Compatibilidad con modulo de pago Amazon Pay - Login and Pay with Amazon (amzpayments - v3.2.01 - Patworx Multimedia )
+[+] ADD: Compatibilidad con modulo de pago PayPal DIRECT XO (paypalplus - v1.2.0  -  PixelWeb)
+[*] MOD: Se actualizan guias de usuario.
+[*] MOD: Mejoras en el idioma EN y RU.
+[*] MOD: Ahora muestra los totales de impuestos. Esto depende de la version 1.7 instalada.
+
+V1.0.8 (22/03/2018)
+[+] ADD: Compatibilidad con modulo de pago PaypalBrainTree (v1.0.1 - WebDevOverture).
+[+] ADD: Implementacion de PrestaTrust.
+[-] FIX: No era mostrada la flecha de las listas desplegables.
+
+V1.0.6 & 1.0.7 (17/03/2018)
+[-] FIX: Compatibilidad con PrestaShop 1.7.3. Siempre colocaba el transportista por defecto independiente de lo que el cliente hubiera seleccionado.
+[+] ADD: Compatibilidad con modulo de pago PaypalWithFee (v4.0.10 - 4webs.es).
+[+] ADD: Compatibilidad con modulo de pago Stripe Official (v1.5.2 - 202 ecommerce).
+[+] ADD: Compatibilidad con modulo de pago ReembolsoCargo (v4.0.1 - 4webs.es).
+[-] FIX: No mostraba la linea de wrapping en el resumen de carrito.
+[-] FIX: Con la opcion activa de mostrar primero el carrito y hacer clic en "guardar informacion" devolvi al cliente al carrito en vez de mantenerlo en el checkout.
+
+V1.0.5 (01/18/2018)
+[+] ADD: Compatibilidad con modulo Attribute Wizar Pro.
+[-] FIX: Al desactivar el hook shopping cart se seguian mostrando los modulos de ese hook en resumen de carrito.
+[-] FIX: Mostraba siempre el carrito primero antes del checkout.
+[-] FIX: Al refrescar los pagos ocultaba el contenido del pago seleccionado.
+[-] FIX: Problema detectado con la compatibilidad del metodo de pago Stripe Official.
+[-] FIX: Mostraba el requerir politica de privacidad en el registro y no se mostraba. Solo sucede al usar el registro de nuestro checkout en vez del nativo de prestashop.
+[-] FIX: Al activar el importe minimo de compra daba problema con la redireccion al checkout.
+
+V1.0.4 (01/12/2017)
+[+] ADD: Compatibilidad con modulo de pago MegaReembolso (v2.9.2 - AlabazWeb Pro).
+[+] ADD: Compatibilidad con modulo de pago Paypal (v7.4.2.0 - AlabazWeb Pro).
+[+] ADD: Compatibilidad con modulo de pago Stripe Official (v1.5.1 - 202 ecommerce).
+[-] FIX: Cuando se tiene solo un metodo de pago y este hace peticiones post, no funcionaba.
+
+V1.0.3 (23/11/2017)
+[+] ADD: Compatibilidad con modulo de pago BraintreeJS (v3.0.5 - Bellini Services).
+[+] ADD: Validacion online del RUT chileno.
+[*] MOD: La aceptacion el aceptar las politicas de privacidad junto con los terminos y condiciones para hacer compatible nuestro modulo con las leyes de varios paises.
+[*] MOD: Se actualizan idiomas.
+[-] FIX: Optimizacion del manejo de direcciones.
+[-] FIX: Problema al calcular el valor restante para el envio gratuito en diferentes divisas.
+
+V1.0.2 (06/11/2017)
+[+] ADD: Compatibilidad con modulo de pago Paypal con opcion Braintree.
+[+] ADD: Compatibilidad con modulo de pago CashOnDeliveryPlus con Recargo (v2.9.5 - PrestaHost.eu).
+[+] ADD: Compatibilidad con modulo de transporte Packetery (v2.0.2 - ZLab Solutions).
+[+] ADD: Compatibilidad con modulo Customers Activation.
+[+] ADD: Compatibilidad con modulo Rg_Chilexpress (v.1.4.0 - Rolige).
+[+] ADD: Ahora es posible reemplazar el registro nativo por el del modulo.
+[-] FIX: Al hacer clic en la imagen del transporte o la descripcion, no seleccionaba dicho transporte.
+[-] FIX: Si no mostraba transportes se mostraba en el resumen gastos de envio.
+
+V1.0.1 (10/10/2017)
+[+] ADD: Muestra los descuentos de los productos en el resumen de carrito. (Solo para versiones superiores a PrestaShop 1.7.2.X)
+[+] ADD: Compatibilidad con modulo "KurirQ" (v1.0.4 Prestanesia).
+[-] FIX: No se estaba guardando los mensajes de los pedidos. (Solo para versiones superiores a PrestaShop 1.7.2.X).
+[-] FIX: Problema cuando se tenia activo la compra por invitado.
+[-] FIX: Al requerir la direccion de facturacion y no completar los campos, daba problemas visuales.
+[-] FIX: Se vuelve a dejar el header y footer en la pagina de compra.
+[-] FIX: Siempre era requerido el DNI asi el pais ya no lo requiera.
+
+V1.0.0
+- Nueva version para PrestaShop 1.7

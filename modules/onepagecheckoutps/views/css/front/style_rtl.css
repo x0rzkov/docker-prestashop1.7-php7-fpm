@@ -1,0 +1,208 @@
+/**
+ * We offer the best and most useful modules PrestaShop and modifications for your online store.
+ *
+ * We are experts and professionals in PrestaShop
+ *
+ * @author    PresTeamShop.com <support@presteamshop.com>
+ * @copyright 2011-2019 PresTeamShop
+ * @license   see file: LICENSE.txt
+ * @category  PrestaShop
+ * @category  Module
+ */
+
+div#onepagecheckoutps .onepagecheckoutps_p_step.p_address{
+    text-align: right;
+}
+div#onepagecheckoutps #onepagecheckoutps_step_one .account_creation p{
+    float: right;
+    margin-left: 10px;
+}
+div#onepagecheckoutps #onepagecheckoutps_step_two div.extra_info_carrier a {
+    text-align: left;
+}
+div#onepagecheckoutps #onepagecheckoutps_step_two .delivery_option > div.radio {
+    float: right;
+}
+div#onepagecheckoutps #onepagecheckoutps_step_review table#cart_summary .cart_total_price .total_price_container{
+    border-left: none;
+}
+div#onepagecheckoutps #onepagecheckoutps_step_review #cart_voucher p{
+    float: right;
+}
+div#onepagecheckoutps div#onepagecheckoutps_step_review #div_cgv label{
+    padding-right: 5px;
+}
+div#onepagecheckoutps div#onepagecheckoutps_step_review #buttons_checkout{
+    float: right;
+}
+div#onepagecheckoutps div#onepagecheckoutps_step_review tr.cart_total_price #cart_voucher h4{
+    float: right;
+    margin: 0 0 0 10px;
+}
+#onepagecheckoutps_step_two_container .inpost{
+    margin-right: 0 !important;
+}
+div#onepagecheckoutps{
+    text-align: right;
+}
+div#onepagecheckoutps .onepagecheckoutps_p_step i.fa-pts{
+    margin-left: 5px;
+}
+div#onepagecheckoutps input,
+div#onepagecheckoutps select{
+    text-align: right;
+}
+div#onepagecheckoutps #opc_show_login i.fa-pts,
+div#onepagecheckoutps .panel-title i.fa-pts{
+    margin-left: 5px;
+}
+div#onepagecheckoutps div#div_onepagecheckoutps_info h2{
+    text-align: right;
+}
+div#onepagecheckoutps input.valid{
+    padding-left: 24px !important;
+}
+div#onepagecheckoutps input.error{
+    padding-left: 24px !important;
+}
+div#onepagecheckoutps span.form-error{
+    text-align: left;
+}
+div#onepagecheckoutps #onepagecheckoutps_step_one #opc_show_login{
+    margin-left: 5px;
+}
+div#onepagecheckoutps #onepagecheckoutps_step_two div.delivery_option{
+    float: right;
+}
+div#onepagecheckoutps div#onepagecheckoutps_step_review .cart_quantity .cart_quantity_button > div > .input-group:last-child {
+    float: left;
+}
+div#onepagecheckoutps div#onepagecheckoutps_step_review .cart_quantity .cart_quantity_button .input-group span:last-child {
+    margin-right: -4px;
+}
+div#onepagecheckoutps div#onepagecheckoutps_step_review .cart_quantity .cart_quantity_button .input-group span:first-child {
+    margin-left: -4px;
+}
+div#onepagecheckoutps div#onepagecheckoutps_step_review .cart_quantity .cart_quantity_delete,
+div#onepagecheckoutps div#onepagecheckoutps_step_review .cart_quantity .megacart_quantity_delete {
+    margin-right: 4px;
+}
+div#onepagecheckoutps #onepagecheckoutps_step_review #list-voucher-allowed > div {
+    float: right !important;
+}
+div#onepagecheckoutps .onepagecheckoutps_p_step_four {
+    padding-right: 5px;
+}
+
+@media (max-width: 992px) {
+    div#onepagecheckoutps #onepagecheckoutps_step_review #buttons_footer_review > div {
+        float: right !important;
+    }
+}
+
+div.loading_big{
+    right: 0;
+}
+.loading_big i.fa-pts{
+    right: 48%;
+}
+.pts .nopadding-right {
+    padding-left: 0 !important;
+}
+.pts .nopadding-left {
+    padding-left: 0 !important;
+}
+
+#header-order-detail-content > div{
+    float: right;
+}
+
+/*div#onepagecheckoutps h1,
+div#onepagecheckoutps p,
+div#onepagecheckoutps a,
+div#onepagecheckoutps span,
+div#onepagecheckoutps label,
+div#onepagecheckoutps input,
+div#onepagecheckoutps select,
+div#onepagecheckoutps .onepagecheckoutps_p_step,
+div#onepagecheckoutps .onepagecheckoutps_p_step.p_address,
+div#onepagecheckoutps #onepagecheckoutps_step_review table#cart_summary tbody tr td,
+div#onepagecheckoutps .div_item,
+#dialog_opc td,
+#dialog_opc p,
+#dialog_opc a
+#dialog_opc label,
+#dialog_opc span
+{
+    text-align: right !important;
+}
+div#onepagecheckoutps div#onepagecheckoutps_step_review #div_cgv,
+div#onepagecheckoutps div#onepagecheckoutps_step_review tr.cart_total_price #cart_voucher h4,
+div#onepagecheckoutps #onepagecheckoutps_step_review #btn_continue_shopping,
+div#onepagecheckoutps div#div_onepagecheckoutps_info,
+div#onepagecheckoutps #onepagecheckoutps_step_review_container,
+div#onepagecheckoutps #onepagecheckoutps_step_one_container,
+div#onepagecheckoutps #onepagecheckoutps_step_review #cart_voucher p,
+div#onepagecheckoutps #onepagecheckoutps_step_review td.cart_description a,
+#div_dialog_opc #dialog_opc .ui-dialog-title{
+    float: right !important;
+}
+
+
+div#onepagecheckoutps #onepagecheckoutps_step_three_container{
+    float: left !important;
+}
+div#onepagecheckoutps div#div_onepagecheckoutps_login {
+    float: left !important;
+    width: auto !important;
+}
+div#onepagecheckoutps div#div_onepagecheckoutps_info {
+    width: auto !important;
+}
+div#onepagecheckoutps #onepagecheckoutps_step_review_container {
+    padding-left: 0 !important;
+    padding-right: 1%;
+    width: 100% !important;
+}
+div#onepagecheckoutps #onepagecheckoutps_step_review #btn_place_order{
+    float: left !important;
+}
+div#onepagecheckoutps .onepagecheckoutps_p_step_one,
+div#onepagecheckoutps .onepagecheckoutps_p_step_two,
+div#onepagecheckoutps .onepagecheckoutps_p_step_three,
+div#onepagecheckoutps .onepagecheckoutps_p_step_four{
+    background-position: right !important;
+}
+div#onepagecheckoutps .onepagecheckoutps_p_step {
+    padding: 0 70px 5px 0 !important;
+}
+div#onepagecheckoutps #onepagecheckoutps_step_three_container{
+    padding-left: 0 !important;
+    padding-right: 1% !important;
+}
+div#onepagecheckoutps #onepagecheckoutps_step_one_container{
+    padding-right: 0 !important;
+    padding-left: 1% !important;
+}
+div#onepagecheckoutps #onepagecheckoutps_step_three table#table_payment tr td {
+    padding-right: 5px;
+}
+div#onepagecheckoutps #onepagecheckoutps_step_review table#cart_summary tr td.cart_quantity a img{
+    float: left;
+}
+div#onepagecheckoutps #onepagecheckoutps_step_review #btn_place_order span{
+    text-align: center !important;
+}
+div#onepagecheckoutps div#onepagecheckoutps_step_review tr.cart_total_price #cart_voucher h4{
+    margin: 4px 0 0 10px !important;
+}
+#div_dialog_opc #dialog_opc .ui-dialog-titlebar-close{
+    left: 10px !important;
+    right: auto !important;
+}
+div#onepagecheckoutps #onepagecheckoutps_step_one #div_passwd{
+    float: right!important;
+}
+.formError{
+    direction: ltr!important;
+}*/

@@ -1,0 +1,27 @@
+.pstStockBar .psb-dot {
+    display: inline-block;
+    width: 20px;
+    height: 5px;
+    background: #dedede;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+.pstStockBar .psb-label {
+    margin-right: 5px;
+}
+.pstStockBar .psb-scale-wrp {
+    white-space: nowrap;
+}
+.pstStockBar .psb-high .psb-dot-active {
+    background: #7db9e8;
+}
+.pstStockBar .psb-medium .psb-dot-active {
+    background: #fdcd1b;
+}
+.pstStockBar .psb-low .psb-dot-active {
+    background: #ff5722;
+}
+.pstStockBar .psb-sections-2 .psb-dot,
+.pstStockBar .psb-sections-3 .psb-dot {
+    width: 30px;
+}

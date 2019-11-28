@@ -1,0 +1,134 @@
+#supercheckout-fieldset .supercheckout-threecolumns input[type='text'],
+#supercheckout-fieldset .supercheckout-threecolumns input[type='password'],
+#supercheckout-fieldset .supercheckout-threecolumns textarea,
+#supercheckout-fieldset .supercheckout-threecolumns select,.return-list,
+#supercheckout-fieldset .account-transaction table.list {
+    min-height: 32px !important;
+}
+
+@media (min-width: 1024px){
+    #velsof_payment_dialog #velsof_dialog_content #velsof_payment_container{
+        width: 70%;
+    }
+}
+#velsof_supercheckout_form #supercheckout-fieldset .supercheckout-threecolumns .error-form {
+	border: 1px solid #f13340 !important;
+    color: #f13340 !important;
+    background: url(../img/front/form-error.png) 98% 8px no-repeat #fff1f2 !important;
+}
+#velsof_supercheckout_form #supercheckout-fieldset .supercheckout-threecolumns .ok-form {
+	border: 1px solid #46a74e !important;
+    color: #35b33f !important;
+    background: url(../img/front/form-ok.png) 98% 8px no-repeat #ddf9e1 !important;
+}
+
+#velsof_supercheckout_form #supercheckout-fieldset .supercheckout-threecolumns .dob-error-form {
+	border: 1px solid #f13340 !important;
+    /*color: #f13340 !important;*/
+    background: 98% 5px no-repeat #fff1f2 !important;
+}
+#velsof_supercheckout_form #supercheckout-fieldset .supercheckout-threecolumns .dob-ok-form {
+	border: 1px solid #46a74e !important;
+    /*color: #35b33f !important;*/
+    background: 98% 5px no-repeat #ddf9e1 !important;
+}
+#velsof_supercheckout_form #supercheckout-fieldset .supercheckout-threecolumns .dob-div-error-form {
+/*	border: 1px solid #f13340 !important;*/
+    /*color: #f13340 !important;*/
+    background: url(../img/front/form-error.png) 96% 8px no-repeat  !important;
+}
+#velsof_supercheckout_form #supercheckout-fieldset .supercheckout-threecolumns .dob-div-ok-form {
+/*	border: 1px solid #46a74e !important;*/
+    /*color: #35b33f !important;*/
+    background: url(../img/front/form-ok.png) 96% 8px no-repeat  !important;
+}
+
+
+
+[aria-describedby=divkbmobilelogin] input[type=text]{
+    min-height: 32px !important;
+    border: 1px solid #969A96 !important;
+    background-color: transparent !important;
+    color: #000000 !important;
+    border-radius: 3px !important;
+    width: 97%;
+        padding: 2px 3px;
+}
+[aria-describedby=divkbmobilelogin] input[type=number]{
+    min-height: 32px !important;
+    border: 1px solid #969A96 !important;
+    background-color: transparent !important;
+    color: #000000 !important;
+    border-radius: 3px !important;
+    width: 97%;
+        padding: 2px 3px;
+}
+[aria-describedby=divkbmobilelogin] input[type=password]{
+    min-height: 32px !important;
+    border: 1px solid #969A96 !important;
+    background-color: transparent !important;
+    color: #000000 !important;
+    border-radius: 3px !important;
+    width: 97%;
+        padding: 2px 3px;
+}
+.divkbmobilelogin .supercheckout-extra-wrap label {
+    color: #000 !important;
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 0;
+    text-align: left;
+}
+.divkbmobilelogin .supercheckout-extra-wrap {
+    padding-top: 5px !important;
+    padding-right: 6% !important;
+    color: #000000 !important;
+    font-size: 12px;
+    margin-top: 3px;
+}
+[aria-describedby=divkbmobilelogin] .ui-dialog-titlebar.ui-widget-header {
+    margin-bottom: 3px !important;
+    margin-top: 0 !important;
+    color: #7b7b7b !important;
+    background: transparent;
+    border: 0;
+    font-size: 14px !important;
+    font-weight: bold !important;
+}
+
+.divkbmobilelogin .orangebuttonapply {
+    text-decoration: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F77219', endColorstr='#F75B16') !important;
+     border: 1px solid #EC6723 !important; 
+    font-size: 11px !important;
+    width: auto !important;
+    border-radius: 2px !important;
+     color: #F9F9F9 !important; 
+    cursor: pointer !important;
+    display: inline-block !important;
+    padding: 5px !important;
+    text-align: center !important;
+    font-weight: bold;
+}
+
+.divkbmobilelogin select.supercheckout-large-field {
+    width: 98%;
+    border-radius: 3px !important;
+    min-height: 32px;
+}
+ .divkbmobilelogin select {
+    border: 1px solid #969A96 !important;
+    background-color: transparent !important;
+    color: #000000 !important;
+    border-radius: 3px !important;
+}
+
+#divkbmobilelogin {
+    padding-top: 0;
+}
+
+.divkbmobilelogin .supercheckout-required {
+    color: #FF8A1E !important;
+    font-weight: normal !important;
+}
+

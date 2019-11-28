@@ -1,0 +1,25 @@
+.pstStockBar .psb-dot {
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #dedede;
+    margin-right: 4px;
+}
+.pstStockBar .psb-label {
+    margin-right: 5px;
+}
+.pstStockBar .psb-dots-wrp {
+    white-space: nowrap;
+}
+.pstStockBar .psb-high .psb-dot-active {
+    background: #7db9e8;
+}
+.pstStockBar .psb-medium .psb-dot-active {
+    background: #fdcd1b;
+}
+.pstStockBar .psb-low .psb-dot-active {
+    background: #ff5722;
+}

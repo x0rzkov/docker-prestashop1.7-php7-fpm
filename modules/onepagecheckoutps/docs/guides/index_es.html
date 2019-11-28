@@ -1,0 +1,2289 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+       <title>Gu&iacute;a de usuario - One Page Checkout PrestaShop</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--jQuery-->
+        <script src="assets/libs/twitter-bootstrap/js/jquery.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="assets/libs/twitter-bootstrap/js/bootstrap.min.js"></script>
+        <!--extra-->
+        <script src="assets/libs/twitter-bootstrap/js/jquery.scroll.js"></script>
+        <script src="assets/libs/twitter-bootstrap/js/prettify.js"></script>
+        <script src="assets/libs/twitter-bootstrap/js/jquery-migrate-1.1.0.js"></script>
+        <script src="assets/libs/twitter-bootstrap/js/bootstrap-affix.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="assets/libs/twitter-bootstrap/css/bootstrap.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="assets/libs/twitter-bootstrap/css/bootstrap-theme.css">
+        <!--Own javascript-->
+        <script src="assets/libs/documentation.js"></script>
+        <script src="assets/libs/twitter-bootstrap/js/script.js"></script>
+        <!--Own css-->
+        <link rel="stylesheet" href="assets/libs/documentation.css">
+        <!--Icons-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <!--Style-->
+        <link rel="stylesheet" href="assets/libs/twitter-bootstrap/css/prettify.css">
+        <link rel="stylesheet" href="assets/libs/twitter-bootstrap/css/style.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar navbar-default navbar-static-top" role="navigation">
+                <div class="container">
+                    <div class="row">
+                        <article class="col-xs-9">
+                            <img id="img_logo" src="screenshots/logo.png" style="margin-right: 10px"/><h3>One Page Checkout PrestaShop</h3>
+                        </article>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container pts-docs-container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div id="nav_container" class="affix-top">
+                        <ul id="nav" class="nav nav-list bs-docs-sidenav">
+                            <li class="nav-item item1 first act_item open_item">
+                                <dl class="slide-down">
+                                    <dt>
+                                    <a href="#module">One Page Checkout PrestaShop</a>
+                                    </dt>
+                                    <dd></dd>
+                                </dl>
+                            </li>
+                            <li class="nav-item item2">
+                                <dl class="slide-down">
+                                    <dt>
+                                    <a href="#tab_general">
+                                        <i class="fa fa-plus"></i>General
+                                    </a>
+                                    </dt>
+                                    <dd>
+                                        <ul class="list">
+                                            <li>
+                                                <a href="#enable_debug">Modo de prueba</a>
+                                            </li>
+                                            <li>
+                                                <a href="#enable_guest_checkout">Habilitar compra de invitados</a>
+                                            </li>
+                                            <li>
+                                                <a href="#redirect_directly_to_opc">Redirigir directamente a la p&aacute;gina de pago</a>
+                                            </li>
+                                            <li>
+                                                <a href="#replace_form_to_opc">Reemplazar el formulario de registro por el del checkout</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_form_opc_adresseses">Mostrar formulario de registro del checkout en: Mis direcciones</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_form_opc_personal_info">Mostrar formulario de registro del checkout en: Mi información personal</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_delivery_virtual">Mostrar la direcci&oacute;n de entrega en la compra de productos virtuales</a>
+                                            </li>
+                                            <li>
+                                                <a href="#delivery_address_confirmation">Confirmar la direcci&oacute;n de env&iacute;o antes de hacer checkout</a>
+                                            </li>
+                                            <li>
+                                                <a href="#default_payment_method">Escoger un m&eacute;todo de pago por defecto</a>
+                                            </li>
+                                            <li>
+                                                <a href="#default_carrier">Escoger un transporte por defecto</a>
+                                            </li>
+                                            <li>
+                                                <a href="#default_group_customer">A&ntilde;adir a clientes nuevos en el grupo</a>
+                                            </li>
+                                            <li>
+                                                <a href="#groups_customer_additional">A&ntilde;adir a nuevos clientes en estos otros grupos</a>
+                                            </li>
+                                            <li>
+                                                <a href="#validate_dni">Validar identificaci&oacute;n de Espa&ntilde;a y Chile</a>
+                                            </li>
+                                            <li>
+                                                <a href="#id_content_page">Contenedor de p&aacute;gina (HTML)</a>
+                                            </li>
+                                            <li>
+                                                <a href="#id_customer">Identificador de cliente</a>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="nav-item item2">
+                                <dl class="slide-down">
+                                    <dt>
+                                    <a href="#tab_register">
+                                        <i class="fa fa-plus"></i>Registro
+                                    </a>
+                                    </dt>
+                                    <dd>
+                                        <ul class="list">
+                                            <li>
+                                                <a href="#enable_login_registered_customer">Requerir iniciar sesi&oacute;n a un cliente registrado </a>
+                                            </li>
+                                            <li>
+                                                <a href="#enable_button_save_info">Mostrar bot&oacute;n de &quot;Guardar informaci&oacute;n&quot; </a>
+                                            </li>
+                                            <li>
+                                                <a href="#capitalize_fields">Capitalizar los campos </a>
+                                            </li>
+                                            <li>
+                                                <a href="#enable_privacy_policy">Requerir aceptar pol&iacute;ticas de privacidad antes de la compra</a>
+                                            </li>
+                                            <li>
+                                                <a href="#enable_invoice_address">Solicitar direcci&oacute;n de facturaci&oacute;n</a>
+                                            </li>
+                                            <li>
+                                                <a href="#use_same_name_contact_ba">Usar el mismo nombre y apellido del cliente en la direcci&oacute;n de facturaci&oacute;n</a>
+                                            </li>
+                                            <li>
+                                                <a href="#insert_cod_iso_invoice">Insertar autom&aacute;ticamente el c&oacute;digo ISO del pa&iacute;s en los dos primeros caracteres de la identificaci&oacute;n en la direcci&oacute;n de facturaci&oacute;n</a>
+                                            </li>
+                                            <li>
+                                                <a href="#insert_cod_iso_delivery">Insertar autom&aacute;ticamente el c&oacute;digo ISO del pa&iacute;s en los dos primeros caracteres de la identificaci&oacute;n en la direcci&oacute;n de entrega</a>
+                                            </li> 
+                                            <li>
+                                                <a href="#use_same_name_contact_da">Usar el mismo nombre y apellido del cliente en la direcci&oacute;n de entrega</a>
+                                            </li>
+                                            <li>
+                                                <a href="#request_confirm_email">Solicitar la confirmaci&oacute;n del correo electr&oacute;nico</a>
+                                            </li>
+                                            <li>
+                                                <a href="#request_password">Solicitar contrase&ntilde;a</a>
+                                            </li>
+                                            <li>
+                                                <a href="#choice_group_customer">Mostrar en lista los grupos de clientes</a>
+                                            </li>
+                                            <li>
+                                                <a href="#list_cities_geonames">Mostrar listado de ciudades usando Geonames.org</a>
+                                            </li>
+                                            <li>
+                                                <a href="#autocomplete_address_geonames">Usar autocompletar de Geonames.org desde el C&oacute;digo postal</a>
+                                            </li>
+                                            <li>
+                                                <a href="#autocomplete_google_address">Usar autocompletar de Google desde la direcci&oacute;n</a>
+                                            </li>
+                                            <li>
+                                                <a href="#google_api_key">Google API KEY</a>
+                                            </li>
+                                            <li>
+                                                <a href="#autocomplete_field_address_google_maps">Autocompletar el campo dirección con la sugerencia de Google Maps</a>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="nav-item item2">
+                                <dl class="slide-down">
+                                    <dt>
+                                    <a href="#tab_shipping">
+                                        <i class="fa fa-plus"></i>Env&iacute;o
+                                    </a>
+                                    </dt>
+                                    <dd>
+                                        <ul class="list">
+                                            <li>
+                                                <a href="#enable_modules_shipping">Habilitar compatibilidad para m&oacute;dulos de env&iacute;o</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_description_carrier">Mostrar descripci&oacute;n de los transportistas</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_image_carrier">Mostrar imagen de transportistas</a>
+                                            </li>
+                                            <li>
+                                                <a href="#refresh_shipping">Recargar env&iacute;o al cambiar de provincia</a>
+                                            </li>
+                                            <li>
+                                                <a href="#force_need_postcode">Requerir ingresar un c&oacute;digo postal</a>
+                                            </li>
+                                            <li>
+                                                <a href="#module_carrier_need_postcode">M&oacute;dulo de env&iacute;o que requiere un c&oacute;digo postal</a>
+                                            </li>
+                                            <li>
+                                                <a href="#force_need_city">Requerir ingresar una ciudad</a>
+                                            </li>
+                                            <li>
+                                                <a href="#module_carrier_need_city">M&oacute;dulo de env&iacute;o que requiere una ciudad</a>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="nav-item item3">
+                                <dl class="slide-down">
+                                    <dt>
+                                        <a href="#tab_payment">
+                                            <i class="fa fa-plus"></i>Pago
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <ul>
+                                            <li class="sub_tab">
+                                                <dl class="slide-down">
+                                                    <dt>
+                                                        <a href="#tab_general_payment">General</a>
+                                                    </dt>
+                                                    <dd>
+                                                         <ul class="list">
+                                                            <li>
+                                                                <a href="#show_images_payment">Mostrar im&aacute;genes de m&eacute;todos de pago.</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#show_description_payment">Mostrar descripci&oacute;n detallada de los m&eacute;todos de pago.</a>
+                                                            </li>
+                                                        </ul>
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="sub_tab">
+                                                <dl class="slide-down">
+                                                    <dt>
+                                                        <a href="#tab_pay_methods">M&eacute;todos de pago</a>
+                                                    </dt>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="sub_tab">
+                                                <dl class="slide-down">
+                                                    <dt>
+                                                        <a href="#tab_ship_pay">Env&iacute;o seg&uacute;n pago</a>
+                                                    </dt>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="nav-item item3">
+                                <dl class="slide-down">
+                                    <dt>
+                                    <a href="#tab_review">
+                                        <i class="fa fa-plus"></i>Resumen
+                                    </a>
+                                    </dt>
+                                    <dd>
+                                        <ul class="list">
+                                            <li>
+                                                <a href="#enable_terms_conditions">Requerir aceptar t&eacute;rminos y condiciones antes de la compra</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_link_continue_shopping">Mostrar el enlace "Continuar Comprando"</a>
+                                            </li>
+                                            <li>
+                                                <a href="#link_continue_shopping">URL Personalizada para el bot&oacute;n de "Continuar comprando"</a>
+                                            </li>
+                                            <li>
+                                                <a href="#discount_box">Mostrar caja de descuento</a>
+                                            </li>
+                                            <li>
+                                                <a href="#order_message_box">Mostrar la caja de texto para mensaje de pedido</a>
+                                            </li>
+                                            <li>
+                                                <a href="#remove_link_products">Eliminar el enlace de los productos</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_zoom_product_image">Mostrar zoom en la imagen del producto</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_subtotal_product">Mostrar subtotal de productos</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_total_discount">Mostrar total de descuento</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_total_wrapping">Mostrar total de envoltura</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_total_shipping">Mostrar total de env&iacute;o</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_total_without_tax">Mostrar total sin impuestos</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_total_tax">Mostrar total de impuestos</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_total_price">Mostrar total</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_remaining_free_shipping">Mostrar env&iacute;o gratuito faltante</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_weight">Mostrar peso</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_reference">Mostrar referencia</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_unit_price">Mostrar precio unitario</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_availability">Mostrar disponibilidad</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_delivery_time_product">Mostrar tiempo de entrega del producto</a>
+                                            </li>
+                                            <li>
+                                                <a href="#enable_hook_shopping_cart">Habilitar hook de carrito de compra</a>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="nav-item item3">
+                                <dl class="slide-down">
+                                    <dt>
+                                    <a href="#tab_theme">
+                                        <i class="fa fa-plus"></i>Dise&ntilde;o
+                                    </a>
+                                    </dt>
+                                    <dd>
+                                        <ul class="list">
+                                            <li>
+                                                <a href="#theme_background_color">Color del fondo</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_border_color">Color del borde</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_icon_color">Color de las im&aacute;genes</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_text_color">Color del texto</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_selected_color">Color del seleccionado de Env&iacute;o y Pago</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_selected_color_text">Color del texto del seleccionado de Env&iacute;o y Pago</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_confirm_color">Color del Bot&oacute;n de checkout</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_confirm_text_color">Color del texto de Bot&oacute;n de checkout</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_already_register_button">Color del bot&oacute;n ¿Ya est&aacute; registrado?</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_already_register_button_text">Color del texto del bot&oacute;n ¿Ya est&aacute; registrado?</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_login_button">Color del bot&oacute;n Identificarse</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_login_button_text">Color del texto del bot&oacute;n Identificarse</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_voucher_button">Color del bot&oacute;n Descuento</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_voucher_button_text">Color del texto del bot&oacute;n Descuento</a>
+                                            </li>
+                                            <li>
+                                                <a href="#confirmation_button_float">Mostrar bot&oacute;n de confirmaci&oacute;n flotante</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_background_button_footer">Color de fondo del bot&oacute;n de confirmaci&oacute;n flotante</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_border_button_footer">Color del borde del bot&oacute;n de confirmaci&oacute;n flotante</a>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="nav-item item3">
+                                <dl class="slide-down">
+                                    <dt>
+                                    <a href="#tab_required_fields">
+                                        <i class="fa fa-plus"></i>Campos del registro
+                                    </a>
+                                    </dt>
+                                    <dd>
+                                        <ul class="list">
+                                            <li>
+                                                <a href="#btn_manage_field_options">Administrar opciones de campos</a>
+                                            </li>
+                                            <li>
+                                                <a href="#btn_new_register">Nuevo campo personalizado</a>
+                                            </li>
+                                            <li>
+                                                <a href="#required_field_name">Nombre</a>
+                                            </li>
+                                            <li>
+                                                <a href="#required_field_object">Objeto</a>
+                                            </li>
+                                            <li>
+                                                <a href="#required_field_description">Descripci&oacute;n</a>
+                                            </li>
+                                            <li>
+                                                <a href="#required_field_label">Label</a>
+                                            </li>
+                                            <li>
+                                                <a href="#field_type">Tipo</a>
+                                            </li>
+                                            <li>
+                                                <a href="#field_size">Tama&ntilde;o</a>
+                                            </li>
+                                            <li>
+                                                <a href="#field_type_control">Tipo de control</a>
+                                            </li>
+                                            <li>
+                                                <a href="#required_field_value">Valor por defecto</a>
+                                            </li>
+                                            <li>
+                                                <a href="#required_field_required">Requerido</a>
+                                            </li>
+                                            <li>
+                                                <a href="#required_field_active">Activo</a>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="nav-item item3">
+                                <dl class="slide-down">
+                                    <dt>
+                                    <a href="#tab_fields_position">
+                                        Posiciones de campos
+                                    </a>
+                                    </dt>
+                                </dl>
+                            </li>
+                            <li class="nav-item item3">
+                                <dl class="slide-down">
+                                    <dt>
+                                        <a href="#tab_social_login">
+                                            <i class="fa fa-plus"></i>Login social
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <ul>
+                                            <li class="sub_tab">
+                                                <dl class="slide-down">
+                                                    <dt>
+                                                        <a href="#tab_facebook">Facebook</a>
+                                                    </dt>
+                                                    <dd>
+                                                        <ul class="list">
+                                                            <li>
+                                                                <a href="#how_to_facebook">¿C&oacute;mo crear una aplicaci&oacute;n en <b>Facebook</b>?</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#enable_facebook">Habilitar Facebook</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#social_login_id_facebook">API Key Facebook</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#social_login_secret_facebook">Secret Key Facebook</a>
+                                                            </li>
+                                                        </ul>
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                            <li class="sub_tab">
+                                                <dl class="slide-down">
+                                                    <dt>
+                                                        <a href="#tab_google">Google</a>
+                                                    </dt>
+                                                    <dd>
+                                                        <ul class="list">
+                                                            <li>
+                                                                <a href="#how_to_google">¿C&oacute;mo crear una aplicaci&oacute;n en <b>Google</b>?</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#enable_google">Habilitar Google</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#social_login_id_goole">API Key Google</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#social_login_secret_google">Secret Key Google</a>
+                                                            </li>
+                                                        </ul>
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                            <li class="sub_tab">
+                                                <dl class="slide-down">
+                                                    <dt>
+                                                        <a href="#tab_paypal">Paypal</a>
+                                                    </dt>
+                                                    <dd>
+                                                        <ul class="list">
+                                                            <li>
+                                                                <a href="#how_to_paypal">¿C&oacute;mo crear una aplicaci&oacute;n en <b>Paypal</b>?</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#enable_paypal">Habilitar Paypal</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#social_login_id_paypal">API Key Paypal</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#social_login_secret_paypal">Secret Key Paypal</a>
+                                                            </li>
+                                                        </ul>
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                            <li class="sub_tab">
+                                                <dl class="slide-down">
+                                                    <dt>
+                                                        <a href="#tab_biocryptology">Biocryptology</a>
+                                                    </dt>
+                                                    <dd>
+                                                        <ul class="list">
+                                                            <li>
+                                                                <a href="#how_to_biocryptology">C&oacute;mo crear tu dominio en <b>Biocryptology</b>?</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#enable_biocryptology">Habilitar Biocryptology</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#social_login_id_biocryptology">Api Key Biocryptology</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#social_login_secret_biocryptology">Secret Key Biocryptology</a>
+                                                            </li>
+                                                        </ul>
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                            <li class="sub_tab">
+                                                <dl class="slide-down">
+                                                    <dt>
+                                                        <a href="#tab_statistics">Estad&iacute;sticas</a>
+                                                    </dt>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="nav-item item3">
+                                <dl class="slide-down">
+                                    <dt>
+                                        <a href="#tab_information">Informaci&oacute;n</a>
+                                    </dt>
+                                </dl>
+                            </li>
+                            <li class="nav-item item3">
+                                <dl class="slide-down">
+                                    <dt>
+                                    <a href="#tab_translate">
+                                        <i class="fa fa-plus"></i>Traducir
+                                    </a>
+                                    </dt>
+                                    <dd>
+                                        <ul class="list">
+                                            <li>
+                                                <a href="#select_language">Seleccione un idioma</a>
+                                            </li>
+                                            <li>
+                                                <a href="#save">Guardar</a>
+                                            </li>
+                                            <li>
+                                                <a href="#save_download">Guardar y Descargar</a>
+                                            </li>
+                                            <li>
+                                                <a href="#share_translation">Comp&aacute;rtenos tu traducci&oacute;n</a>
+                                            </li>
+                                            <li>
+                                                <a href="#expand">Expandir todo</a>
+                                            </li>
+                                            <li>
+                                                <a href="#collapse">Contraer todo</a>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="nav-item item3">
+                                <dl class="slide-down">
+                                    <dt>
+                                    <a href="#tab_code_editors">
+                                        Editores de c&oacute;digo
+                                    </a>
+                                    </dt>
+                                </dl>
+                            </li>
+                            <li class="nav-item item3">
+                                <dl class="slide-down">
+                                    <dt>
+                                    <a href="#tab_suggestions">
+                                        Sugerencias
+                                    </a>
+                                    </dt>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="box-content">
+                        <section id="module" class="block-templates">
+                            <br><br>
+                            <p>
+                                ¿Aumenta su n&uacute;mero de carritos abandonados? ¿Sus estad&iacute;sticas muestran que
+                                los usuarios abandonan el proceso de compra?
+                            </p>
+                            <p>
+                                Mejore sus resultados de ventas con este m&oacute;dulo para PrestaShop que le permitir&aacute;
+                                realizar las compras de la forma m&aacute;s f&aacute;cil: en un solo paso.
+                                "One Page Checkout PS" ahorra tiempo a sus clientes a la hora de terminar la compra, acelera
+                                el proceso de pago y minimiza los campos de registro a rellenar por el cliente.
+                            </p>
+                            <p>
+                                F&aacute;cil e intuitivo de usar para los usuarios, ahorra tiempo y minimiza los abandonos de
+                                carrito. ¡Sus ventas lo notar&aacute;n!
+                            </p>
+                        </section>
+                        <section id="tab_general" class="block-templates">
+                            <h3>
+                                <i class="fa fa-cogs fa-1x"></i>
+                                General
+                            </h3>
+                            <p>
+                                En la secci&oacute;n de configuraci&oacute;n General se encontrar&aacute;n las opciones de
+                                parametrizaci&oacute;n que determinar&aacute; el comportamiento del m&oacute;dulo de manera general.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/tab_general_es.png"/>
+                            </div>
+                        </section>
+                        <section id="enable_debug" class="block-templates">
+                            <h4> Modo de prueba </h4>
+                            <p>
+                                Al habilitar esta opci&oacute;n, aparecer&aacute; un nuevo campo de texto en el cual debe ingresar la o las IP's para las cuales
+                                se habilitar&aacute; el m&oacute;dulo. El m&oacute;dulo quedar&aacute; deshabilitado para las IP's que no se hayan guardado.
+                            </p>
+                            <p class="alert alert-info">
+                                <i class="fa fa-info-circle"></i>
+                                Es recomendable activar esta opci&oacute;n para probar el m&oacute;dulo en su tienda antes de habilitarlo a los clientes
+                            </p>
+                        </section>
+                        <section id="enable_guest_checkout" class="block-templates">
+                            <h4>
+                                Habilitar compra de invitados
+                            </h4>
+                            <p>
+                                Si habilita esta opci&oacute;n, usted permite que se realicen pedidos como invitado.
+                            </p>
+                        </section>
+                        <section id="redirect_directly_to_opc" class="block-templates">
+                            <h4>
+                                Redirigir directamente a la p&aacute;gina de pago
+                            </h4>
+                            <p>
+                                Si habilita esta opci&oacute;n se enviar&aacute; directamente a la p&aacute;gina de pago. Si se encuentra deshabilitada, se mostrar&aacute; una vista de resumen del pedido antes de poder visualizar la p&aacute;gina del OnePageCheckoutPS.
+                            </p>
+                        </section>
+                        <section id="replace_form_to_opc" class="block-templates">
+                            <h4>
+                                Reemplazar el formulario de registro por el del checkout
+                            </h4>
+                            <p>
+                                Al habilitar esta opci&oacute;n, el formulario del Checkout se mostrar&aacute; en lugar de formulario de registro, s&oacute;lo con las opciones de datos personales, direcci&oacute;n de env&iacute;o y direcci&oacute;n de facturaci&oacute;n en caso de ser establecida.
+                            </p>
+                        </section>
+                        <section id="show_form_opc_adresseses" class="block-templates">
+                            <h4>
+                                Mostrar formulario de registro del checkout en: Mis direcciones
+                            </h4>
+                            <p>
+                                Al habilitar esta opci&oacute;n e ir a Mis direcciones de Mi cuenta, se mostrar&aacute; el formulario de registro del checkout con las opciones de direcci&oacute;n de env&iacute;o y direcci&oacute;n de facturaci&oacute;n.
+                            </p>
+                        </section>
+                        <section id="show_form_opc_personal_info" class="block-templates">
+                            <h4>
+                                Mostrar formulario de registro del checkout en: Mi información personal
+                            </h4>
+                            <p>
+                                Al habilitar esta opci&oacute;n e ir a Mi información personal de Mi cuenta, se mostrar&aacute; el formulario de registro del checkout con las opciones de datos personales.
+                            </p>
+                        </section>
+                        <section id="show_delivery_virtual" class="block-templates">
+                            <h4>
+                                Mostrar la direcci&oacute;n de entrega en la compra de productos virtuales
+                            </h4>
+                            <p>
+                                Si habilita esta opci&oacute;n, la direcci&oacute;n de entrega ser&aacute; mostrada aunque los productos
+                                comprados sean productos virtuales.
+                            </p>
+                        </section>
+                        <section id="delivery_address_confirmation" class="block-templates">
+                            <h4>
+                                Confirmar la direcci&oacute;n de env&iacute;o antes de hacer checkout
+                            </h4>
+                            <p>
+                                Si habilita esta opci&oacute;n, se mostrar&aacute; una ventana emergente donde podr&aacute; confirmar que es la direcci&oacute;n de env&iacute;o correcta antes de generar el pedido.
+                            </p>
+                        </section>
+                        <section id="default_payment_method" class="block-templates">
+                            <h4>
+                                Escoger un m&eacute;todo de pago por defecto
+                            </h4>
+                            <p>
+                                En este campo podr&aacute;s seleccionar el m&eacute;todo de pago que estar&aacute; seleccionado por defecto cuando el cliente vaya a la p&aacute;gina del checkout.
+                            </p>
+                        </section>
+                        <section id="default_carrier" class="block-templates">
+                            <h4>
+                                Escoger un transporte por defecto
+                            </h4>
+                            <p>
+                                En este campo podr&aacute;s seleccionar el transporte que estar&aacute; seleccionado por defecto cuando el cliente vaya a la p&aacute;gina del checkout.
+                            </p>
+                        </section>
+                        <section id="default_group_customer" class="block-templates">
+                            <h4>
+                                A&ntilde;adir a clientes nuevos en el grupo
+                            </h4>
+                            <p>
+                                Cuando un cliente se registre en su tienda desde la p&aacute;gina de OnePageCheckoutPS, &eacute;ste
+                                se debe registrar en un grupo de clientes. En esta opci&oacute;n se configura en qu&eacute; grupo estar&aacute;
+                                registrado por defecto el nuevo cliente.
+                            </p>
+                        </section>
+                        <section id="groups_customer_additional" class="block-templates">
+                            <h4>
+                                A&ntilde;adir a nuevos clientes en estos otros grupos
+                            </h4>
+                            <p>
+                                Si adem&aacute;s desea que los clientes nuevos se encuentren agregados en otros grupos, puede seleccionar uno o varios
+                                grupos donde quedar&aacute;n agregados.
+                            </p>
+                            <p>
+                                Para seleccionar varios grupos puede presionar la tecla CTRL de su teclado y dar clic a cada uno de los grupos que desea seleccionar,
+                                si el grupo ya est&aacute; seleccionado y desea quitarlo de la selecci&oacute;n, con CTRL presionado debe dar clic sobre &eacute;l.
+                            </p>
+                        </section>
+                        <section id="validate_dni" class="block-templates">
+                            <h4>
+                                Validar identificaci&oacute;n de Espa&ntilde;a y Chile
+                            </h4>
+                            <p>
+                                Si habilita esta opci&oacute;n, cuando un cliente a&ntilde;ada productos al carrito de compras y proceda a realizar el pedido, el sistema
+                                validar&aacute; si la c&eacute;dula ingresada es v&aacute;lida. Si la c&eacute;dula no es v&aacute;lida el cliente no
+                                podr&aacute; realizar el pedido.
+                            </p>
+                        </section>
+                        <section id="id_content_page" class="block-templates">
+                            <h4>
+                                Contenedor de p&aacute;gina (HTML)
+                            </h4>
+                            <p>
+                                En este campo de configuraci&oacute;n se debe configurar el selector del contenedor HTML donde se ubicar&aacute; la vista del m&oacute;dulo.
+                            </p>
+                            <p class="alert alert-info">
+                                <i class="fa fa-info-circle"></i>
+                                Se recomienda dejar este campo con el valor predeterminado, a menos que su plantilla tenga
+                                un identificador diferente y deba cambiarse.
+                            </p>
+                        </section>
+                        <section id="id_customer" class="block-templates">
+                            <h4>
+                                Identificador de cliente
+                            </h4>
+                            <p>
+                                Al instalar el m&oacute;dulo se genera un nuevo cliente que es de uso exclusivo del m&oacute;dulo,
+                                con &eacute;ste cliente se realizan operaciones internas para obtener tarifas, precios, tiempos,
+                                etc. con respecto a los productos que se han seleccionado; todo esto siempre que no se haya iniciado sesi&oacute;n.
+                            </p>
+                            <p>
+                                El ID del cliente es el que est&aacute; configurado por defecto en este campo de configuraci&oacute;n y no se
+                                debe cambiar a menos que (por temas de migraci&oacute;n de tiendas o por alguna modificaci&oacute;n del
+                                administrador) se borre el cliente y se haya configurado uno nuevo para que haga este mismo trabajo.
+                                Se recomienda no cambiar este campo ni eliminar/editar el cliente que crea el m&oacute;dulo llamado “OPC PTS Not Delete”
+                                el cual se encuentra desactivado (tampoco debe activarse).
+                            </p>
+                            <p class="alert alert-info">
+                                <i class="fa fa-info-circle"></i>
+                                No cambiar a menos de que el desarrollador le indique.
+                            </p>
+                        </section>
+                        <section id="tab_register" class="block-templates">
+                            <h3>
+                                <i class="fa fa-user fa-1x"></i>
+                                Registro
+                            </h3>
+                            <p>
+                                En la secci&oacute;n de registro se configura el comportamiento que van a tener los campos en el <b>paso n&uacute;mero
+                                uno del checkout</b>, el cual est&aacute; determinado a recopilar la informaci&oacute;n del cliente
+                                (nombres, direcciones, n&uacute;meros de contacto, etc.)
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/tab_register_es.png"/>
+                            </div>
+                        </section>
+                        <section id="enable_login_registered_customer" class="block-templates">
+                            <h4>
+                                Requerir iniciar sesi&oacute;n a un cliente registrado
+                            </h4>
+                            <p>
+                                Al habilitar esta opci&oacute;n, los clientes que ya tengan una cuenta no podr&aacute;n volver a registrarse con el mismo correo electr&oacute;nico.
+                            </p>
+                        </section>
+                        <section id="enable_button_save_info" class="block-templates">
+                            <h4>
+                                Mostrar bot&oacute;n de &quot;Guardar informaci&oacute;n&quot;
+                            </h4>
+                            <p>
+                                Si se deshabilita esta opci&oacute;n, no se mostrar&aacute; el bot&oacute;n &quot;Guardar informaci&oacute;n&quot; en el registro del cliente del checkout
+                            </p>
+                        </section>
+                        <section id="capitalize_fields" class="block-templates">
+                            <h4>
+                                Capitalizar los campos
+                            </h4>
+                            <p>
+                                Si habilita esta opci&oacute;n la primera letra de cada palabra en los campos ser&aacute; may&uacute;scula.
+                            </p>
+                            <p class="alert alert-info">
+                                <i class="fa fa-info-circle"></i>
+                                Esta opci&oacute;n solo aplica para los campos: Nombre, Apellido, Direcci&oacute;n, Ciudad, Empresa y C&oacute;digo postal. No aplica para los campos personalizados.
+                            </p>
+                        </section>
+                        <section id="enable_privacy_policy" class="block-templates">
+                            <h4>
+                                Requerir aceptar pol&iacute;ticas de privacidad antes de la compra
+                            </h4>
+                            <p>
+                                Esta opci&oacute;n permite que se muestre o no el control para aceptar las pol&iacute;ticas de privacidad.
+                                Si se deshabilita esta opci&oacute;n no se mostrar&aacute; el aceptar las pol&iacute;ticas de privacidad.
+                            </p>
+                            <p>
+                                Si se habilita se mostrar&aacute; una lista de CMS, la opci&oacute;n que se seleccione ser&aacute; el contenido que se mostrar&aacute;
+                                cuando el cliente de clic en “leer”.
+                            </p>
+                        </section>
+                        <section id="enable_invoice_address" class="block-templates">
+                            <h4>
+                                Solicitar direcci&oacute;n de facturaci&oacute;n
+                            </h4>
+                            <p>
+                                Si habilita esta opci&oacute;n, se va a solicitar la direcci&oacute;n de facturaci&oacute;n para el pedido y se
+                                mostrar&aacute; otra opci&oacute;n donde se preguntar&aacute; si la direcci&oacute;n de facturaci&oacute;n debe ser requerida o no.
+                                Si deshabilita esta opci&oacute;n, la direcci&oacute;n de facturaci&oacute;n ser&aacute; la misma de env&iacute;o.
+                            </p>
+                        </section>
+                        <section id="use_same_name_contact_ba" class="block-templates">
+                            <h4>
+                                Usar el mismo nombre y apellido del cliente en la direcci&oacute;n de facturaci&oacute;n
+                            </h4>
+                            <p>
+                                Esta opci&oacute;n se mostrar&aacute; cuando la opci&oacute;n <b>Solicitar direcci&oacute;n de facturaci&oacute;n</b> est&eacute; habilitada.
+                                Si habilita esta opci&oacute;n, el nombre y apellido del cliente ser&aacute; la misma en la direcci&oacute;n de facturaci&oacute;n y estos campos
+                                no aparecer&aacute;n en la configuraci&oacute;n de la direcci&oacute;n de facturaci&oacute;n.
+                                Si deshabilita esta opci&oacute;n, estos campos se mostrar&aacute;n en la direcci&oacute;n de facturaci&oacute;n.
+                            </p>
+                        </section>
+                        <section id="insert_cod_iso_invoice" class="block-templates">
+                            <h4>
+                                Insertar autom&aacute;ticamente el c&oacute;digo ISO del pa&iacute;s en los dos primeros caracteres de la identificaci&oacute;n en la direcci&oacute;n de facturaci&oacute;n
+                            </h4>
+                            <p>
+                                Esta opci&oacute;n permite añadir autom&aacute;ticamente como prefijo los dos primeros caracteres del c&oacute;digo ISO del Pa&iacute;s a la identificaci&oacute;n en la direcci&oacute;n de facturaci&oacute;n.
+                            </p>
+                        </section>
+                        <section id="insert_cod_iso_delivery" class="block-templates">
+                            <h4>
+                                Insertar autom&aacute;ticamente el c&oacute;digo ISO del pa&iacute;s en los dos primeros caracteres de la identificaci&oacute;n en la direcci&oacute;n de entrega
+                            </h4>
+                            <p>
+                                Esta opci&oacute;n permite añadir autom&aacute;ticamente como prefijo los dos primeros caracteres del c&oacute;digo ISO del Pa&iacute;s a la identificaci&oacute;n en la direcci&oacute;n de entrega.
+                            </p>
+                        </section>
+                        <section id="use_same_name_contact_da" class="block-templates">
+                            <h4>
+                                Usar el mismo nombre y apellido del cliente en la direcci&oacute;n de entrega
+                            </h4>
+                            <p>
+                                Si habilita esta opci&oacute;n, el nombre y apellido del cliente ser&aacute; la misma en la direcci&oacute;n de entrega y estos
+                                campos no aparecer&aacute;n en la configuraci&oacute;n de la direcci&oacute;n de entrega.
+                            </p>
+                            <p>
+                                Si deshabilita esta opci&oacute;n, estos campos se mostrar&aacute;n en la direcci&oacute;n de entrega.
+                            </p>
+                        </section>
+                         <section id="request_confirm_email" class="block-templates">
+                            <h4>
+                                Solicitar la confirmaci&oacute;n del correo electr&oacute;nico
+                            </h4>
+                            <p>
+                                Esta opci&oacute;n permite que se muestre el campo de confirmaci&oacute;n de correo electr&oacute;nico por motivos de seguridad.
+                                Si no est&aacute; habilitada, no ser&aacute; mostrado el campo de verificaci&oacute;n de confirmar correo electr&oacute;nico.
+                            </p>
+                        </section>
+                        <section id="request_password" class="block-templates">
+                            <h4>
+                                Solicitar contrase&ntilde;a
+                            </h4>
+                            <p>
+                                Si est&aacute; opci&oacute;n se encuentra deshabilitada, cuando se cree un nuevo cliente, la contrase&ntilde;a ser&aacute; generada
+                                autom&aacute;ticamente y enviada a su correo.
+                            </p>
+                            <p>
+                                Si la opci&oacute;n se encuentra habilitada entonces el cliente tendr&aacute; la opci&oacute;n de escribir la contrase&ntilde;a
+                                que desee para su cuenta. Adem&aacute;s, ser&aacute; mostrada otra opci&oacute;n llamada <b>Opci&oacute;n de auto-generar</b>
+                                la cual mostrar&aacute; o no un control para que el cliente pueda autogenerar una contrase&ntilde;a si lo desea. Si la opci&oacute;n
+                                de auto-generar contrase&ntilde;a no se encuentra activa, &eacute;sta se autogenerar&aacute;.
+                            </p>
+                            <p class="alert alert-info">
+                                <i class="fa fa-info-circle"></i>
+                                Si la opci&oacute;n - Solicitar contrase&ntilde;a - no est&aacute; activa, la contrase&ntilde;a del cliente se crear&aacute; autom&aacute;ticamente.
+                            </p>
+                            <p class="alert alert-info">
+                                <i class="fa fa-info-circle"></i>
+                                No se muestra la - Opci&oacute;n de auto-generar - cuando la opción - Habilitar compra de invitados - de la pesta&ntilde;a General est&aacute; activa.
+                            </p>
+                        </section>
+                         <section id="choice_group_customer" class="block-templates">
+                            <h4>
+                                Mostrar en lista los grupos de clientes
+                            </h4>
+                            <p>
+                                Al momento de registrarse, el cliente puede tener la oportunidad de elegir el grupo al cual desee pertenecer,
+                                para esto se debe activar esta opci&oacute;n y enseguida ser&aacute; mostrada la lista de grupos que se visualizar&aacute;n para
+                                que el cliente los pueda seleccionar. Para seleccionar varios grupos puede presionar la tecla CTRL de su teclado
+                                y dar clic a cada uno de los grupos que desea seleccionar, si el grupo ya est&aacute; seleccionado y desea quitarlo de la selecci&oacute;n,
+                                con CTRL presionado debe dar clic sobre &eacute;l. Si no selecciona ning&uacute;n grupo, entonces todos los grupos de la lista ser&aacute;n mostrados.
+                            </p>
+                            <p class="alert alert-info">
+                                <i class="fa fa-info-circle"></i>
+                                Si eliges un grupo, entonces se mostrar&aacute;n s&oacute;lo los grupos seleccionados, de lo contrario todos los grupos se mostrar&aacute;n.
+                            </p>
+                        </section>
+                        <section id="list_cities_geonames" class="block-templates">
+                            <h4>
+                                Mostrar listado de ciudades usando Geonames.org
+                            </h4>
+                            <p>
+                                Si habilita esta opci&oacute;n se mostrar&aacute; una lista desplegable con ciudades seg&uacute;n la provincia seleccionada.
+                            </p>
+                            <p class="alert alert-info">
+                                <i class="fa fa-info-circle"></i>
+                                Esta opci&oacute;n no funciona cuando el m&oacute;dulo Shipping Configurator Pro est&aacute; instalado y activo.
+                            </p>
+                        </section>
+                        <section id="autocomplete_address_geonames" class="block-templates">
+                            <h4>
+                                Usar autocompletar de Geonames.org desde el C&oacute;digo postal
+                            </h4>
+                            <p>
+                                Si habilita esta opci&oacute;n se mostrar&aacute;n sugerencias para completar las direcciones seg&uacute;n el c&oacute;digo postal que est&eacute; escribiendo.
+                            </p>
+                        </section>
+                        <section id="autocomplete_google_address" class="block-templates">
+                            <h4>
+                                Usar autocompletar de Google desde la direcci&oacute;n
+                            </h4>
+                            <p>
+                                Esta opci&oacute;n habilita la integraci&oacute;n con el API de Google para permitir brindar una ayuda visual al momento de escribir la direcci&oacute;n.
+                                Esto aplica tanto para la direcci&oacute;n de env&iacute;o como de facturaci&oacute;n.
+                            </p>
+                        </section>
+                        <section id="google_api_key" class="block-templates">
+                            <h4>
+                                Google API KEY
+                            </h4>
+                            <p>
+                                En este campo de texto se digita el <i>API KEY</i> que ofrece Google para poder hacer uso de la herramienta de autocompletado de direcciones,
+                                este campo se mostrar&aacute; si se ha seleccionado la opci&oacute;n <b>Usar autocompletar de google desde la direcci&oacute;n</b>.
+                            </p>
+                            <p>
+                                El <i>API KEY</i> de Google para la librer&iacute;a de Autocompletado desde la Direcci&oacute;n se crea desde la consola de desarrollo de Google,
+                                para lograrlo debe tener una cuenta de Google, iniciar sesi&oacute;n e ingresar a
+                                <a target="_blank" href="https://developers.google.com/maps/documentation/javascript/">esta direcci&oacute;n</a>.
+                            </p>
+                            <p>
+                                Una vez haya ingresado en el anterior enlace, aparecer&aacute; la siguiente ventana, donde debe seleccionar en la parte izquierda <b>Get API Key</b> y luego el bot&oacute;n de la esquina superior derecha <b>GET STARTED</b>.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/google_API_Key_es.png"/>
+                            </div>
+                            <p>
+                                En la siguiente ventana, selecciona <b>Maps</b> y clic en el bot&oacute;n <b>CONTINUAR</b>.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/google_maps_platform_es.png"/>
+                            </div>
+                            <p>
+                                En esta ventana, seleccione o cree un proyecto, puede seleccionar My Project o crear uno que usted desee, luego clic en el bot&oacute;n <b>NEXT</b>.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/google_maps_platform_2_es.png"/>
+                            </div>
+                            <p>
+                                En esta ventana, seleccione <b>CREAR CUENTA DE FACTURACI&Oacute;N</b>.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/google_maps_platform_3_es.png"/>
+                            </div>
+                            <p>
+                                En la siguiente ventana, seleccione su Pa&iacute;s, aceptar las Condiciones del Servicio y Actualizaciones por correo electr&oacute;nico en caso de que las desee, clic en el bot&oacute;n <b>ACEPTAR Y CONTINUAR</b>. 
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/google_maps_platform_4_es.png"/>
+                            </div>
+                            <p>
+                                En esta ventana, debe digitar sus datos personales y por &uacute;ltimo, clic en el bot&oacute;n <b>INICIAR PRUEBA GRATUITA</b>. 
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/google_maps_platform_5_es.png"/>
+                            </div>
+                        </section>
+                        <section id="autocomplete_field_address_google_maps" class="block-templates">
+                            <h4>
+                                Autocompletar el campo dirección con la sugerencia de Google Maps
+                            </h4>
+                            <p>
+                                Al habilitar esta opci&oacute;n, mientras est&aacute; digitando una direcci&oacute;n, google maps autom&aacute;ticamente le sugiere una, si desea puede autocompletar la direcci&oacute;n con la sugerencia de google maps o seguir escribiendo su direcci&oacute;n.
+                            </p>
+                        </section>
+                        <section id="tab_shipping" class="block-templates">
+                            <h3 id="tabs_menu">
+                                <i class="fa fa-truck fa-1x"></i>
+                                Env&iacute;o
+                            </h3><br>
+                            <p>
+                                En la secci&oacute;n de env&iacute;o se configura el comportamiento que van a tener los campos en el <b>paso n&uacute;mero
+                                dos del checkout</b>, el cual est&aacute; determinado para seleccionar las preferencias de env&iacute;o del pedido.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/tab_shipping_es.png">
+                            </div>
+                            <br>
+                        </section>
+                        <section id="enable_modules_shipping" class="block-templates">
+                            <h4>
+                                Habilitar compatibilidad para m&oacute;dulos de env&iacute;o
+                            </h4>
+                            <p>
+                                Al habilitar esta opci&oacute;n, se agrega un bot&oacute;n en m&eacute;todos de env&iacute;o, al dar clic all&iacute; abre todos los m&eacute;todos de pago en otra p&aacute;gina para cuando se actualice, se redirija a la p&aacute;gina del Checkout.
+                            </p>
+                            <p class="alert alert-info">
+                                <i class="fa fa-info-circle"></i>
+                                Habilitar esta opci&oacute;n solo si alg&uacute;n m&oacute;dulo de env&iacute;o no funciona correctamente. Esto a&ntilde;ade un peque&ntilde;o paso extra.
+                            </p>
+                        </section>  
+                        <section id="show_description_carrier" class="block-templates">
+                            <h4>
+                                Mostrar descripci&oacute;n de los transportistas
+                            </h4>
+                            <p>
+                                Esta opci&oacute;n oculta o muestra la descripci&oacute;n de los transportistas en la lista. Si se deshabilita solamente
+                                se mostrar&aacute; el nombre, imagen y precio.
+                            </p>
+                        </section>
+                        <section id="show_image_carrier" class="block-templates">
+                            <h4>
+                                Mostrar imagen de transportistas
+                            </h4>
+                            <p>
+                                Esta opci&oacute;n oculta o muestra la imagen de los transportistas en la lista.
+                                Si se deshabilita solamente se mostrar&aacute; el nombre, precio y descripci&oacute;n
+                                (a menos que se haya deshabilitado en la opci&oacute;n <b>Mostrar descripci&oacute;n de los transportistas</b>).
+                            </p>
+                        </section>
+                        <section id="refresh_shipping" class="block-templates">
+                            <h4>
+                                Recargar env&iacute;o al cambiar de provincia
+                            </h4>
+                            <p>
+                                Si esta opci&oacute;n est&aacute; habilitada se mostrar&aacute;n autom&aacute;ticamente los m&eacute;todos de env&iacute;o disponibles para la provincia seleccionada.
+                            </p>
+                        </section>
+                        <section id="force_need_postcode" class="block-templates">
+                            <h4>
+                                Requerir ingresar un c&oacute;digo postal
+                            </h4>
+                            <p>
+                                Si esta opci&oacute;n est&aacute; habilitada, ser&aacute; obligatorio digitar un c&oacute;digo postal para mostrar
+                                los m&eacute;todos de env&iacute;o disponibles seg&uacute;n los m&oacute;dulos de env&iacute;o que requieren esta informaci&oacute;n.
+                            </p>
+                        </section>
+                        <section id="module_carrier_need_postcode" class="block-templates">
+                            <h4>
+                                M&oacute;dulo de env&iacute;o que requiere un c&oacute;digo postal
+                            </h4>
+                            <p>
+                                En este campo de texto se configurar&aacute;n los m&oacute;dulos que requieran un c&oacute;digo postal para determinar el precio y disponibilidad de env&iacute;o.
+                                Los nombres de los m&oacute;dulos deben estar separados por coma (,) y sin ning&uacute;n espacio.
+                            </p>
+                        </section>
+                        <section id="force_need_city" class="block-templates">
+                            <h4>
+                                Requerir ingresar una ciudad
+                            </h4>
+                            <p>
+                                Si esta opci&oacute;n est&aacute; habilitada, ser&aacute; obligatorio ingresar una ciudad para mostrar los m&eacute;todos de env&iacute;o
+                                disponibles seg&uacute;n los m&oacute;dulos de env&iacute;o que requieren esta informaci&oacute;n.
+                            </p>
+                        </section>
+                        <section id="module_carrier_need_city" class="block-templates">
+                            <h4>
+                                M&oacute;dulo de env&iacute;o que requiere una ciudad
+                            </h4>
+                            <p>
+                                En este campo de texto se configurar&aacute;n los m&oacute;dulos que requieran una ciudad para determinar el precio y disponibilidad de env&iacute;o.
+
+                                Los nombres de los m&oacute;dulos deben estar separados por coma (,) y sin ning&uacute;n espacio.
+                            </p>
+                        </section>
+                        <section id="tab_payment" class="block-templates">
+                            <h3 id="tabs_menu">
+                                <i class="fa fa-credit-card fa-1x"></i> Pago
+                            </h3><br>
+                            <p>
+                                En la secci&oacute;n de pago se configura el comportamiento que van a tener los campos en el <b>paso n&uacute;mero tres del checkout</b>,
+                                el cual est&aacute; determinado para seleccionar las preferencias de pago del pedido.
+                            </p>
+                        </section>
+                        <section id="tab_general_payment" class="block-templates">
+                            <h3 id="tabs_menu">
+                                <i class="fa fa-cogs fa-1x"></i>
+                                General
+                            </h3>
+                            <br>
+                            <div class="tree">
+                                <img src="screenshots/tab_general_payment_es.png"/>
+                            </div>
+                        </section>
+                        <section id="show_images_payment" class="block-templates">
+                            <h4>
+                                Mostrar im&aacute;genes de m&eacute;todos de pago.
+                            </h4>
+                            <p>
+                                Esta opci&oacute;n permite mostrar u ocultar las im&aacute;genes de los m&eacute;todos de pago en el tercer paso del One Page Checkout.
+                            </p>
+                        </section>
+                        <section id="show_description_payment" class="block-templates">
+                            <h4>
+                                Mostrar descripci&oacute;n detallada de los m&eacute;todos de pago.
+                            </h4>
+                            <p>
+                                Al habilitar esta opci&oacute;n, se mostrar&aacute; la descripci&oacute;n detallada del m&eacute;todo de pago, bien sea la que este tenga por defecto, o la que e introduzca para personalizarla.
+                            </p>
+                            <p class="alert alert-info">
+                                <i class="fa fa-info-circle"></i>
+                                Despu&eacute;s de desactivar esta opci&oacute;n, los m&eacute;todos de pago que contienen formularios para solicitar informaci&oacute;n se ver&aacute;n afectados.
+                            </p>
+                        </section>
+                        <!-- cup&oacute;n -->
+                        <section id="tab_pay_methods" class="block-templates">
+                            <h3>
+                                <i class="fa fa-credit-card fa-1x"></i> M&eacute;todos de pago
+                            </h3>
+                            <p>En esta secci&oacute;n se pueden personalizar el t&iacute;tulo, descripci&oacute;n e imagen de los m&eacute;todos de pago.</p>
+                            <div class="tree">
+                                <img src="screenshots/tab_pay_methods_es.png">
+                            </div>
+                        </section>
+                        <section id="tab_ship_pay" class="block-templates">
+                            <h3>
+                                <i class="fa fa-truck fa-1x"></i> Env&iacute;o seg&uacute;n pago
+                            </h3>
+                            <p>
+                                En esta secci&oacute;n se puede configurar el m&eacute;todo de pago que va a estar disponible seg&uacute;n el m&eacute;todo de env&iacute;o.
+                                Para seleccionarlos s&oacute;lo debe dar clic al control de chequeo de cada m&eacute;todo de pago.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/tab_ship_pay_es.png">
+                            </div>
+                        </section>
+                        <section id="tab_review" class="block-templates">
+                            <h3>
+                                <i class="fa fa-check fa-1x"></i>
+                                Resumen
+                            </h3>
+                            <p>
+                                En la secci&oacute;n de resumen se configura el comportamiento que van a tener los campos en el <b>paso n&uacute;mero cuatro del checkout</b>,
+                                el cual est&aacute; determinado para mostrar la informaci&oacute;n de los productos en el pedido, vales de descuento,
+                                informaci&oacute;n de impuestos y totales.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/tab_review_es.png">
+                            </div>
+                        </section>
+                        <section id="enable_terms_conditions" class="block-templates">
+                            <h4>
+                                Requerir aceptar t&eacute;rminos y condiciones antes de la compra
+                            </h4>
+                            <p>
+                                Esta opci&oacute;n permite que se muestre o no el control para aceptar los t&eacute;rminos y condiciones. Si se deshabilita esta
+                                opci&oacute;n no se mostrar&aacute; el aceptar los t&eacute;rminos y condiciones.
+                            </p>
+                            <p>
+                                Si se habilita se mostrar&aacute; una lista de CMS, la opci&oacute;n que se seleccione ser&aacute; el contenido que se mostrar&aacute;
+                                cuando el cliente de clic en “leer”.
+                            </p>
+                        </section>
+                        <section id="show_link_continue_shopping" class="block-templates">
+                            <h4>
+                                Mostrar el enlace "Continuar Comprando"
+                            </h4>
+                            <p>
+                                Si la opci&oacute;n est&aacute; habilitada, el bot&oacute;n de <b><i>CONTINUAR COMPRANDO</i></b> se mostrar&aacute;,
+                                permitiendo al cliente regresar a la tienda y agregar otros productos; de lo contrario, el bot&oacute;n no aparecer&aacute;.
+                            </p>
+                        </section>
+                         <section id="link_continue_shopping" class="block-templates">
+                            <h4>
+                                URL Personalizada para el bot&oacute;n de "Continuar comprando"
+                            </h4>
+                            <p>
+                                En este campo se puede definir la URL a la cual se enviar&aacute; cuando se presione el bot&oacute;n de <b><i>CONTINUAR COMPRANDO</i></b>, se recomienda
+                                usar el prefijo <span class="text-info">http://</span> para URL externa. Si desea que el URL sea la p&aacute;gina de inicio de su tienda,
+                                puede dejar vac&iacute;o este campo.
+                            </p>
+                            <p>
+                                Esta opci&oacute;n se mostrar&aacute; si la opci&oacute;n <b>Mostrar el enlace “continuar comprando”</b> est&aacute; habilitada.
+                            </p>
+                        </section>
+                        <section id="discount_box" class="block-templates">
+                            <h4>
+                                Mostrar caja de descuento
+                            </h4>
+                            <p>
+                                Al habilitar esta opci&oacute;n, aparecer&aacute; una cuadro de texto donde puede añadir el c&oacute;digo de descuento, en caso de contar con uno.
+                            </p>
+                            <p class="alert alert-info">
+                                <i class="fa fa-info-circle"></i>
+                                As&iacute; tenga activada esta opci&oacute;n, debe tener descuentos creados para que sea mostrado.
+                            </p>
+                        </section>
+                        <section id="order_message_box" class="block-templates">
+                            <h4>
+                                Mostrar la caja de texto para mensaje de pedido
+                            </h4>
+                            <p>
+                                Esta opci&oacute;n muestra una caja de texto para enviar comentarios sobre el pedido, al estar habilitada.
+                            </p>
+                        </section>
+                        <section id="remove_link_products" class="block-templates">
+                            <h4>
+                                Eliminar el enlace de los productos
+                            </h4>
+                            <p>
+                                En el resumen del Checkout siempre se muestra el nombre del producto con un enlace a la p&aacute;gina del producto. Cuando esta opci&oacute;n se encuentre habilitada, el enlace no se mostrar&aacute; y s&oacute;lo aparecer&aacute; el nombre del producto.
+                            </p>
+                        </section>
+                        <section id="show_zoom_product_image" class="block-templates">
+                            <h4>
+                                Mostrar zoom en la imagen del producto
+                            </h4>
+                            <p>
+                                Cuando se habilita esta opci&oacute;n, se ve la imagen del producto m&aacute;s grande en el resumen del pedido en la p&aacute;gina del Checkout.
+                            </p>
+                        </section>
+                        <section id="show_subtotal_product" class="block-templates">
+                            <h4>
+                                Mostrar subtotal de productos
+                            </h4>
+                            <p>
+                                Oculta o muestra la informaci&oacute;n del total de los productos.
+                            </p>
+                        </section>
+                        <section id="show_total_discount" class="block-templates">
+                            <h4>
+                                Mostrar total de descuento
+                            </h4>
+                            <p>
+                                Oculta o muestra la informaci&oacute;n del total de los descuentos, si lo hubiere.
+                            </p>
+                        </section>
+                        <section id="show_total_wrapping" class="block-templates">
+                            <h4>
+                                Mostrar total de envoltura
+                            </h4>
+                            <p>
+                                Oculta o muestra la informaci&oacute;n del total de las envolturas, si lo hubiere.
+                            </p>
+                        </section>
+                        <section id="show_total_shipping" class="block-templates">
+                            <h4>
+                                Mostrar total de env&iacute;o
+                            </h4>
+                            <p>
+                                Oculta o muestra la informaci&oacute;n del total de env&iacute;o.
+                            </p>
+                        </section>
+                        <section id="show_total_without_tax" class="block-templates">
+                            <h4>
+                                Mostrar total sin impuestos
+                            </h4>
+                            <p>
+                                Oculta o muestra la informaci&oacute;n del total sin los impuestos incluidos.
+                            </p>
+                        </section>
+                        <section id="show_total_tax" class="block-templates">
+                            <h4>
+                                Mostrar total de impuestos
+                            </h4>
+                            <p>
+                                Oculta o muestra la informaci&oacute;n del total de los impuestos.
+                            </p>
+                        </section>
+                        <section id="show_total_price" class="block-templates">
+                            <h4>
+                                Mostrar total
+                            </h4>
+                            <p>
+                                Oculta o muestra la informaci&oacute;n del total del pedido.
+                            </p>
+                        </section>
+                        <section id="show_remaining_free_shipping" class="block-templates">
+                            <h4>
+                                Mostrar env&iacute;o gratuito faltante
+                            </h4>
+                            <p>
+                                Si usted tiene configurado una condici&oacute;n de env&iacute;o gratuito seg&uacute;n precio del pedido, puede habilitar
+                                esta opci&oacute;n si desea que en el resumen del pedido se muestre cuanto precio en compras falta para conseguir
+                                que el cliente obtenga el env&iacute;o gratuito.
+                            </p>
+                        </section>
+                        <section id="show_weight" class="block-templates">
+                            <h4>
+                                Mostrar peso
+                            </h4>
+                            <p>
+                                Oculta o muestra la informaci&oacute;n del peso de cada producto.
+                            </p>
+                        </section>
+                        <section id="show_reference" class="block-templates">
+                            <h4>
+                                Mostrar referencia
+                            </h4>
+                            <p>
+                                Oculta o muestra la informaci&oacute;n de la referencia de cada producto.
+                            </p>
+                        </section>
+                        <section id="show_unit_price" class="block-templates">
+                            <h4>
+                                Mostrar precio unitario
+                            </h4>
+                            <p>
+                                Oculta o muestra la informaci&oacute;n del precio unitario de cada producto.
+                            </p>
+                        </section>
+                        <section id="show_availability" class="block-templates">
+                            <h4>
+                                Mostrar disponibilidad
+                            </h4>
+                            <p>
+                                Oculta o muestra en el resumen del carrito de compras, si el producto est&aacute; disponible o no.
+                            </p>
+                            <p class="alert alert-info">
+                                <i class="fa fa-info-circle"></i>
+                                Esta opci&oacute;n solo funciona cuando la opci&oacute;n Habilitar administraci&oacute;n de stock est&aacute; activa en Par&aacute;metros de la Tienda - Configuraci&oacute;n de productos
+                            </p>
+                        </section>
+                        <section id="show_delivery_time_product" class="block-templates">
+                            <h4>
+                                Mostrar tiempo de entrega del producto
+                            </h4>
+                            <p>
+                                Oculta o muestra en el resumen del carrito de compras, el tiempo de entrega del producto.
+                            </p>
+                        </section>
+                        <section id="enable_hook_shopping_cart" class="block-templates">
+                            <h4>
+                                Habilitar hook de carrito de compra
+                            </h4>
+                            <p>
+                                Algunos m&oacute;dulos ejecutan acciones o muestran cierto tipo de informaci&oacute;n en el carrito de compra.
+                                Si usted tiene alg&uacute;n m&oacute;dulo que realice acciones de &eacute;ste tipo y adem&aacute;s desea que se muestren esas
+                                acciones o vistas, entonces habilite esta opci&oacute;n, de lo contrario deshabil&iacute;tela.
+                            </p>
+                        </section>
+                        <section id="tab_theme" class="block-templates">
+                            <h3>
+                                <i class="fa fa-check fa-1x"></i>
+                                Dise&ntilde;o
+                            </h3>
+                            <p>
+                                En la secci&oacute;n de dise&ntilde;o se configuran los colores que va a tener la vista del checkout.
+                            </p>
+                            <p>
+                                Para configurar los colores debe dar clic en el cuadro que est&aacute; al lado derecho del campo de texto y elegir el color que desee.
+                                Si usted ya tiene los c&oacute;digos hexadecimales de los colores que desea configurar, entonces los puede ingresar directamente en el campo de texto.
+                                Si el color no se define para alguna de las configuraciones, se tomar&aacute; el color por defecto del m&oacute;dulo OnePageCheckoutPS.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/tab_design_es.png">
+                            </div>
+                        </section>
+                        <section id="theme_background_color" class="block-templates">
+                            <h4>
+                                Color del fondo
+                            </h4>
+                            <p>
+                                En esta opci&oacute;n se configura el color de fondo que tendr&aacute; la vista.
+                            </p>
+                        </section>
+                        <section id="theme_border_color" class="block-templates">
+                            <h4>
+                                Color del borde
+                            </h4>
+                            <p>
+                                En esta opci&oacute;n se configura el color del borde de la vista, es el borde externo.
+                            </p>
+                        </section>
+                        <section id="theme_icon_color" class="block-templates">
+                            <h4>
+                                Color de las im&aacute;genes
+                            </h4>
+                            <p>
+                                En esta opci&oacute;n se configura el color de las im&aacute;genes/&iacute;conos que tendr&aacute;n algunos de los t&iacute;tulos,
+                                los botones de agregar o quitar productos, etc.
+                            </p>
+                        </section>
+                        <section id="theme_text_color" class="block-templates">
+                            <h4>
+                                Color del texto
+                            </h4>
+                            <p>
+                                Ingrese aqu&iacute; el color del texto que desea para la p&aacute;gina de OnePageCheckoutPS.
+                            </p>
+                        </section>
+                        <section id="theme_selected_color" class="block-templates">
+                            <h4>
+                                Color del seleccionado de Env&iacute;o y Pago
+                            </h4>
+                            <p>
+                                En esta opci&oacute;n se configura el color de fondo que tendr&aacute;n los m&eacute;todos de env&iacute;o y de pago al ser seleccionados.
+                            </p>
+                        </section>
+                        <section id="theme_selected_color_text" class="block-templates">
+                            <h4>
+                                Color del texto del seleccionado de Env&iacute;o y Pago
+                            </h4>
+                            <p>
+                                En esta opci&oacute;n se configura el color del texto que tendr&aacute;n los m&eacute;todos de env&iacute;o y de pago al ser seleccionados.
+                            </p>
+                        </section>
+                        <section id="theme_confirm_color" class="block-templates">
+                            <h4>
+                                Color del Bot&oacute;n de checkout
+                            </h4>
+                            <p>
+                                En esta opci&oacute;n se configura el color de fondo que tendr&aacute; el bot&oacute;n del Checkout (Confirmar Pedido).
+                            </p>
+                        </section>
+                        <section id="theme_confirm_text_color" class="block-templates">
+                            <h4>
+                                Color del texto de Bot&oacute;n de checkout
+                            </h4>
+                            <p>
+                                En esta opci&oacute;n se configura el color del texto y el borde que tendr&aacute; el bot&oacute;n del Checkout (Confirmar Pedido)
+                            </p>
+                        </section>
+                        <section id="theme_already_register_button" class="block-templates">
+                            <h4>
+                                Color del bot&oacute;n ¿Ya est&aacute; registrado?
+                            </h4>
+                            <p>
+                                En esta opci&oacute;n se configura el color de fondo que tendr&aacute; el bot&oacute;n <b>¿Ya est&aacute; registrado?</b>.
+                            </p>
+                        </section>
+                        <section id="theme_already_register_button_text" class="block-templates">
+                            <h4>
+                                Color del texto del bot&oacute;n ¿Ya est&aacute; registrado?
+                            </h4>
+                            <p>
+                                En esta opci&oacute;n se configura el color del texto del bot&oacute;n <b>¿Ya est&aacute; registrado?</b>.
+                            </p>
+                        </section>
+                        <section id="theme_login_button" class="block-templates">
+                            <h4>
+                                Color del bot&oacute;n Identificarse
+                            </h4>
+                            <p>
+                                En esta opci&oacute;n se configura el color de fondo que tendr&aacute; el bot&oacute;n <b>Identificarse</b>, que aparece en la ventana modal
+                                al hacer clic en el bot&oacute;n <b>¿Ya est&aacute; registrado?</b>
+                            </p>
+                        </section>
+                        <section id="theme_login_button_text" class="block-templates">
+                            <h4>
+                                Color del texto del bot&oacute;n Identificarse
+                            </h4>
+                            <p>
+                                Ingrese el color que tendr&aacute; el texto del bot&oacute;n <b>Identificarse</b>, que aparece en la ventana modal
+                                al hacer clic en el bot&oacute;n <b>¿Ya est&aacute; registrado?</b>
+                            </p>
+                        </section>
+                        <section id="theme_voucher_button" class="block-templates">
+                            <h4>
+                                Color del bot&oacute;n Descuento
+                            </h4>
+                            <p>
+                                En esta opci&oacute;n se configura el color de fondo que tendr&aacute; el bot&oacute;n <b>Agregar</b>, que le permite a&ntilde;adir un
+                                c&oacute;digo de descuento.
+                            </p>
+                        </section>
+                        <section id="theme_voucher_button_text" class="block-templates">
+                            <h4>
+                                Color del texto del bot&oacute;n Descuento
+                            </h4>
+                            <p>
+                                Esta opci&oacute;n le permite configurar el color que tendr&aacute; el texto del bot&oacute;n <b>Agregar</b>, que le permite a&ntilde;adir un
+                                c&oacute;digo de descuento.
+                            </p>
+                        </section>
+                        <section id="confirmation_button_float" class="block-templates">
+                            <h4>
+                                Mostrar bot&oacute;n de confirmaci&oacute;n flotante
+                            </h4>
+                            <p>
+                                Si habilita esta opci&oacute;n se mostrar&aacute; una ventana flotante en la p&aacute;gina de OnePageCheckoutPS, con dos botones para que el cliente
+                                confirme la compra o siga comprando.
+                            </p>
+                        </section>
+                        <section id="theme_background_button_footer" class="block-templates">
+                            <h4>
+                                Color de fondo del bot&oacute;n de confirmaci&oacute;n flotante
+                            </h4>
+                            <p>
+                                Esta opci&oacute;n se activa si habilita la opci&oacute;n <b>Mostrar bot&oacute;n de confirmaci&oacute;n flotante</b>.
+                                Ingrese aqu&iacute; el color que tendr&aacute; el fondo de la ventana flotante.
+                            </p>
+                        </section>
+                        <section id="theme_border_button_footer" class="block-templates">
+                            <h4>
+                                Color del borde del bot&oacute;n de confirmaci&oacute;n flotante
+                            </h4>
+                            <p>
+                                Esta opci&oacute;n se activa si habilita la opci&oacute;n <b>Mostrar bot&oacute;n de confirmaci&oacute;n flotante</b>.
+                                Ingrese aqu&iacute; el color que tendr&aacute; el borde de la ventana flotante.
+                            </p>
+                        </section>
+                        <section id="tab_required_fields" class="block-templates">
+                            <h3>
+                                <i class="fa fa-pencil-square-o fa-1x"></i>
+                                Campos del registro
+                            </h3>
+                            <p>
+                                En la secci&oacute;n de los campos del registro se configura la disponibilidad, requerimientos y textos de los diferentes campos que se muestran y
+                                recolectan informaci&oacute;n en la vista del m&oacute;dulo.
+                            </p>
+                            <p>
+                                En la tabla que se muestra se dividen los campos seg&uacute;n colores:
+                            </p>
+                            <ul>
+                                <li><b>Azul:</b> Campos referentes a la informaci&oacute;n del cliente</li>
+                                <li><b>Verde:</b> Campos referentes a la informaci&oacute;n de la direcci&oacute;n de entrega</li>
+                                <li><b>Amarillo:</b> Campos referentes a la informaci&oacute;n de la direcci&oacute;n de facturaci&oacute;n</li>
+                            </ul>
+                            <p>
+                                En la columna de <b><i>ACCIONES</i></b> se mostrar&aacute; un bot&oacute;n <b><i>EDITAR</i></b> que al dar clic se mostrar&aacute; una ventana emergente
+                                con los datos del campo, ah&iacute; se podr&aacute;n editar sus valores.
+                            </p>
+                            <br>
+                            <br>
+                            <div class="tree">
+                                <img src="screenshots/tab_required_fields_es.png">
+                            </div>
+                        </section>
+                        <section id="btn_manage_field_options" class="block-templates">
+                            <h4>
+                                Administrar opciones de campos
+                            </h4>
+                            <p>
+                                Este bot&oacute;n permite crear opciones para los elementos que pueden tener m&uacute;ltiples opciones como listas desplegables, checkbox, etc.
+                            </p>
+                        </section>
+                        <section id="btn_new_register" class="block-templates">
+                            <h4>
+                                Nuevo campo personalizado
+                            </h4>
+                            <p>
+                                Al dar clic sobre este bot&oacute;n aparecer&aacute; la siguiente ventana:
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/tab_required_fields_new_field_es.png">
+                            </div>
+                            <p>
+                                Ingrese los datos requeridos y cree un nuevo elemento(campo de texto, lista desplegable, etc) en el formulario del Checkout.
+                            </p>
+                        </section>
+                        <section id="required_field_name" class="block-templates">
+                            <h4>
+                                Nombre
+                            </h4>
+                            <p>
+                                Este control informativo hace referencia al nombre que tendr&aacute; el campo internamente. No puede contener espacios ni car&aacute;cteres especiales;
+                                solamente letras, n&uacute;meros y guiones.
+                            </p>
+                        </section>
+                        <section id="required_field_object" class="block-templates">
+                            <h4>
+                                Objeto
+                            </h4>
+                            <p>
+                                Este control informativo hace referencia al objeto al cual pertenece, &eacute;ste puede ser <b>Cliente</b>,
+                                <b>Direcci&oacute;n de env&iacute;o</b> o <b>Direcci&oacute;n de facturaci&oacute;n</b>.
+                            </p>
+                        </section>
+                        <section id="required_field_description" class="block-templates">
+                            <h4>
+                                Descripci&oacute;n
+                            </h4>
+                            <p>
+                                Este control permite editar el nombre externo que tendr&aacute; el campo para la vista del cliente. Se puede configurar en los diferentes idiomas de la tienda.
+                            </p>
+                        </section>
+                        <section id="required_field_label" class="block-templates">
+                            <h4>
+                                Label
+                            </h4>
+                            <p>
+                                Este control permite colocar un texto personalizado debajo del campo a la vista del cliente. Se puede configurar en los diferentes idiomas de la tienda.
+                            </p>
+                        </section>
+                        <section id="field_type" class="block-templates">
+                            <h4>
+                                Tipo
+                            </h4>
+                            <p>
+                                Este control informativo hace referencia al tipo de datos que va a tener como valor el campo. S&oacute;lo se puede escribir n&uacute;meros en este campo.
+                            </p>
+                        </section>
+                        <section id="field_size" class="block-templates">
+                            <h4>
+                                Tama&ntilde;o
+                            </h4>
+                            <p>
+                                Este control informativo hace referencia al tama&ntilde;o de los valores que va a tener el campo, s&oacute;lo aplica para campos de tipo <i>cadena de texto</i>.
+                            </p>
+                        </section>
+                        <section id="field_type_control" class="block-templates">
+                            <h4>
+                                Tipo de control
+                            </h4>
+                            <p>
+                                Este control informativo hace referencia al tipo de control que va a tener el campo, seg&uacute;n el tipo de control se va a mostrar en la vista como
+                                una lista de selecci&oacute;n o un campo de texto.
+                            </p>
+                        </section>
+                        <section id="required_field_value" class="block-templates">
+                            <h4>
+                                Valor por defecto
+                            </h4>
+                            <p>
+                                Este control hace referencia al valor por defecto que va a tener el campo, este valor se mostrar&aacute; al iniciar como un valor predeterminado.
+                            </p>
+                        </section>
+                        <section id="required_field_required" class="block-templates">
+                            <h4>
+                                Requerido
+                            </h4>
+                            <p>
+                                Este control permite definir si el campo va a ser requerido (obligatorio) para el cliente o se puede omitir.
+                            </p>
+                            <p>
+                                En la columna <b><i>REQUERIDO</i></b> de la tabla se puede dar clic en los botones que se muestran para cambiar el estado del campo, cuando est&aacute; en color rojo con una equis
+                                significa que el campo no es requerido (obligatorio) para ser diligenciado por parte del cliente, cuando est&aacute; en verde con un s&iacute;mbolo de chequeo
+                                significa que el campo es requerido (obligatorio) para el cliente.
+                            </p>
+                        </section>
+                        <section id="required_field_active" class="block-templates">
+                            <h4>
+                                Activo
+                            </h4>
+                            <p>
+                                Este control permite definir si el campo va a estar habilitado para ser mostrado en la vista y que el cliente lo pueda diligenciar.
+                            </p>
+                            <p>
+                                En la columna <b><i>ACTIVO</i></b> se puede dar clic en los botones que se muestran para cambiar el estado del campo, cuando est&aacute; en color rojo con una equis significa
+                                que el campo no est&aacute; activo, por lo tanto, no se ver&aacute; en la vista del m&oacute;dulo, cuando est&aacute; en verde con un s&iacute;mbolo de chequeo significa que el campo est&aacute; activo
+                                y se mostrar&aacute; en los formularios que debe diligenciar el cliente.
+                            </p>
+                        </section>
+                        <section id="tab_fields_position" class="block-templates">
+                            <h3>
+                                <i class="fa fa-arrows fa-1x"></i> Posiciones de campos
+                            </h3>
+                            <p>
+                                En la secci&oacute;n de Posiciones de los campos se configura el orden que tendr&aacute;n los campos en la vista del m&oacute;dulo.
+                                En esta secci&oacute;n se mantienen los colores de los campos seg&uacute;n su objeto (ver <b>CAMPOS DE REGISTRO</b>)
+                            </p>
+                            <p>
+                                Para cambiar el orden de los campos debe arrastrar cada etiqueta que haga referencia a un campo y ubicarla enseguida de otra etiqueta seg&uacute;n el orden
+                                que usted prefiera. Tambi&eacute;n puede arrastrarla para dejar en una nueva fila para que quede en una fila &uacute;nica; adem&aacute;s puede ordenar
+                                las filas completas, para esto debe arrastrar en cualquier lugar del espacio blanco que hay en cada campo que est&aacute; encerrado por un borde,
+                                el cual hace referencia a la fila.
+                            </p>
+                            <p>
+                                La configuraci&oacute;n del orden se guarda autom&aacute;ticamente luego de cada ordenamiento.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/tab_fields_position_es.png">
+                            </div>
+                        </section>
+                        <section id="tab_social_login" class="block-templates">
+                            <h3>
+                                <i class="fa fa-share-alt fa-1x"></i>  Login social
+                            </h3>
+                            <p>
+                                En esta secci&oacute;n se configuran las claves de las aplicaciones de <i>Facebook</i>, de <i>Google</i>, de <i>Paypal</i> y de <i>Biocryptology</i> para que los clientes de
+                                la tienda puedan loguearse por medio de &eacute;stas y puedan ver sus <i>Estad&iacute;sticas</i>.
+                            </p>
+                        </section>
+                        <section id="tab_facebook" class="block-templates">
+                            <h3>
+                                <i class="fa fa-facebook fa-1x"></i>  Facebook
+                            </h3>
+                            <div class="tree">
+                                <img src="screenshots/tab_facebook_es.png">
+                            </div>
+                        </section>
+                        <section id="how_to_facebook" class="block-templates">
+                            <h4>
+                                ¿C&oacute;mo crear una aplicaci&oacute;n en <b>Facebook</b>?
+                            </h4>
+                            <ol>
+                                <li>Ir a <a target="_blank" href="https://developers.facebook.com/apps/">Facebook Developer</a> e iniciar sesi&oacute;n con sus credenciales. </li>
+                                <li>
+                                    Clic sobre el bot&oacute;n <b>Crear una nueva aplicaci&oacute;n</b> <i class="fa fa-question-circle fa-1x text-info" data-toggle="tooltip" data-placement="top" title="Este se encuentra en la parte superior derecha de la pantalla"></i>.
+                                </li>
+                                <li>
+                                    Aparecer&aacute; un popup, llenar el formulario y hacer clic sobre el bot&oacute;n <b>Crear identificador de la aplicaci&oacute;n</b>.
+                                </li>
+                                <li>
+                                    Se mostrar&aacute;n las aplicaciones que Facebook permite crear, se debe dar clic en el bot&oacute;n <b>Configurar</b>  de la aplicaci&oacute;n <b>Inicio de Sesi&oacute;n con Facebook</b>.
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/facebook/fb1_es.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    En la ventana siguiente debe seleccionar la pesta&ntilde;a <b>Web</b>, escribir la URL de su tienda principal y presionar el bot&oacute;n Guardar.
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/facebook/fb2_es.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    Despu&eacute;s de guardar la URL de la tienda, se debe dar clic a la opci&oacute;n <b>Configuraci&oacute;n</b>  y despu&eacute;s a <b>Informaci&oacute;n b&aacute;sica</b>. Ah&iacute; se deben introducir todos los datos requeridos para lograr un correcto funcionamiento de la aplicaci&oacute;n.
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/facebook/fb3_es.png">
+                                    </div>
+                                    <p>Se debe tener en cuenta que para poder activar la aplicaci&oacute;n de Facebook y poder ser usada por los visitantes de la tienda, se debe a&ntilde;adir las URL de pol&iacute;ticas de privacidad, t&eacute;rminos y condiciones en la informaci&oacute;n b&aacute;sica de la aplicaci&oacute;n.</p>
+                                </li>
+                                <li>
+                                    Al terminar de ingresar la informaci&oacute;n b&aacute;sica y guardarla, en el mismo panel izquierdo se debe dar clic en la opci&oacute;n <b>Inicio de Sesi&oacute;n con Facebook</b> y despu&eacute;s a <b>Configuraci&oacute;n</b>, de esta forma se mostrar&aacute; una ventana con nuevas opciones de configuraci&oacute;n, las cuales se explican en la siguiente imagen.
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/facebook/fb4_es.png">
+                                    </div>
+                                    <p>Tener en cuenta que la (s) URL (s) de la tienda para el campo <b>URL de redireccionamiento de OAuth v&aacute;lidos</b> de la anterior ventana, se debe (n) tomar del campo <b>*Valid OAuth Redirect URls:</b>, el cual aparece en el m&oacute;dulo, en la pesta&ntilde;a Login Social, Facebook y seleccionar <b>¿C&oacute;mo puedo obtener esta informaci&oacute;n?</b>, como se muestra en la siguiente imagen.</p>                                   
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/facebook/fb5_es.png">
+                                    </div>
+                                </li>
+                            </ol>
+                        </section>
+                        <section id="enable_facebook" class="block-templates">
+                            <h4>
+                                Habilitar Facebook
+                            </h4>
+                            <p>
+                                Al tener esta opci&oacute;n deshabilitada, no es necesario que borres el <i>API Key</i> y el <i>Secret Key</i>, solo habilita esta opci&oacute;n cuando requieras visualizar el bot&oacute;n de la aplicaci&oacute;n de Facebook.
+                            </p>
+                        </section>
+                        <section id="social_login_id_facebook" class="block-templates">
+                            <h4>
+                                <i>API Key</i> Facebook
+                            </h4>
+                            <p>
+                                En este campo de texto debe ingresar el <i>API Key</i> de la aplicaci&oacute;n de Facebook.
+                            </p>
+                        </section>
+                        <section id="social_login_secret_facebook" class="block-templates">
+                            <h4>
+                                <i>Secret Key</i> Facebook
+                            </h4>
+                            <p>
+                                En este campo de texto debe ingresar el <i>Secret Key</i> de la aplicaci&oacute;n de Facebook.
+                            </p>
+                        </section>
+                        <section id="tab_google" class="block-templates">
+                            <h3>
+                                <i class="fa fa-google fa-1x"></i>  Google
+                            </h3>
+                            <div class="tree">
+                                <img src="screenshots/tab_google_es.png">
+                            </div>
+                        </section>
+                        <section id="how_to_google" class="block-templates">
+                            <h4>¿C&oacute;mo crear una aplicaci&oacute;n en <b>Google</b>?</h4>
+                            <ol>
+                                <li>Ir a <a target="_blank" href="https://code.google.com/apis/console/">Google Api Console</a> e iniciar sesi&oacute;n con sus credenciales</li>
+                                <li>
+                                    Presionar el bot&oacute;n <b>CREAR PROYECTO</b> <i class="fa fa-question-circle fa-1x text-info" data-toggle="tooltip" data-placement="top" title="Este se encuentra en la parte izquierda de la pantalla"></i>,
+                                    ingresar el Nombre del proyecto y hacer clic sobre el bot&oacute;n <b>CREAR</b>.
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg1_es.png">
+                                    </div>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg2_es.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    Hacer clic en el icono <b>Notificaciones</b> de la parte superior derecha y seleccionar el proyecto creado.
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg3_es.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    Posteriormente aparecer&aacute; una nueva ventana, ir a la opci&oacute;n APIs y dar clic en <b>Ir a la visi&oacute;n general de las API</b>.
+                                    <br> 
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg4_es.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    Clic sobre la opci&oacute;n <b>ENABLE APIS AND SERVICES</b>.
+                                    <br> 
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg5_es.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    Posteriormente aparecer&aacute; una nueva vista, digitar en la caja de texto que dice Buscar APIs y servicios, <b>maps</b> habilitar todas las APIs
+                                    que contengan la palabra maps, luego de hacer esto, digitar <b>google+</b> y enter.
+                                    <br> 
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg6_es.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    Aparecer&aacute; la siguiente ventana, donde se debe dar clic en <b>Google+ API</b>
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg7_es.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    Hacer clic en el bot&oacute;n <b>HABILITAR</b>
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg8_es.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    Hacer clic en el bot&oacute;n <b>CREAR CREDENCIALES</b>
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg9_es.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    En la siguiente ventana, seleccionar en el campo ¿Qu&eacute; API est&aacute;s utilizando? la opci&oacute;n <b>Google+ API</b>, ¿Desde d&oacute;nde llamar&aacute;s a la API? la opci&oacute;n <b>Navegador web (Javascript)</b>, ¿A qu&eacute; tipo de datos acceder&aacute;s? la opci&oacute;n <b>Datos del usuario</b>,
+                                    y hacer clic sobre la opci&oacute;n <b>¿Qu&eacute; credenciales necesito?</b><br>
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg10_es.png">
+                                    </div>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg11_es.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    Te aparecer&aacute; una ventana emergente, dar clic en en el bot&oacute;n <b>NOT NOW</b>
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg18_es.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    En la ventana Credenciales, puede dejar el <b>Nombre</b> que aparece en la opci&oacute;n Crear un ID de cliente de OAuth 2.0 o cambiarlo por uno que usted desee. Los valores a introducir
+                                    en las opciones "Authorized JavaScript Origins" para el campo "Or&iacute;genes autorizados de Javascript" y "Authorized redirect URIs" para el campo "URl de redireccionamiento autorizados", los encuentra en la configuraci&oacute;n
+                                    del m&oacute;dulo, en "Login social -> Google" al hacer clic en el bot&oacute;n ¿C&oacute;mo puedo obtener esta informaci&oacute;n?.
+                                    Por &uacute;ltimo, hacer clic sobre la opci&oacute;n <b>Crear ID de cliente de OAuth</b><br>
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg13_es.png">
+                                    </div>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg12_es.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    En la siguiente ventana, debe digitar la <b>Direcci&oacute;n de correo electr&oacute;nico</b> y el <b>Nombre de producto</b> que se va a mostrar a los usuarios.
+                                    Por &uacute;ltimo, hacer clic sobre la opci&oacute;n <b>Continuar</b>.<br>
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg14_es.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    En la siguiente ventana, aparecer&aacute; el Client ID con una opci&oacute;n para Descargar, la cual la podr&aacute; exportar en el momento que lo necesite.
+                                    Por &uacute;ltimo, hacer clic sobre la opci&oacute;n <b>Listo</b>.<br>
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg15_es.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    En esta ventana aparecer&aacute;(n) la(s) credencial(es) creada(s), al dar clic en el nombre de la credencial desplegar&aacute; en otra ventana la informaci&oacute;n requerida.
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg16_es.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    Debes dar clic en la pesta&ntilde;a <b>Pantalla de consentimiento de OAuth</b> y diligenciar los datos que se muestran en la imagen con una flecha, por &uacute;ltimo clic en guardar.
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg19_es.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    Luego, dar clic en la pesta&ntilde;a <b>Verificaci&oacute;n de dominio</b> y dar clic en el bot&oacute;n <b>A&ntilde;adir un dominio</b>.
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg20_es.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    Aparecer&aacute; una ventana donde debes digitar tu dominio como se indica en el ejemplo y por &uacute;ltimo, dar clic en el bot&oacute;n <b>A&Ntilde;ADIR UN DOMINIO</b>.
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg21_es.png">
+                                    </div>
+                                </li> 
+                                <li>
+                                    En la pesta&ntilde;a Credenciales, al dar clic en la API creada, te aparecer&aacute; el <b>API Key</b> que corresponde al <b>ID de cliente</b> y el <b>Secret Key</b> que corresponde al <b>Secreto de cliente</b> de la aplicaci&oacute;n.
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg17_es.png">
+                                    </div>
+                                </li>
+                            </ol>
+                        </section>
+                        <section id="enable_google" class="block-templates">
+                            <h4>
+                                Habilitar Google
+                            </h4>
+                            <p>
+                                Al tener esta opci&oacute;n deshabilitada, no es necesario que borres el <i>API Key</i> y el <i>Secret Key</i>, solo habilita esta opci&oacute;n cuando requieras visualizar el bot&oacute;n de la aplicaci&oacute;n de Google.
+                            </p>
+                        </section>
+                        <section id="social_login_id_goole" class="block-templates">
+                            <h4>
+                                <i>API Key</i> Google
+                            </h4>
+                            <p>
+                                En este campo de texto debe ingresar el <i>API Key</i> de la aplicaci&oacute;n de Google.
+                            </p>
+                        </section>
+                        <section id="social_login_secret_google" class="block-templates">
+                            <h4>
+                                <i>Secret Key</i> Google
+                            </h4>
+                            <p>
+                                En este campo de texto debe ingresar el <i>Secret Key</i> de la aplicaci&oacute;n de Google.
+                            </p>
+                        </section>
+                        <section id="tab_paypal" class="block-templates">
+                            <h3>
+                                <i class="fa fa-paypal fa-1x"></i>  Paypal
+                            </h3>
+                            <div class="tree">
+                                <img src="screenshots/tab_paypal_es.png">
+                            </div>
+                        </section>
+                        <section id="how_to_paypal" class="block-templates">
+                            <h4>¿C&oacute;mo crear una aplicaci&oacute;n en <b>Paypal</b>?</h4>
+                             <ul>
+                                <li>Ir a <a href="https://developer.paypal.com/" target="_blank">https://developer.paypal.com/</a>, hacer clic en el bot&oacute;n <b>Log In</b> e iniciar sesi&oacute;n en Paypal</li>
+                                <li>Hacer clic en el bot&oacute;n <b>Dashboard</b> de la parte superior derecha de la pantalla</li>
+                                <li>
+                                    Seguir los pasos de la imagen:<br>
+                                    <div class="tree"><img src="screenshots/social_login/paypal/paypal1_es.png"></div>
+                                </li>
+                                <li>
+                                    Llenar el formulario y oprimir el bot&oacute;n <b>Create App</b>:<br>
+                                    <div class="tree"><img src="screenshots/social_login/paypal/paypal2_es.png"></div>
+                                </li>
+                                <li>
+                                    Una vez creada la aplicaci&oacute;n ya puede ver el <i>App ID</i> y <i>App Secret</i> de la aplicaci&oacute;n.<br>
+                                    <div class="tree"><img src="screenshots/social_login/paypal/paypal3_es.png"></div>
+                                </li>
+                                <li>
+                                    Buscar la secci&oacute;n <b>LIVE APP SETTINGS</b> y seguir los pasos de la imagen:<br>
+                                    <div class="tree"><img src="screenshots/social_login/paypal/paypal4_es.png"></div>
+                                </li>
+                                <li>
+                                    Despu&eacute;s de haber dado clic en la opci&oacute;n <b>Advanced Options</b>
+                                    se desplegar&aacute; un formulario, seguir los pasos:<br>
+                                    - Seleccionar las opciones: <u>Personal Information</u> y <u>Address Information</u>.<br>
+                                    - Ingresar una URL de <u>pol&iacute;ticas de privacidad</u> y de <u>t&eacute;rminos y condiciones</u>.<br>
+                                    - Seleccionar la opci&oacute;n: <u>Allow the customers who haven't yet confirmed their email address with PayPal, to log in to your app</u>.<br>
+                                    - Oprimir el bot&oacute;n <b>Save</b>
+                                </li><br>
+                                <li>
+                                    Paypal requiere un permiso para poder acceder a la información del cliente para el inicio de sesión, por lo tanto, es necesario que envíe un correo a <b>help-loginappreview@paypal.com</b> solicitando los siguientes permisos:<br>
+                                    <br><b>Personal Information:</b><br>
+                                    -  Date of birth<br>
+                                    <br><b>Address Information:</b><br>
+                                    - Email address<br>
+                                    - Street addres<br>
+                                    - Zip code<br>
+                                    - City<br>
+                                    - Country<br>
+                                    - State<br>
+                                    <br>Indique en el correo que estos datos se usarán para el inicio de sesión y creación de dirección del cliente en su tienda PrestaShop a través del módulo One Page Checkout PS. Estos datos se obtienen una vez que el cliente presione el botón de <b>inicio de sesión con Paypal</b>.<br>
+                                </li>
+                            </ul>
+                        </section>
+                        <section id="enable_paypal" class="block-templates">
+                            <h4>
+                                Habilitar Paypal
+                            </h4>
+                            <p>
+                                Al tener esta opci&oacute;n deshabilitada, no es necesario que borres el <i>API Key</i> y el <i>Secret Key</i>, solo habilita esta opci&oacute;n cuando requieras visualizar el bot&oacute;n de la aplicaci&oacute;n de Paypal.
+                            </p>
+                        </section>
+                        <section id="social_login_id_paypal" class="block-templates">
+                            <h4>
+                                <i>API Key</i> Paypal
+                            </h4>
+                            <p>
+                                En este campo de texto debe ingresar el <i>API Key</i> de la aplicaci&oacute;n de Paypal.
+                            </p>
+                        </section>
+                        <section id="social_login_secret_paypal" class="block-templates">
+                            <h4>
+                                <i>Secret Key</i> Paypal
+                            </h4>
+                            <p>
+                                En este campo de texto debe ingresar el <i>Secret Key</i> de la aplicaci&oacute;n de Paypal.
+                            </p>
+                        </section>
+                        <section id="tab_biocryptology" class="block-templates">
+                            <h3>
+                                <img src="screenshots/social_login/biocryptology/btn_biocryptology.png" height="18" style="width: 13px;"/> Biocryptology
+                            </h3>
+                            <div class="tree">
+                                <img src="screenshots/tab_biocryptology_es.png">
+                            </div>
+                        </section>
+                        <section id="how_to_biocryptology" class="block-templates">
+                            <h4>C&oacute;mo crear tu dominio en <b>Biocryptology</b>?</h4>
+                             <ul>
+                                <li>Ir a <a href="https://biocryptology.com/" target="_blank">https://biocryptology.com/</a>, hacer clic en el bot&oacute;n <b>Mis dominios</b> e iniciar sesi&oacute;n en Biocryptology</li>
+                                <li>
+                                    Seguir los pasos de la imagen:<br>
+                                    <div class="tree"><img src="screenshots/social_login/biocryptology/bc1_es.png"></div>
+                                </li>
+                                <li>
+                                    Hacer clic en el bot&oacute;n <b>+A&ntilde;adir dominios</b> de la parte superior derecha de la pantalla
+                                    <div class="tree"><img src="screenshots/social_login/biocryptology/bc2_es.png"></div>
+                                </li>
+                                <li>
+                                    En esta ventana, digite su direcci&oacute;n de dominio y una descripci&oacute;n corta opcional.
+                                    <div class="tree"><img src="screenshots/social_login/biocryptology/bc3_es.png"></div>
+                                </li>
+                                <li>
+                                    Aparecer&aacute; la siguiente ventana, donde puede copiar el c&oacute;digo y dar clic en el bot&oacute;n <b>Cerrar</b> 
+                                    <div class="tree"><img src="screenshots/social_login/biocryptology/bc4_es.png"></div>
+                                </li>
+                                <li>
+                                    En esta ventana, queda creado tu dominio, dar clic para modificarlo.
+                                    <div class="tree"><img src="screenshots/social_login/biocryptology/bc5_es.png"></div>
+                                </li>
+                                <li>
+                                    Dar clic en el bot&oacute;n <b>A&ntilde;adir plugin</b> del campo Plugins.
+                                    <div class="tree"><img src="screenshots/social_login/biocryptology/bc6_es.png"></div>
+                                </li>
+                                <li>
+                                    En esta ventana, puedes cambiar la imagen (opcional), nombre del plugin (visible), seleccionar Generar clave secreta, colocar la URl de pol&iacute;tica de privacidad de tu tienda. También añadir post login y post logout URL. Por &uacute;ltimo, clic en el bot&oacute;n <b>GUARDAR</b>.
+                                    <div class="tree"><img src="screenshots/social_login/biocryptology/bc7_es.png"></div>
+                                </li>
+                                <li>
+                                    Al añadir un <b>post login</b>, digite la(s) <b>Post login URLs</b> que corresponde(n) al <b>Añadir post login URL</b> y la(s) <b>post logout</b> que corresponde(n) al <b>Añadir post logout URL</b> de la aplicaci&oacute;n.<br>
+                                    <div class="tree"><img src="screenshots/social_login/biocryptology/bc8_es.png"></div>
+                                </li>
+                                <li>
+                                    Seleccionar la opci&oacute;n <b>Editar</b> del plugin que hayas creado.<br>
+                                    <div class="tree"><img src="screenshots/social_login/biocryptology/bc9_es.png"></div>
+                                </li>
+                                <li>
+                                    Aparecer&aacute; esta ventana, con el <b>API Key</b> que corresponde al <b>Cliente ID</b> y el <b>Secret Key</b> que corresponde al <b>Clave secreta</b> de la aplicaci&oacute;n.
+                                    <div class="tree"><img src="screenshots/social_login/biocryptology/bc10_es.png"></div>
+                                </li>
+                            </ul>  
+                        </section>
+                        <section id="enable_biocryptology" class="block-templates">
+                            <h4>
+                                Habilitar Biocryptology
+                            </h4>
+                            <p>
+                                Al tener esta opci&oacute;n deshabilitada, no es necesario que borres el <i>API Key</i> y el <i>Secret Key</i>, solo habilita esta opci&oacute;n cuando requieras visualizar el bot&oacute;n de la aplicaci&oacute;n de Biocryptology.
+                            </p>
+                        </section>
+                        <section id="social_login_id_biocryptology" class="block-templates">
+                            <h4>
+                                <i>API Key</i> Biocryptology
+                            </h4>
+                            <p>
+                                En este campo de texto debe ingresar el <i>API Key</i> de la aplicaci&oacute;n de Biocryptology.
+                            </p>
+                        </section>
+                        <section id="social_login_secret_biocryptology" class="block-templates">
+                            <h4>
+                                <i>Secret Key</i> Biocryptology
+                            </h4>
+                            <p>
+                                En este campo de texto debe ingresar el <i>Secret Key</i> de la aplicaci&oacute;n de Biocryptology.
+                            </p>
+                        </section>
+                        <section id="tab_statistics" class="block-templates">
+                            <h3>
+                                <i class="fa fa-line-chart fa-1x"></i> 
+                                Estad&iacute;sticas
+                            </h3>
+                            <p>
+                                En esta secci&oacute;n se puede ver un gr&aacute;fico circular que muestra el número de conexiones por cada red social (Facebook, Google, Paypal, Biocryptology) del m&oacute;dulo.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/tab_statistics_es.png">
+                            </div>
+                            <div class="alert alert-info">
+                                <i class="fa fa-info-circle"></i> &nbsp; Cuando no hay estad&iacute;sticas se muestra el siguiente mensaje: 
+                                "No hay datos para mostrar, no hay conexiones a trav&eacute;s de redes sociales o no has configurado el inicio de sesi&oacute;n a trav&eacute;s de &eacute;stas."
+                            </div>
+                        </section>
+                        <section id="tab_information" class="block-templates">
+                            <h3>
+                                <i class="fa fa-globe fa-1x"></i>
+                                Informaci&oacute;n
+                            </h3>
+                            <p>
+                                En esta secci&oacute;n configura la tarea CRON para eliminar las direcciones vac&iacute;as creadas por el m&oacute;dulo en su tienda.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/tab_information_es.png">
+                            </div>
+                        </section>  
+                        <section id="tab_translate" class="block-templates">
+                            <h3>
+                                <i class="fa fa-globe fa-1x"></i>
+                                Traducir
+                            </h3>
+                            <p>
+                                En esta secci&oacute;n se configuran las traducciones del m&oacute;dulo.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/tab_translate_es.png">
+                            </div>
+                        </section>
+                        <section id="select_language" class="block-templates">
+                            <h4>
+                                Seleccione un idioma
+                            </h4>
+                            <p>
+                                En esta lista desplegable seleccione el idioma a traducir. Despu&eacute;s de haber seleccionado una opci&oacute;n, los formularios de cada
+                                fichero del m&oacute;dulo se llenar&aacute;n con los valores guardados anteriormente. Si no se encuentran valores
+                                los campos de los fomularios quedar&aacute;n en blanco.
+                            </p>
+                        </section>
+                        <section id="save" class="block-templates">
+                            <h4>
+                                Guardar
+                            </h4>
+                            <p>
+                                Este bot&oacute;n le permite guardar la traducci&oacute;n realizada.
+                            </p>
+                        </section>
+                        <section id="save_download" class="block-templates">
+                            <h4>
+                                Guardar y Descargar
+                            </h4>
+                            <p>
+                                Este bot&oacute;n le permite guardar y descargar un archivo .php con la traducci&oacute;n realizada.
+                            </p>
+                        </section>
+                        <section id="share_translation" class="block-templates">
+                            <h4>
+                                Comp&aacute;rtenos tu traducci&oacute;n
+                            </h4>
+                            <p>
+                                Al dar clic en este bot&oacute;n se env&iacute;a a nosotros (info@presteamshop.com) la traducci&oacute;n realizada
+                                al idioma seleccionado en la opci&oacute;n <b> Seleccione un idioma</b>.
+                            </p>
+                            <div class="alert alert-info">
+                                <i class="fa fa-info-circle"></i> &nbsp; Si comparte su traducci&oacute;n con nosotros lo tendremos en cuenta para
+                                futuras actualizaciones del m&oacute;dulo.
+                            </div>
+                        </section>
+                        <section id="expand" class="block-templates">
+                            <h4>
+                                Expandir todo
+                            </h4>
+                            <p>
+                                Este bot&oacute;n le permite expandir los archivos de esta p&aacute;gina.
+                            </p>
+                        </section>
+                        <section id="collapse" class="block-templates">
+                            <h4>
+                                Contraer todo
+                            </h4>
+                            <p>
+                                Este bot&oacute;n le permite contraer los archivos de esta p&aacute;gina.
+                            </p>
+                        </section>
+                        <section id="tab_code_editors" class="block-templates">
+                            <h3>
+                                <i class="fa fa-code fa-1x"></i>
+                                Editores de c&oacute;digo
+                            </h3>
+                            <p>
+                                En esta secci&oacute;n usted puede agregar o modificar c&oacute;digo css y javascript de los archivos del m&oacute;dulo
+                                sin necesidad de acceder directamente a estos.
+
+                                Por ejemplo: Para modificar c&oacute;digo css ingrese al apartado de <b>CSS</b>, busque el archivo que desea editar,
+                                ingresa el c&oacute;digo css y presiona el bot&oacute;n <b>Guardar</b>.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/tab_code_editors_es.png">
+                            </div>
+                        </section>
+                        <section id="tab_suggestions" class="block-templates">
+                            <h3>
+                                <i class="fa fa-pencil fa-1x"></i>
+                                Sugerencias
+                            </h3>
+                            <p>
+                                Esta secci&oacute;n le permite comunicarse con nosotros ya sea para reportar problemas y contarnos sus dudas,
+                                o para compartir con nosotros sus sugerencias, funcionalidades y opiniones a cerca del m&oacute;dulo.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/tab_suggestions_es.png">
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

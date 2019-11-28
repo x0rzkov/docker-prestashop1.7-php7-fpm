@@ -1,0 +1,2257 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+       <title>User guide - One Page Checkout PrestaShop</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--jQuery-->
+        <script src="assets/libs/twitter-bootstrap/js/jquery.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="assets/libs/twitter-bootstrap/js/bootstrap.min.js"></script>
+        <!--extra-->
+        <script src="assets/libs/twitter-bootstrap/js/jquery.scroll.js"></script>
+        <script src="assets/libs/twitter-bootstrap/js/prettify.js"></script>
+        <script src="assets/libs/twitter-bootstrap/js/jquery-migrate-1.1.0.js"></script>
+        <script src="assets/libs/twitter-bootstrap/js/bootstrap-affix.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="assets/libs/twitter-bootstrap/css/bootstrap.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="assets/libs/twitter-bootstrap/css/bootstrap-theme.css">
+        <!--Own javascript-->
+        <script src="assets/libs/documentation.js"></script>
+        <script src="assets/libs/twitter-bootstrap/js/script.js"></script>
+        <!--Own css-->
+        <link rel="stylesheet" href="assets/libs/documentation.css">
+        <!--Icons-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <!--Style-->
+        <link rel="stylesheet" href="assets/libs/twitter-bootstrap/css/prettify.css">
+        <link rel="stylesheet" href="assets/libs/twitter-bootstrap/css/style.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar navbar-default navbar-static-top" role="navigation">
+                <div class="container">
+                    <div class="row">
+                        <article class="col-xs-9">
+                            <img id="img_logo" src="screenshots/logo.png" style="margin-right: 10px"/><h3>One Page Checkout PrestaShop</h3>
+                        </article>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container pts-docs-container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div id="nav_container" class="affix-top">
+                        <ul id="nav" class="nav nav-list bs-docs-sidenav">
+                            <li class="nav-item item1 first act_item open_item">
+                                <dl class="slide-down">
+                                    <dt>
+                                    <a href="#module">One Page Checkout PrestaShop</a>
+                                    </dt>
+                                    <dd></dd>
+                                </dl>
+                            </li>
+                            <li class="nav-item item2">
+                                <dl class="slide-down">
+                                    <dt>
+                                    <a href="#tab_general">
+                                        <i class="fa fa-plus"></i>General
+                                    </a>
+                                    </dt>
+                                    <dd>
+                                        <ul class="list">
+                                            <li>
+                                                <a href="#enable_debug"> Test mode </a>
+                                            </li>
+                                            <li>
+                                                <a href="#enable_guest_checkout">Enable guest checkout</a>
+                                            </li>
+                                            <li>
+                                                <a href="#redirect_directly_to_opc">Redirect directly to page checkout</a>
+                                            </li>
+                                            <li>
+                                                <a href="#replace_form_to_opc">Replace the registration form with the checkout form</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_form_opc_adresseses">Show checkout registration form at: My addresses</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_form_opc_personal_info">Show checkout registration form at: My personal information</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_delivery_virtual">Show the delivery address for the purchase of virtual goods</a>
+                                            </li>
+                                            <li>
+                                                <a href="#default_payment_method">Choose a default payment method</a>
+                                            </li>
+                                            <li>
+                                                <a href="#default_carrier">Choose a default carrier</a>
+                                            </li>
+                                            <li>
+                                                <a href="#default_group_customer">Add new customers to the group</a>
+                                            </li>
+                                            <li>
+                                                <a href="#groups_customer_additional">Add new customers in other groups</a>
+                                            </li>
+                                            <li>
+                                                <a href="#validate_dni">Validate identification Spain and Chile</a>
+                                            </li>
+                                            <li>
+                                                <a href="#id_content_page">Container page (HTML)</a>
+                                            </li>
+                                            <li>
+                                                <a href="#id_customer">Customer ID</a>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="nav-item item2">
+                                <dl class="slide-down">
+                                    <dt>
+                                    <a href="#tab_register">
+                                        <i class="fa fa-plus"></i>Register
+                                    </a>
+                                    </dt>
+                                    <dd>
+                                        <ul class="list">
+                                            <li>
+                                                <a href="#enable_login_registered_customer">Require login to a registered customer</a>
+                                            </li>
+                                            <li>
+                                                <a href="#enable_button_save_info">Show button &quot;Save Information&quot;</a>
+                                            </li>
+                                            <li>
+                                                <a href="#capitalize_fields">Capitalize fields </a>
+                                            </li>
+                                            <li>
+                                                <a href="#enable_privacy_policy">Require acceptance of privacy policy before buying</a>
+                                            </li>
+                                            <li>
+                                                <a href="#enable_invoice_address">Request invoice address</a>
+                                            </li>
+                                            <li>
+                                                <a href="#use_same_name_contact_ba">Use the same first name and last name for the customers invoice address</a>
+                                            </li>
+                                            <li>
+                                                <a href="#insert_cod_iso_invoice">Automatically insert the country ISO code at the beginning of the DNI in the invoice address</a>
+                                            </li>
+                                            <li>
+                                                <a href="#insert_cod_iso_delivery">Automatically insert the country ISO code at the beginning of the DNI in the delivery address</a>
+                                            </li>
+                                            <li>
+                                                <a href="#use_same_name_contact_da">Use the same first name and last name for the customers delivery address</a>
+                                            </li>
+                                            <li>
+                                                <a href="#request_confirm_email">Request confirmation email</a>
+                                            </li>
+                                            <li>
+                                                <a href="#request_password">Password request</a>
+                                            </li>
+                                            <li>
+                                                <a href="#choice_group_customer">Show customer group list</a>
+                                            </li>
+                                            <li>
+                                                <a href="#list_cities_geonames">Show list of cities using Geonames.org</a>
+                                            </li>
+                                            <li>
+                                                <a href="#autocomplete_address_geonames">Use postal code autocomplete from Geonames.org</a>
+                                            </li>
+                                            <li>
+                                                <a href="#autocomplete_google_address">Use address autocomplete from Google</a>
+                                            </li>
+                                            <li>
+                                                <a href="#google_api_key">Google API KEY</a>
+                                            </li>
+                                            <li>
+                                                <a href="#autocomplete_field_address_google_maps">Autocomplete the address field with the Google Maps suggestion</a>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="nav-item item2">
+                                <dl class="slide-down">
+                                    <dt>
+                                    <a href="#tab_shipping">
+                                        <i class="fa fa-plus"></i> Shipping
+                                    </a>
+                                    </dt>
+                                    <dd>
+                                        <ul class="list">
+                                            <li>
+                                                <a href="#enable_modules_shipping">Enable compatibility for shipping modules</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_description_carrier">Show description of carriers</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_image_carrier">Show image of carriers</a>
+                                            </li>
+                                            <li>
+                                                <a href="#refresh_shipping">Reload shipping when changing state</a>
+                                            </li>
+                                            <li>
+                                                <a href="#force_need_postcode">Require a postal code to be entered</a>
+                                            </li>
+                                            <li>
+                                                <a href="#module_carrier_need_postcode">Carrier module that requires a postal code</a>
+                                            </li>
+                                            <li>
+                                                <a href="#force_need_city">Require a city to be entered</a>
+                                            </li>
+                                            <li>
+                                                <a href="#module_carrier_need_city">Carrier module that requires a city</a>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="nav-item item3">
+                                <dl class="slide-down">
+                                    <dt>
+                                        <a href="#tab_payment">
+                                            <i class="fa fa-plus"></i> Payment
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <ul>
+                                            <li class="sub_tab">
+                                                <dl class="slide-down">
+                                                    <dt>
+                                                        <a href="#tab_general_payment">General</a>
+                                                    </dt>
+                                                    <dd>
+                                                         <ul class="list">
+                                                            <li>
+                                                                <a href="#show_images_payment">Show images of payment methods.</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#show_description_payment">Show detailed description of the payment methods.</a>
+                                                            </li>
+                                                        </ul>
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="sub_tab">
+                                                <dl class="slide-down">
+                                                    <dt>
+                                                        <a href="#tab_pay_methods">Pay methods</a>
+                                                    </dt>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="sub_tab">
+                                                <dl class="slide-down">
+                                                    <dt>
+                                                        <a href="#tab_ship_pay">Ship to Pay</a>
+                                                    </dt>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="nav-item item3">
+                                <dl class="slide-down">
+                                    <dt>
+                                    <a href="#tab_review">
+                                        <i class="fa fa-plus"></i> Review
+                                    </a>
+                                    </dt>
+                                    <dd>
+                                        <ul class="list">
+                                            <li>
+                                                <a href="#enable_terms_conditions">Require acceptance of terms and conditions before buying</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_link_continue_shopping">Show "Continue Shopping" link</a>
+                                            </li>
+                                            <li>
+                                                <a href="#link_continue_shopping">Custom URL for the "Continue shopping" button</a>
+                                            </li>
+                                            <li>
+                                                <a href="#discount_box">Show discount box</a>
+                                            </li>
+                                            <li>
+                                                <a href="#order_message_box">Show text box for order message</a>
+                                            </li>
+                                            <li>
+                                                <a href="#remove_link_products">Remove the link from the products</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_zoom_product_image">Show zoom on product image</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_subtotal_product">Show subtotal of products</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_total_discount">Show total discount</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_total_wrapping">Show gift wrapping total</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_total_shipping">Show shipping total</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_total_without_tax">Show total excluding tax</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_total_tax">Show total tax</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_total_price">Show total</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_remaining_free_shipping">Show amount remaining to qualify for free shipping</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_weight">Show weight</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_reference">Show reference</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_unit_price">Show unit price</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_availability">Show availability</a>
+                                            </li>
+                                            <li>
+                                                <a href="#show_delivery_time_product">Show delivery time of the product</a>
+                                            </li>
+                                            <li>
+                                                <a href="#enable_hook_shopping_cart">Enable hook shopping cart</a>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="nav-item item3">
+                                <dl class="slide-down">
+                                    <dt>
+                                    <a href="#tab_theme">
+                                        <i class="fa fa-plus"></i> Theme
+                                    </a>
+                                    </dt>
+                                    <dd>
+                                        <ul class="list">
+                                            <li>
+                                                <a href="#theme_background_color">Background color</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_border_color">Border color</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_icon_color">Color of images</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_text_color">Text color</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_selected_color">Carrier and Payment selected color</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_selected_color_text">Carrier and Payment selected text color</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_confirm_color">Checkout button color</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_confirm_text_color">Text color of checkout button</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_already_register_button">Already register button color</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_already_register_button_text">Already register text button color</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_login_button">Login button color</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_login_button_text">Login text button color</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_voucher_button">Voucher button color</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_voucher_button_text">Voucher text button color</a>
+                                            </li>
+                                            <li>
+                                                <a href="#confirmation_button_float">Show confirmation button float</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_background_button_footer">Background color float confirmation button</a>
+                                            </li>
+                                            <li>
+                                                <a href="#theme_border_button_footer">Border color float confirmation button</a>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="nav-item item3">
+                                <dl class="slide-down">
+                                    <dt>
+                                    <a href="#tab_required_fields">
+                                        <i class="fa fa-plus"></i> Fields register
+                                    </a>
+                                    </dt>
+                                    <dd>
+                                        <ul class="list">
+                                            <li>
+                                                <a href="#btn_manage_field_options">Manage field options</a>
+                                            </li>
+                                            <li>
+                                                <a href="#btn_new_register">New custom field</a>
+                                            </li>
+                                            <li>
+                                                <a href="#required_field_name">Name</a>
+                                            </li>
+                                            <li>
+                                                <a href="#required_field_object">Objet</a>
+                                            </li>
+                                            <li>
+                                                <a href="#required_field_description">Description</a>
+                                            </li>
+                                            <li>
+                                                <a href="#required_field_label">Label</a>
+                                            </li>
+                                            <li>
+                                                <a href="#field_type">Type</a>
+                                            </li>
+                                            <li>
+                                                <a href="#field_size">Size</a>
+                                            </li>
+                                            <li>
+                                                <a href="#field_type_control">Type control</a>
+                                            </li>
+                                            <li>
+                                                <a href="#required_field_value">Default value</a>
+                                            </li>
+                                            <li>
+                                                <a href="#required_field_required">Required</a>
+                                            </li>
+                                            <li>
+                                                <a href="#required_field_active">Active</a>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="nav-item item3">
+                                <dl class="slide-down">
+                                    <dt>
+                                    <a href="#tab_fields_position">
+                                        Fields position
+                                    </a>
+                                    </dt>
+                                </dl>
+                            </li>
+                            <li class="nav-item item3">
+                                <dl class="slide-down">
+                                    <dt>
+                                        <a href="#tab_social_login">
+                                            <i class="fa fa-plus"></i> Social login
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <ul>
+                                            <li class="sub_tab">
+                                                <dl class="slide-down">
+                                                    <dt>
+                                                        <a href="#tab_facebook">Facebook</a>
+                                                    </dt>
+                                                    <dd>
+                                                        <ul class="list">
+                                                            <li>
+                                                                <a href="#how_to_facebook">How to create a <b>Facebook</b> application?</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#enable_facebook">Enable Facebook</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#social_login_id_facebook">API Key Facebook</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#social_login_secret_facebook">Secret Key Facebook</a>
+                                                            </li>
+                                                        </ul>
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                            <li class="sub_tab">
+                                                <dl class="slide-down">
+                                                    <dt>
+                                                        <a href="#tab_google">Google</a>
+                                                    </dt>
+                                                    <dd>
+                                                        <ul class="list">
+                                                            <li>
+                                                                <a href="#how_to_google">How to create an application on <b>Google?</b></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#enable_google">Enable Google</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#social_login_id_goole">API Key Google</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#social_login_secret_google">Secret Key Google</a>
+                                                            </li>
+                                                        </ul>
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                            <li class="sub_tab">
+                                                <dl class="slide-down">
+                                                    <dt>
+                                                        <a href="#tab_paypal">Paypal</a>
+                                                    </dt>
+                                                    <dd>
+                                                        <ul class="list">
+                                                            <li>
+                                                                <a href="#how_to_paypal">How to create an application in <b>Paypal</b>?</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#enable_paypal">Enable Paypal</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#social_login_id_paypal">API Key Paypal</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#social_login_secret_paypal">Secret Key Paypal</a>
+                                                            </li>
+                                                        </ul>
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                            <li class="sub_tab">
+                                                <dl class="slide-down">
+                                                    <dt>
+                                                        <a href="#tab_biocryptology">Biocryptology</a>
+                                                    </dt>
+                                                    <dd>
+                                                        <ul class="list">
+                                                            <li>
+                                                                <a href="#how_to_biocryptology">How to create your domain in <b>Biocryptology</b>?</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#enable_biocryptology">Enable Biocryptology</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#social_login_id_biocryptology">Api Key Biocryptology</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#social_login_secret_biocryptology">Secret Key Biocryptology</a>
+                                                            </li>
+                                                        </ul>
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                            <li class="sub_tab">
+                                                <dl class="slide-down">
+                                                    <dt>
+                                                        <a href="#tab_statistics">Statistics</a>
+                                                    </dt>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="nav-item item3">
+                                <dl class="slide-down">
+                                    <dt>
+                                        <a href="#tab_information">Information</a>
+                                    </dt>
+                                </dl>
+                            </li>
+                            <li class="nav-item item3">
+                                <dl class="slide-down">
+                                    <dt>
+                                    <a href="#tab_translate">
+                                        <i class="fa fa-plus"></i> Translate
+                                    </a>
+                                    </dt>
+                                    <dd>
+                                        <ul class="list">
+                                            <li>
+                                                <a href="#select_language">Select language</a>
+                                            </li>
+                                            <li>
+                                                <a href="#save">Save</a>
+                                            </li>
+                                            <li>
+                                                <a href="#save_download">Save and Download</a>
+                                            </li>
+                                            <li>
+                                                <a href="#share_translation">Share us your translation</a>
+                                            </li>
+                                            <li>
+                                                <a href="#expand">Expand all</a>
+                                            </li>
+                                            <li>
+                                                <a href="#collapse">Collapse all</a>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="nav-item item3">
+                                <dl class="slide-down">
+                                    <dt>
+                                    <a href="#tab_code_editors">
+                                        Code Editors
+                                    </a>
+                                    </dt>
+                                </dl>
+                            </li>
+                            <li class="nav-item item3">
+                                <dl class="slide-down">
+                                    <dt>
+                                    <a href="#tab_suggestions">
+                                        Suggestions
+                                    </a>
+                                    </dt>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="box-content">
+                        <section id="module" class="block-templates">
+                            <br><br>
+                            <p>
+                                Does it increase the number of abandoned carts? Do your statistics show that users leave the buying process?
+                            </p>
+                            <p>
+                                Improve your sales results with this PrestaShop module that allows you to realize the purchases in the easiest way: in one step.
+                                "One Page Checkout PS" customer saves time when completing the purchase, accelerates the payment process and minimizes registration fields
+                                to be completed by the customer.
+                            </p>
+                            <p>
+                                Easy and intuitive to use for users, saves time and minimizes the abandonment of cart. ¡Its sales will notice!
+                            </p>
+                        </section>
+                        <section id="tab_general" class="block-templates">
+                            <h3>
+                                <i class="fa fa-cogs fa-1x"></i>
+                                General
+                            </h3>
+                            <p>
+                                In the General Settings section you will find parameter options that determine the general behavior of the module.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/tab_general_en.png"/>
+                            </div>
+                        </section>
+                        <section id="enable_debug" class="block-templates">
+                            <h4> Test mode </h4>
+                            <p>
+                                When you enable this option, A new text field in which you must enter the IP (s) The module. The module will be " Disabled for IPs that have not been saved.
+                            </p>
+                            <p class="alert alert-info">
+                                <i class="fa fa-info-circle"></i>
+                                It is recommended that you enable this option to test the module in your store before enabling it for clients
+                            </p>
+                        </section>
+                        <section id="enable_guest_checkout" class="block-templates">
+                            <h4>
+                                Enable guest checkout
+                            </h4>
+                            <p>
+                                If you enable this option, you allows to make orders as a guest.
+                            </p>
+                        </section>
+                        <section id="redirect_directly_to_opc" class="block-templates">
+                            <h4>
+                                Redirect directly to page checkout
+                            </h4>
+                            <p>
+                                Enabling this option will lead directly to the payment page. If this option is disabled will display a summary view of the order before going to the OnePageCheckoutPS page.
+                            </p>
+                        </section>
+                        <section id="replace_form_to_opc" class="block-templates">
+                            <h4>
+                                Replace the registration form with the checkout form
+                            </h4>
+                            <p>
+                                When you enable this option, the Checkout form will be displayed instead of the registration form. Only with the options of personal data, shipping address and billing address if established.
+                            </p>
+                        </section>
+                        <section id="show_form_opc_adresseses" class="block-templates">
+                            <h4>
+                                Show checkout registration form at: My addresses
+                            </h4>
+                            <p>
+                                When you enable this option and go to My addresses in My Account, the checkout registration form will be displayed with the shipping address and invoice address options.
+                            </p>
+                        </section>
+                        <section id="show_form_opc_personal_info" class="block-templates">
+                            <h4>
+                                Show checkout registration form at: My personal information
+                            </h4>
+                            <p>
+                                By enabling this option and going to My Personal Information in My Account, the checkout registration form will be displayed with the personal data options.
+                            </p>
+                        </section>
+                        <section id="show_delivery_virtual" class="block-templates">
+                            <h4>
+                                Show the delivery address for the purchase of virtual goods
+                            </h4>
+                            <p>
+                                Enabling this option will display the delivery address, even though the purchased products are virtual.
+                            </p>
+                        </section>
+                        <section id="default_payment_method" class="block-templates">
+                            <h4>
+                                Choose a default payment method
+                            </h4>
+                            <p>
+                                In this field you will be able to select the payment method that will be Selected by default when the customer goes to the checkout page.
+                            </p>
+                        </section>
+                        <section id="default_carrier" class="block-templates">
+                            <h4>
+                                Choose a default carrier
+                            </h4>
+                            <p>
+                                In this field you will be able to select the carrier that will be Selected by default when the customer goes to the checkout page.
+                            </p>
+                        </section>
+                        <section id="default_group_customer" class="block-templates">
+                            <h4>
+                                Add new customers to the group
+                            </h4>
+                            <p>
+                                When a customer registers in your store from the OnePageCheckoutPS page, this should be
+                                recorded in a group of customers. In this option you can set which group the new customer will be added to by default.
+                            </p>
+                        </section>
+                        <section id="groups_customer_additional" class="block-templates">
+                            <h4>
+                                Add new customers in other groups
+                            </h4>
+                            <p>
+                                If you would also like new customers to be recorded in other groups, it is possible to select one or more groups to which they will be added.
+                            </p>
+                            <p>
+                                To select multiple groups hold down the CTRL key, on your keyboard, and click each of the groups you wish to select.
+                                If the group is already selected and you want to remove the selection just click on it while holding down CTRL.
+                            </p>
+                        </section>
+                        <section id="validate_dni" class="block-templates">
+                            <h4>
+                                Validate identification Spain and Chile
+                            </h4>
+                            <p>
+                                If enabled this option, when a customer adds products to the shopping cart and proceed with the order, the system will validate if
+                                the number of identification that entered is valid. If the number of identification is invalid the customer may not make the order.
+                            </p>
+                        </section>
+                        <section id="id_content_page" class="block-templates">
+                            <h4>
+                                Container page (HTML)
+                            </h4>
+                            <p>
+                                This field is to configure the HTML selector container, where the checkout module itself is located.
+                            </p>
+                            <p class="alert alert-info">
+                                <i class="fa fa-info-circle"></i>
+                                It is recommended to leave this field with the default settings, unless your template has a different identifier and must be changed.
+                            </p>
+                        </section>
+                        <section id="id_customer" class="block-templates">
+                            <h4>
+                                Customer ID
+                            </h4>
+                            <p>
+                               On installing the module a new customer is generated that is for the exclusive use of this module. With this customer,
+                               internal operations may be performed, to obtain prices, times, etc. for the products that have been selected; this customer
+                               profile is only ever used while not logged in.
+                            </p>
+                            <p>
+                                The customer ID is that which is contained in this field by default and should not be changed unless (for shop migration issues or
+                                because of a modification made by the administrator) the customer is deleted and a new one set doing exactly the same job. It is
+                                recommended not to change this field or delete / edit the customer that the module has created, called "OPC PTS Not Delete", which
+                                by default is disabled (and should not be enabled).
+                            </p>
+                            <p class="alert alert-info">
+                                <i class="fa fa-info-circle"></i>
+                                Do not change unless the developer tells you.
+                            </p>
+                        </section>
+                        <section id="tab_register" class="block-templates">
+                            <h3>
+                                <i class="fa fa-user fa-1x"></i>
+                                Register
+                            </h3>
+                            <p>
+                                In the registration section you can configure the behavior of the fields in <b>step one of the checkout</b>. Its primary purpose
+                                is to collect customer information (names, addresses, contact numbers, etc.)
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/tab_register_en.png"/>
+                            </div>
+                        </section>
+                        <section id="enable_login_registered_customer" class="block-templates">
+                            <h4>
+                                Require login to a registered customer
+                            </h4>
+                            <p>
+                                By enabling this option, customers who already have an account will not be able to re-register with the same email.
+                            </p>
+                        </section>
+                        <section id="enable_button_save_info" class="block-templates">
+                            <h4>
+                                Show button &quot;Save Information&quot;
+                            </h4>
+                            <p>
+                                If this option is disabled, the & quot; Save information & quot; button will not be displayed. On the customer registration form.
+                            </p>
+                        </section>
+                        <section id="capitalize_fields" class="block-templates">
+                            <h4>
+                                Capitalize fields
+                            </h4>
+                            <p>
+                                If you enable this option the first letter of the fields will be capital letters.
+                            </p>
+                            <p class="alert alert-info">
+                                <i class="fa fa-info-circle"></i>
+                                This option only applies to the fields: First name, Last name, Address, City, Company and Postal Code. Not applicable for custom fields.
+                            </p>
+                        </section>
+                        <section id="enable_privacy_policy" class="block-templates">
+                            <h4>
+                               Require acceptance of privacy policy before buying
+                            </h4>
+                            <p>
+                                This option will show or hide the checkbox to accept the privacy policy.
+                                If this option is disabled the check box accepting the privacy policy will not be shown.
+                            </p>
+                            <p>
+                                If enabled the CMS list will be displayed. The option selected refers to the content displayed when the customer clicks "read".
+                            </p>
+                        </section>
+                        <section id="enable_invoice_address" class="block-templates">
+                            <h4>
+                                Request invoice address
+                            </h4>
+                            <p>
+                                f you enable this option, you will request the invoice address for the order and another option will be shown that will ask
+                                if the invoice address is required or not.
+                            </p>
+                            <p>
+                                If you disable this option, the invoice address will be the same as the delivery address.
+                            </p>
+                        </section>
+                        <section id="use_same_name_contact_ba" class="block-templates">
+                            <h4>
+                                Use the same first name and last name for the customers invoice address
+                            </h4>
+                            <p>
+                                This option is displayed when the <b>Request invoice address</b> option is enabled.
+                                If you enable this option, the full name of the customer will be the same in the invoice address and these fields will not appear in the
+                                configuration of the invoice address.
+                                If you disable this option, these fields will be displayed in the invoice address.
+                            </p>
+                        </section>
+                        <section id="insert_cod_iso_invoice" class="block-templates">
+                            <h4>
+                                Automatically insert the country ISO code at the beginning of the DNI in the invoice address
+                            </h4>
+                            <p>
+                                This option allows you to automatically add as prefix the first two characters of the ISO code of the Country to the identification in the invoice address.
+                            </p>
+                        </section>
+                        <section id="insert_cod_iso_delivery" class="block-templates">
+                            <h4>
+                                Automatically insert the country ISO code at the beginning of the DNI in the delivery address
+                            </h4>
+                            <p>
+                                This option allows you to automatically add as prefix the first two characters of the ISO code of the Country to the identification in the delivery address.
+                            </p>
+                        </section>
+                        <section id="use_same_name_contact_da" class="block-templates">
+                            <h4>
+                                Use the same first name and last name for the customers delivery address
+                            </h4>
+                            <p>
+                                If you enable this option, the full name of the customer will be the same on the delivery address and these fields will not appear
+                                in the configuration of the delivery address.
+                            </p>
+                            <p>
+                                If you disable this option, these fields will be displayed in the delivery address.
+                            </p>
+                        </section>
+                        <section id="request_confirm_email" class="block-templates">
+                            <h4>
+                                Request confirmation email
+                            </h4>
+                            <p>
+                                This option allows the confirmation email field to be displayed, for security reasons. If it is disabled, another field will
+                                not be displayed to verify the email address.
+                            </p>
+                        </section>
+                        <section id="request_password" class="block-templates">
+                            <h4>
+                                Password request
+                            </h4>
+                            <p>
+                                If this option is disabled, when a new customer is created, the password will be automatically generated and sent to their email.
+                            </p>
+                            <p>
+                                If this option is enabled then the customer will have the option to input their desired password for their account. In addition
+                                another option will be shown called <b>Option to auto-generate</b>. This will show a control to allow the
+                                customer to auto generate a password for themselves, if desired. If the auto-generate password option is not active, it will autogenerate.
+                            </p>
+                            <p class="alert alert-info">
+                                <i class="fa fa-info-circle"></i>
+                                If the - Password request - option is not active, the customer password will be created automatically.
+                            </p>
+                            <p class="alert alert-info">
+                                <i class="fa fa-info-circle"></i>
+                                The - Option to auto-generate - is not displayed when the option - Enable guest checkout - from the General tab is active.
+                            </p>
+                        </section>
+                        <section id="choice_group_customer" class="block-templates">
+                            <h4>
+                                Show customer group list
+                            </h4>
+                            <p>
+                                If this option is enabled, when registering, the customer can choose from a list of groups and select which one they wish to belong.
+                                To select multiple groups hold down the CTRL key, on your keyboard, and click each of the groups you wish to select. If the group is
+                                already selected and you want to remove the selection just click on it while holding down CTRL. If no group is selected, then all the
+                                groups in the list will be shown.
+                            </p>
+                            <p class="alert alert-info">
+                                <i class="fa fa-info-circle"></i>
+                                If you choose a group, then only the selected groups will be displayed, otherwise all the groups will be displayed.
+                            </p>
+                        </section>
+                        <section id="list_cities_geonames" class="block-templates">
+                            <h4>
+                                Show list of cities using Geonames.org
+                            </h4>
+                            <p>
+                                If you enable this option, a drop - down list will appear with cities according to the selected province.
+                            <p class="alert alert-info">
+                                <i class="fa fa-info-circle"></i>
+                                This option does not work when the Shipping Configurator Pro module is installed and active.
+                            </p>
+                        </section>
+                        <section id="autocomplete_address_geonames" class="block-templates">
+                            <h4>
+                                Use postal code autocomplete from Geonames.org
+                            </h4>
+                            <p>
+                                If you enable this option, suggestions will be displayed for complete the adresses according to the postal code you are typing.
+                            </p>
+                        </section>
+                        <section id="autocomplete_google_address" class="block-templates">
+                            <h4>
+                                Use address autocomplete from Google
+                            </h4>
+                            <p>
+                                This option enables the integration of the Google API providing a visual prompt, to the user, when writing their address. This applies to both the delivery and invoice address.
+                            </p>
+                        </section>
+                        <section id="google_api_key" class="block-templates">
+                            <h4>
+                                Google API KEY
+                            </h4>
+                            <p>
+                                In this text field input your <i>API KEY</i> which Google offers to allow the use of their address autocomplete tool.
+                                This field will be displayed if you have selected the option <b>Use address autocomplete from Google</b>.
+                            </p>
+                            <p>
+                                You can create a Google <i>API KEY</i>, for the address autocomplete function, in the Google Developer Console. To achieve this
+                                you must have a Google account, log in and go <a target="_blank" href="https://developers.google.com/maps/documentation/javascript/">here</a> for your <i>API Key</i>.
+                            </p>
+                            <p>
+                                Once you have entered the previous link, the following window will appear, where you should select on the left <b>Get API Key</b> and then the button in the upper right corner <b>GET STARTED</b>.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/google_API_Key_en.png"/>
+                            </div>
+                            <p>
+                                In the next window, select <b>Maps</b> and click on the <b>CONTINUE</b> button.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/google_maps_platform_en.png"/>
+                            </div>
+                            <p>
+                                In this window, select or create a project, you can select My Project or create one that you want, then click on the <b>NEXT</b> button.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/google_maps_platform_2_en.png"/>
+                            </div>
+                            <p>
+                                In this window, select <b>CREATE BILLING ACCOUNT</b>.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/google_maps_platform_3_en.png"/>
+                            </div>
+                            <p>
+                                In the next window, select your Country, accept the Terms of Service and Updates by email in case you want them, click on the button <b>ACCEPT AND CONTINUE</b>.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/google_maps_platform_4_en.png"/>
+                            </div>
+                            <p>
+                                In this window, you must enter your personal information and finally, click on the <b>START FREE TEST</b> button.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/google_maps_platform_5_en.png"/>
+                            </div>
+                        </section>
+                        <section id="autocomplete_field_address_google_maps" class="block-templates">
+                            <h4>
+                                Autocomplete the address field with the Google Maps suggestion
+                            </h4>
+                            <p>
+                                When you enable this option, while you are typing an address, google maps automatically suggests one, if you wish you can autocomplete the address with the suggestion of google maps or continue typing your address.
+                            </p>
+                        </section>
+                        <section id="tab_shipping" class="block-templates">
+                            <h3 id="tabs_menu">
+                                <i class="fa fa-truck fa-1x"></i>
+                                Shipping
+                            </h3><br>
+                            <p>
+                                In the Shipping Section you can configure the behavior of the fields in <b>step two of the checkout</b>.
+                                Its primary purpose is to select the shipping preference for an order.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/tab_shipping_en.png">
+                            </div>
+                            <br>
+                        </section>
+                        <section id="enable_modules_shipping" class="block-templates">
+                            <h4>
+                                Enable compatibility for shipping modules
+                            </h4>
+                            <p>
+                                When you enable this option, a button is added in shipping methods, when you click there, you open all the payment methods in another page so when you update it, you will be redirected to the Checkout page.
+                            </p>
+                            <p class="alert alert-info">
+                                <i class="fa fa-info-circle"></i>
+                                Enable this option only if a shipping module is not working properly. This adds a small extra step.
+                            </p>
+                        </section>
+                        <section id="show_description_carrier" class="block-templates">
+                            <h4>
+                                Show description of carriers
+                            </h4>
+                            <p>
+                                This option hides or shows the description of the carriers listed. If disabled only the name, image and price will be shown.
+                            </p>
+                        </section>
+                        <section id="show_image_carrier" class="block-templates">
+                            <h4>
+                                Show image of carriers
+                            </h4>
+                            <p>
+                                This option hides or shows the image of carriers in the list. If disabled only the name, price and
+                                description will be displayed (unless you have disabled the option <b>Show description of carriers</b>)
+                            </p>
+                        </section>
+                        <section id="refresh_shipping" class="block-templates">
+                            <h4>
+                                Reload shipping when changing state
+                            </h4>
+                            <p>
+                                If this option is selected, Enabled will automatically display the sending methods, Available for the selected province.
+                            </p>
+                        </section>
+                        <section id="force_need_postcode" class="block-templates">
+                            <h4>
+                                Require a postal code to be entered
+                            </h4>
+                            <p>
+                                If this option is enabled, it will be compulsory to enter a postal code in order to display the shipping methods
+                                available, depending on the carrier’s module that may require this information.
+                            </p>
+                        </section>
+                        <section id="module_carrier_need_postcode" class="block-templates">
+                            <h4>
+                                Carrier module that requires a postal code
+                            </h4>
+                            <p>
+                                Modules that require a postal code for pricing and shipping availability can be configured. Module names must be separated by
+                                a comma (,) without any spaces.
+                            </p>
+                        </section>
+                        <section id="force_need_city" class="block-templates">
+                            <h4>
+                               Require a city to be entered
+                            </h4>
+                            <p>
+                                If this option is enabled, it will be compulsory to enter a city in order to display the shipping methods, depending on the carriers’ module, that may require this information.
+                            </p>
+                        </section>
+                        <section id="module_carrier_need_city" class="block-templates">
+                            <h4>
+                                Carrier module that requires a city
+                            </h4>
+                            <p>
+                                Modules that require a City for pricing and shipping availability can be configured.
+                                Module names must be separated by a comma (,) without any spaces.
+                            </p>
+                        </section>
+                        <section id="tab_payment" class="block-templates">
+                            <h3 id="tabs_menu">
+                                <i class="fa fa-credit-card fa-1x"></i> Payment
+                            </h3><br>
+                            <p>
+                                In the Payment Section you can configure the behavior of the fields in <b>step three of the checkout</b>. Its primary purpose is to select the payment preference for an order.
+                            </p>
+                        </section>
+                        <section id="tab_general_payment" class="block-templates">
+                            <h3 id="tabs_menu">
+                                <i class="fa fa-cogs fa-1x"></i>
+                                General
+                            </h3>
+                            <br>
+                            <div class="tree">
+                                <img src="screenshots/tab_general_payment_en.png"/>
+                            </div>
+                        </section>
+                        <section id="show_images_payment" class="block-templates">
+                            <h4>
+                                Show images of payment methods.
+                            </h4>
+                            <p>
+                                This option allows you to show or hide the images of the payment methods in the third step of One Page Checkout.
+                            </p>
+                        </section>
+                        <section id="show_description_payment" class="block-templates">
+                            <h4>
+                               Show detailed description of the payment methods.
+                            </h4>
+                            <p>
+                                When you enable this option, the detailed description of the payment method will be shown, whether it is the default payment method or the one you enter to personalize it.
+                            </p>
+                            <p class="alert alert-info">
+                                <i class="fa fa-info-circle"></i>
+                                After deactivating this option, the payment methods that contain forms to request information will be affected.
+                            </p>
+                        </section>
+                        <section id="tab_pay_methods" class="block-templates">
+                            <h3>
+                                <i class="fa fa-credit-card fa-1x"></i>  Pay methods
+                            </h3>
+                            <div class="tree">
+                                <img src="screenshots/tab_pay_methods_en.png">
+                            </div>
+                            <p>In this section you can customize the title, description and image of the payment methods.</p>
+                        </section>
+                        <section id="tab_ship_pay" class="block-templates">
+                            <h3>
+                                <i class="fa fa-truck fa-1x"></i> Ship to Pay
+                            </h3>
+                            <p>
+                                In the payment depending on shipping section you can configure the method of payment that will be available depending on the shipping method.
+                                To select them you only need to click the checkbox for each payment method.
+                            </p>
+                            <p>
+                                If you do not wish to have restrictions, all should be disabled.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/tab_ship_pay_en.png">
+                            </div>
+                        </section>
+                        <section id="tab_review" class="block-templates">
+                            <h3>
+                                <i class="fa fa-check fa-1x"></i>
+                                Review
+                            </h3>
+                            <p>
+                                In this section you can configure the behavior of the fields in <b>step four of the
+                                checkout</b>. Its primary purpose is to display product information, discount vouchers, tax information and totals for an order.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/tab_review_en.png">
+                            </div>
+                        </section>
+                        <section id="enable_terms_conditions" class="block-templates">
+                            <h4>
+                                Require acceptance of terms and conditions before buying
+                            </h4>
+                            <p>
+                                This option will show or hide the checkbox to accept the terms and conditions.
+                                If this option is disabled the checkbox accepting the terms and conditions will not be shown.
+                            </p>
+                            <p>
+                                If enabled the CMS list will be displayed. The option selected refers to the content displayed when the customer clicks "read".
+                            </p>
+                        </section>
+                        <section id="show_link_continue_shopping" class="block-templates">
+                            <h4>
+                                Show "Continue Shopping" link
+                            </h4>
+                            <p>
+                                If this option is enabled, the <b>Continue shopping</b> button will be displayed, allowing the customer to return
+                                to the store and add other products; if not enabled, the button does not appear.
+                            </p>
+                        </section>
+                        <section id="link_continue_shopping" class="block-templates">
+                            <h4>
+                                Custom URL for the "Continue shopping" button
+                            </h4>
+                            <p>
+                                In this field you can define the URL, to send people to, when clicking on the
+                                <b>CONTINUE SHOPPING</b> button. It is recommended to use the prefix <span class="text-info" >http://</span> for external URLs.
+                                If you want the URL to be the stores home page you can leave this field empty.
+                            </p>
+                            <p>
+                                This option will be displayed if the  <b>Show "Continue Shopping" link</b> is enabled.
+                            </p>
+                        </section>
+                        <section id="discount_box" class="block-templates">
+                            <h4>
+                                Show discount box
+                            </h4>
+                            <p>
+                                When you enable this option, a text box will appear where you can add the discount code, if you have one.
+                            </p>
+                            <p class="alert alert-info">
+                                <i class="fa fa-info-circle"></i>
+                                If you have activated this option, you must have discounts created to be shown.
+                            </p>
+                        </section>
+                        <section id="order_message_box" class="block-templates">
+                            <h4>
+                                Show text box for order message
+                            </h4>
+                            <p>
+                                This option shows a text box to send comments about the order, as it is enabled.
+                            </p>
+                        </section>
+                        <section id="remove_link_products" class="block-templates">
+                            <h4>
+                                Remove the link from the products
+                            </h4>
+                            <p>
+                                The product name is always shown in the Checkout summary with a link to the product page. When this option is enabled, the link will not be displayed and only the name of the product will appear.
+                            </p>
+                        </section>
+                        <section id="show_zoom_product_image" class="block-templates">
+                            <h4>
+                                Show zoom on product image
+                            </h4>
+                            <p>
+                                When this option is enabled, the image of the largest product is seen in the summary of the order on the Checkout page.
+                            </p>
+                        </section>
+                        <section id="show_subtotal_product" class="block-templates">
+                            <h4>
+                                Show subtotal of products
+                            </h4>
+                            <p>
+                                Shows or hides the total price of all products.
+                            </p>
+                        </section>
+                        <section id="show_total_discount" class="block-templates">
+                            <h4>
+                                Show total discount
+                            </h4>
+                            <p>
+                                Shows or hides the total value of all discounts applied, if any.
+                            </p>
+                        </section>
+                        <section id="show_total_wrapping" class="block-templates">
+                            <h4>
+                                Show gift wrapping total
+                            </h4>
+                            <p>
+                                Shows or hides the total price of gift wrapping, if any.
+                            </p>
+                        </section>
+                        <section id="show_total_shipping" class="block-templates">
+                            <h4>
+                                Show shipping total
+                            </h4>
+                            <p>
+                                Shows or hides the total cost of shipping.
+                            </p>
+                        </section>
+                        <section id="show_total_without_tax" class="block-templates">
+                            <h4>
+                                Show total excluding tax
+                            </h4>
+                            <p>
+                                Shows or hides the total, in the shopping cart, excluding tax.
+                            </p>
+                        </section>
+                        <section id="show_total_tax" class="block-templates">
+                            <h4>
+                                Show total tax
+                            </h4>
+                            <p>
+                                Shows or hides the total tax to be collected.
+                            </p>
+                        </section>
+                        <section id="show_total_price" class="block-templates">
+                            <h4>
+                                Show total
+                            </h4>
+                            <p>
+                                Shows or hides the sum total of the order
+                            </p>
+                        </section>
+                        <section id="show_remaining_free_shipping" class="block-templates">
+                            <h4>
+                                Show amount remaining to qualify for free shipping
+                            </h4>
+                            <p>
+                                If you have configured a condition of free shipping, depending on the price of the order,
+                                you can enable this option if you would like the order summary to show how much more the
+                                customer needs to spend to qualify for free shipping.
+                            </p>
+                        </section>
+                        <section id="show_weight" class="block-templates">
+                            <h4>
+                                Show weight
+                            </h4>
+                            <p>
+                                Shows or hides the weight of each product.
+                            </p>
+                        </section>
+                        <section id="show_reference" class="block-templates">
+                            <h4>
+                                Show reference
+                            </h4>
+                            <p>
+                                Shows or hides the reference details of each product.
+                            </p>
+                        </section>
+                        <section id="show_unit_price" class="block-templates">
+                            <h4>
+                                Show unit price
+                            </h4>
+                            <p>
+                                Shows or hides the unit price of each product.
+                            </p>
+                        </section>
+                        <section id="show_availability" class="block-templates">
+                            <h4>
+                                Show availability
+                            </h4>
+                            <p>
+                                Hide or show in the summary of the shopping cart, if the product is Available or not.
+                            </p>
+                            <p class="alert alert-info">
+                                <i class="fa fa-info-circle"></i>
+                                This option only works when the Enable stock management option is active in Shop parameters - Product settings
+                            </p>
+                        </section>
+                        <section id="show_delivery_time_product" class="block-templates">
+                            <h4>
+                                Show delivery time of the product
+                            </h4>
+                            <p>
+                                Hide or show in the summary of the shopping cart, the delivery time of the product.
+                            </p>
+                        </section>
+                        <section id="enable_hook_shopping_cart" class="block-templates">
+                            <h4>
+                                Enable hook shopping cart
+                            </h4>
+                            <p>
+                                Some modules perform actions or show a certain type of information in the shopping cart.
+                                If you have any module performing actions of this sort and you would like them to be displayed,
+                                then enable this option. If not, disable it.
+                            </p>
+                        </section>
+                        <section id="tab_theme" class="block-templates">
+                            <h3>
+                                <i class="fa fa-check fa-1x"></i>
+                                Design
+                            </h3>
+                            <p>
+                                In the design section you can configure the colors for the checkout.
+                            </p>
+                            <p>
+                                To set the colors click on the box that is to the right of the text field and choose the
+                                color you would like. If you already have the hexadecimal color codes that you wish to configure,
+                                then you can enter them directly into the text field. If the color is not defined in any of the settings,
+                                the color will be set to default for the OnePageCheckoutPS module.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/tab_design_en.png">
+                            </div>
+                        </section>
+                        <section id="theme_background_color" class="block-templates">
+                            <h4>
+                                Background color
+                            </h4>
+                            <p>
+                                This option sets the background color.
+                            </p>
+                        </section>
+                        <section id="theme_border_color" class="block-templates">
+                            <h4>
+                                Border color
+                            </h4>
+                            <p>
+                                This option sets the color of the outer border.
+                            </p>
+                        </section>
+                        <section id="theme_icon_color" class="block-templates">
+                            <h4>
+                                Color of images
+                            </h4>
+                            <p>
+                                In this option you can configure the color of the images / icons set, for some of the titles,
+                                add or remove product buttons etc.
+                            </p>
+                        </section>
+                        <section id="theme_text_color" class="block-templates">
+                            <h4>
+                                Text color
+                            </h4>
+                            <p>
+                                Enter here the text color you want for OnePageCheckoutPS page.
+                            </p>
+                        </section>
+                        <section id="theme_selected_color" class="block-templates">
+                            <h4>
+                                Carrier and Payment selected color
+                            </h4>
+                            <p>
+                                This option sets the background color that will have the shipping methods and of payment to the be selected.
+                            </p>
+                        </section>
+                        <section id="theme_selected_color_text" class="block-templates">
+                            <h4>
+                                Carrier and Payment selected text color
+                            </h4>
+                            <p>
+                                This option sets the color text that will be assigned to the methods of shipping and payment when they are selected.
+                            </p>
+                        </section>
+                        <section id="theme_confirm_color" class="block-templates">
+                            <h4>
+                                Checkout button color
+                            </h4>
+                            <p>
+                                This option sets the background color of the Checkout button (Confirm Order).
+                            </p>
+                        </section>
+                        <section id="theme_confirm_text_color" class="block-templates">
+                            <h4>
+                                Text color of checkout button
+                            </h4>
+                            <p>
+                                This option sets the text color and the border of the Checkout button (Confirm Order)
+                            </p>
+                        </section>
+                        <section id="theme_already_register_button" class="block-templates">
+                            <h4>
+                                Already register button color
+                            </h4>
+                            <p>
+                                This option sets the background color that will have the button <b>Already registered?</b>.
+                            </p>
+                        </section>
+                        <section id="theme_already_register_button_text" class="block-templates">
+                            <h4>
+                                Already register text button color
+                            </h4>
+                            <p>
+                                This option sets the color of  button's text <b>Already registered?</b>.
+                            </p>
+                        </section>
+                        <section id="theme_login_button" class="block-templates">
+                            <h4>
+                                Login button color
+                            </h4>
+                            <p>
+                                This option sets the background color that will the <b>Login</b> button, which appears in modal
+                                window by clicking the button <b>Already registered?</b>
+                            </p>
+                        </section>
+                        <section id="theme_login_button_text" class="block-templates">
+                            <h4>
+                                Login text button color
+                            </h4>
+                            <p>
+                                Enter the text color of <b>Login button</b>, which appears in modal window by clicking the button <b>Already registered?</b>.
+                            </p>
+                        </section>
+                        <section id="theme_voucher_button" class="block-templates">
+                            <h4>
+                                Voucher button color
+                            </h4>
+                            <p>
+                                This option sets the background color that will have the <b>Add</b> button, which allows you to add a discount code.
+                            </p>
+                        </section>
+                        <section id="theme_voucher_button_text" class="block-templates">
+                            <h4>
+                                Voucher text button color
+                            </h4>
+                            <p>
+                                This option allows you to configure the color that will have the text of <b>Add</b> button, which allows you to add a discount code.
+                            </p>
+                        </section>
+                        <section id="confirmation_button_float" class="block-templates">
+                            <h4>
+                                Show confirmation button float
+                            </h4>
+                            <p>
+                                If you enable this option will show a floating window in the page of OnePageCheckoutPS,
+                                with two buttons for the customer confirms the purchase or continue shopping.
+                            </p>
+                        </section>
+                        <section id="theme_background_button_footer" class="block-templates">
+                            <h4>
+                                Background color float confirmation button
+                            </h4>
+                            <p>
+                                This option is activated if you enable the option <b>Show confirmation button float</b>.
+                                Enter here the background color of the floating window.
+                            </p>
+                        </section>
+                        <section id="theme_border_button_footer" class="block-templates">
+                            <h4>
+                                Border color float confirmation button
+                            </h4>
+                            <p>
+                                This option is activated if you enable the option <b>Show confirmation button float</b>.
+                                Enter here the color will the edge of the floating window.
+                            </p>
+                        </section>
+                        <section id="tab_required_fields" class="block-templates">
+                            <h3>
+                                <i class="fa fa-pencil-square-o fa-1x"></i>
+                                Fields register
+                            </h3>
+                            <p>
+                                In the registration field section you can configure the availability, requirements and texts of the different fields shown.
+                            </p>
+                            <p>
+                                The table shows the fields with next colors:
+                            </p>
+                            <ul>
+                                <li><b>Blue:</b> Fields referring to customer information</li>
+                                <li><b>Green:</b> Fields referring to delivery address information</li>
+                                <li><b>Yellow:</b> Fields referring to invoice address information</li>
+                            </ul>
+                            <p>
+                                In the <b>ACTION</b> column of table the <b>EDIT</b> button is shown. On clicking it,
+                                a popup window will be displayed whose data field values can be edited.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/tab_required_fields_en.png">
+                            </div>
+                        </section>
+                        <section id="btn_manage_field_options" class="block-templates">
+                            <h4>
+                                Manage field options
+                            </h4>
+                            <p>
+                                This button lets you create options for elements that can have
+                                multiple options as dropdown lists, checkbox, etc.
+                            </p>
+                        </section>
+                        <section id="btn_new_register" class="block-templates">
+                            <h4>
+                                New custom field
+                            </h4>
+                            <p>
+                                Clicking on this button you will be shown the following window:
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/tab_required_fields_new_field_en.png">
+                            </div>
+                            <p>
+                                Enter the required data and create a new element (text field, dropdown list, etc.) in Checkout form.
+                            </p>
+                        </section>
+                        <section id="required_field_name" class="block-templates">
+                            <h4>
+                                Name
+                            </h4>
+                            <p>
+                                This text refers to the name of this field internally. It can not contain spaces or
+                                special characters; only letters, numbers and hyphens.
+                            </p>
+                        </section>
+                        <section id="required_field_object" class="block-templates">
+                            <h4>
+                                Object
+                            </h4>
+                            <p>
+                               This text refers to the object to which it belongs.
+                               This can be the <b>Customer</b>, <b>delivery address</b> or <b>invoice address</b>.
+                            </p>
+                        </section>
+                        <section id="required_field_description" class="block-templates">
+                            <h4>
+                                Description
+                            </h4>
+                            <p>
+                                This control allows you to edit the external name that the field would have for the
+                                customers view. It can be configured for the different languages of the Store.
+                            </p>
+                        </section>
+                        <section id="required_field_label" class="block-templates">
+                            <h4>
+                                Label
+                            </h4>
+                            <p>
+                                This control allows you to place a personalized text below the field in the view of the client. It can be configured for the different languages of the Store.
+                            </p>
+                        </section>
+                        <section id="field_type" class="block-templates">
+                            <h4>
+                                Type
+                            </h4>
+                            <p>
+                                This refers to the type of data that this field will have as a value.
+                            </p>
+                        </section>
+                        <section id="field_size" class="block-templates">
+                            <h4>
+                                Size
+                            </h4>
+                            <p>
+                                This refers to the size of the values that the field will have. It only applies to
+                                <b>string</b> file types. Only numbers can be write in this field.
+                            </p>
+                        </section>
+                        <section id="field_type_control" class="block-templates">
+                            <h4>
+                                Type of control
+                            </h4>
+                            <p>
+                                This refers to the type of control that the field will have. Depending on the type of
+                                control, a drop-down list or text field will be displayed.
+                            </p>
+                        </section>
+                        <section id="required_field_value" class="block-templates">
+                            <h4>
+                                Default value
+                            </h4>
+                            <p>
+                                This control refers to the default value the field will have.
+                                This value will be displayed, when starting, as a predetermined value.
+                            </p>
+                        </section>
+                        <section id="required_field_required" class="block-templates">
+                            <h4>
+                                Required
+                            </h4>
+                            <p>
+                                This control allows you to define whether the field will be required (compulsory) for the customer or can be omitted.
+                            </p>
+                            <p>
+                                In the <b>REQUIRED</b> column of table you can click on the buttons shown to change the state of the field. When there is a
+                                Red X this means that the field is not required (compulsory) to be filled in by the customer.
+                                When there is a Green check symbol this means that the field is required (compulsory).
+                            </p>
+                        </section>
+                        <section id="required_field_active" class="block-templates">
+                            <h4>
+                                Activo
+                            </h4>
+                            <p>
+                                This control allows you to define whether the field will be enabled, and be shown for the customer to fill out.
+                            </p>
+                            <p>
+                                In the <b>ACTIVE</b> column of table you can click on the buttons shown to change the state of the field. When there is a Red X this means that the field is not active and therefore will not be
+                                viewed in the module. When there is a Green check symbol this means that the field is active and displayed on the forms the customer should fill out.
+                            </p>
+                        </section>
+                        <section id="tab_fields_position" class="block-templates">
+                            <h3>
+                                <i class="fa fa-arrows fa-1x"></i>  Fields position
+                            </h3>
+                            <p>
+                                In the Field Positions section you can configure the order the fields will have in the front
+                                view of the module. In this section the field colors are recorded according to their object (see <b>REGISTRATION FIELDS</b>).
+                            </p>
+                            <p>
+                                To change the order of the fields simply drag each tag, that references a field,
+                                and place it next to another label in the order of your preference. You may also drag
+                                them into a new line to make a single row; you can also sort whole rows. To do this drag
+                                the tag anywhere within the white space of each field that is enclosed by a border, which
+                                refers to the row.
+                            </p>
+                            <p>
+                                Order configuration is automatically saved after each change.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/tab_fields_position_en.png">
+                            </div>
+                        </section>
+                        <section id="tab_social_login" class="block-templates">
+                            <h3>
+                                <i class="fa fa-share-alt fa-1x"></i> Social Login
+                            </h3>
+                            <p>
+                                In this section you can configure the keys of the applications of <i>Facebook</i>,
+                                <i>Google</i>, <i>Paypal</i> and <i>Biocryptology</i> for that customers shop can log in through these and can see your <i>Statistics</i>.
+                            </p>
+                        </section>
+                        <section id="tab_facebook" class="block-templates">
+                            <h3>
+                                <i class="fa fa-facebook fa-1x"></i>  Facebook
+                            </h3>
+                            <div class="tree">
+                                <img src="screenshots/tab_facebook_en.png">
+                            </div>
+                        </section>
+                        <section id="how_to_facebook" class="block-templates">
+                            <h4>
+                                How to create a <b>Facebook</b> application?
+                            </h4>
+                            <ol>
+                                <li>Go to <a target="_blank" href="https://developers.facebook.com/apps/">Facebook Developer</a> and log in with their credentials.</li>
+                                <li>
+                                    Click on the <b>Create a New App</b> <i class="fa fa-question-circle fa-1x text-info" data-toggle="tooltip" data-placement="top" title="This button is located on the top right of the screen."></i> button.
+                                </li>
+                                <li>
+                                    A popup appears, fill out the form and click on the "Create App ID" button.
+                                </li>
+                                <li>
+                                    The applications that Facebook allows you to create will be shown, you must click on the <b>Configure</b> button of the <b>Login with Facebook</b> application.
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/facebook/fb1_en.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    In the next window you must select the <b>Web</b> tab, type the URL of your main store and press the Save button.
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/facebook/fb2_en.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    After saving the URL of the store, you must click on the <b>Settings</b> option and then on <b>Basic information</b>. There you must enter all the required data to achieve a correct operation of the application.
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/facebook/fb3_en.png">
+                                    </div>
+                                    <p>It must be borne in mind that in order to activate the Facebook application and be able to be used by the visitors of the store, you must add the URLs of the privacy policies and the terms of service in the basic information of the application.</p>
+                                </li>
+                                <li>
+                                    When you finish entering the basic information and save it, in the left panel you must click on the option <b>Login with Facebook</b> and then on <b>Settings</b>, this will show a window with new configuration options, which we explain in the next image.
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/facebook/fb4_en.png">
+                                    </div>
+                                    <p>Note that the URLs of the store for the <b>valid OAuth redirect URL</b> field from the previous window, must be taken from the <b>Valid OAuth Redirect URls:</b> field, which appears in the module, in the Social Login tab, Facebook and select <b>How can I get this info?</b>, as shown in the following image.</p>                                   
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/facebook/fb5_en.png">
+                                    </div>
+                                </li>
+                            </ol>
+                        </section>
+                        <section id="enable_facebook" class="block-templates">
+                            <h4>
+                                Enable Facebook
+                            </h4>
+                            <p>
+                                When having this option disabled, it is not necessary to delete the <i>Key API</i> and the <i>Secret Key</i>, only enable this option when you need to visualize the button of the application of Facebook.
+                            </p>
+                        </section>
+                        <section id="social_login_id_facebook" class="block-templates">
+                            <h4>
+                                <i>API Key</i> Facebook
+                            </h4>
+                            <p>
+                                In this text field you must enter the <i>API Key</i> of your Facebook application.
+                            </p>
+                        </section>
+                        <section id="social_login_secret_facebook" class="block-templates">
+                            <h4>
+                                <i>Secret Key</i> Facebook
+                            </h4>
+                            <p>
+                                In this text field you must enter the <i>Secret Key</i> of your Facebook application.
+                            </p>
+                        </section>
+                        <section id="tab_google" class="block-templates">
+                            <h3>
+                                <i class="fa fa-google fa-1x"></i>  Google
+                            </h3>
+                            <div class="tree">
+                                <img src="screenshots/tab_google_en.png">
+                            </div>
+                        </section>
+                        <section id="how_to_google" class="block-templates">
+                            <h4>How to create an application on <b>Google?</b></h4>
+                            <ol>
+                                <li>
+                                    Go to <a target="_blank" href="https://code.google.com/apis/console/">Google Api Console</a> and log in with their credentials.
+                                </li>
+                                <li>
+                                    Press the <b>CREATE PROJECT</b> <i class="fa fa-question-circle fa-1x text-info" data-toggle="tooltip" data-placement="top" title="This button is located on the left side of the screen"></i>
+                                    button, enter the Project Name and click on the <b>CREATE</b> button.
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg1_en.png">
+                                    </div>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg2_en.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    Click on the <b> Notifications </b> icon at the top right and select the project created.
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg3_en.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    Later a new window will appear, go to the APIs option and click on <b> Go to APIs overview</b>.
+                                    <br> 
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg4_en.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    Click on the option <b> ENABLE APIS AND SERVICES </b>.
+                                    <br> 
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg5_en.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    Later a new view will appear, type in the text box that says Search APIs and services, <b>maps</b> 
+                                    enable all APIs that contain the word maps, after doing this, type <b>google+</b> and enter.
+                                    <br> 
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg6_en.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    The following window will appear, where you should click on <b>Google+ API</b>
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg7_en.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    Click on the <b>ENABLE</b> button
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg8_en.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    Click on the button <b>CREATE CREDENTIALS</b>
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg9_en.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    In the next window, select in the field What API are you using? the <b>Google+ API</b> option, from where will you call the API? the option <b>Web browser(Javascript)</b>, what type of data will you access? the option <b>User data</b>,
+                                    and click on the option <b>What credentials do I need?</b><br>
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg10_en.png">
+                                    </div>         
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg11_en.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    A pop-up window will appear, click on the button <b>NOT NOW</b>
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg18_en.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    In the Credentials window, you can leave the <b>Name</b> that appears in the option Create an OAuth 2.0 client ID or change it to one that you want. The values to enter
+                                    in the "Authorized JavaScript Origins" and "Authorized redirect URIs" options, you find them in the configuration
+                                    of the module, in "Social login -> Google" when clicking on the button How can I get this info?.
+                                    Finally, click on the option <b>Create OAuth client ID</b><br>
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg12_en.png">
+                                    </div>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg13_en.png">
+                                    </div>                                   
+                                </li>
+                                <li>
+                                    In the next window, you must type the <b> Email address </b> and the <b> Product name shown to users </b> that will be displayed to the users.
+                                    Finally, click on the option <b> Continue </b>. <br>
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg14_en.png">
+                                    </div>                                    
+                                </li>
+                               <li>
+                                    In the next window, the Client ID will appear with an option to Download, which can be exported at the moment you need it.
+                                    Finally, click on the <b> Done </b> option. <br>
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg15_en.png">
+                                    </div>                                    
+                                </li>                                
+                                <li>
+                                    In this window the created credentials will appear, when clicking on the name of the credential, the required information will be displayed in another window.
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg16_en.png">
+                                    </div>
+                                </li>  
+                                <li>
+                                    You must click on the tab <b>OAuth consent screen</b> and fill in the data shown in the image with an arrow, finally click save.
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg19_en.png">
+                                    </div>
+                                </li> 
+                                <li>
+                                    Then, click on the tab <b>Domain Verification</b> and click on the button <b>Add domain</b>.
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg20_en.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    A window will appear where you must type your domain as indicated in the example and finally, click on the button <b>ADD DOMAIN</b>.
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg21_en.png">
+                                    </div>
+                                </li>
+                                <li>
+                                    In the Credentials tab, when you click on the API created, you will see the <b>API Key</b> that corresponds to the <b>Client ID</b> and the <b>Secret Key</b> that corresponds to the <b>Client Secret</b> of the application.
+                                    <br>
+                                    <div class="tree">
+                                        <img src="screenshots/social_login/google/gg17_en.png">
+                                    </div>                                  
+                                </li>
+                            </ol>
+                        </section>
+                        <section id="enable_google" class="block-templates">
+                            <h4>
+                                Enable Google
+                            </h4>
+                            <p>
+                                When having this option disabled, it is not necessary to delete the <i>Key API</i> and the <i>Secret Key</i>, only enable this option when you need to visualize the button of the application of Google.
+                            </p>
+                        </section>
+                        <section id="social_login_id_goole" class="block-templates">
+                            <h4>
+                                <i>API Key</i> Google
+                            </h4>
+                            <p>
+                                In this text field you must enter the <i>API Key</i> of your Google application.</p>
+                        </section>
+                        <section id="social_login_secret_google" class="block-templates">
+                            <h4>
+                                <i>Secret Key</i> Google
+                            </h4>
+                            <p>
+                                In this text field you must enter the <i>Secret Key</i> of your Google application.
+                            </p>
+                        </section>
+                        <section id="tab_paypal" class="block-templates">
+                            <h3>
+                                <i class="fa fa-paypal fa-1x"></i>  Paypal
+                            </h3>
+                            <div class="tree">
+                                <img src="screenshots/tab_paypal_en.png">
+                            </div>
+                        </section>
+                        <section id="how_to_paypal" class="block-templates">
+                            <h4>How to create an application in <b>Paypal</b>?</h4>
+                            <ul>
+                                <li>
+                                    Go to <a href="https://developer.paypal.com/" target="_blank">https://developer.paypal.com/</a>, click the <b>Log In</b> button and log in to Paypal
+                                </li>
+                                <li>
+                                    Click the <b>Dashboard</b> button at the top right of the screen
+                                </li>
+                                <li>
+                                    Follow the image steps:<br>
+                                    <div class="tree"><img src="screenshots/social_login/paypal/paypal1_en.png"></div>
+                                </li>
+                                <li>
+                                    Fill out the form and press the <b>Create App</b> button:<br>
+                                    <div class="tree"><img src="screenshots/social_login/paypal/paypal2_es.png"></div>
+                                </li>
+                                <li>
+                                    Once the application is created, you can now see the <i>App ID</i> and <i>App Secret</i> <br>
+                                    <div class="tree"><img src="screenshots/social_login/paypal/paypal3_en.png"></div>
+                                </li>
+                                <li>
+                                    Find the <b>LIVE APP SETTINGS</b> section and follow the steps in the picture:
+                                    <div class="tree"><img src="screenshots/social_login/paypal/paypal4_en.png"></div>
+                                </li>
+                                <li>
+                                    After clicking on the option <b>Advanced Options</b> will be displayed a form, follow the steps:<br>
+                                    - Select the options: <u>Personal Information</u> y <u>Address Information</u>.<br>
+                                    - Enter a URL for <u>Privacy policy URL</u> and <u>User agreement URL</u>.<br>
+                                    - Select option: <u>Allow the customers who haven't yet confirmed their email address with PayPal, to log in to your app</u>.<br>
+                                    - Press the button <b>Save</b>
+                                </li><br>
+                                <li>
+                                    Paypal requires a permission to access the client's information for the login, therefore, it is necessary to send an email to <b> help-loginappreview@paypal.com </b> requesting the following permissions:<br>
+                                    <br><b> Personal Information:</b><br>
+                                    - Date of birth<br>
+                                    <br><b> Address Information:</b><br>
+                                    - Email address<br>
+                                    - Street addres<br>
+                                    - Zip code<br>
+                                    - City<br>
+                                    - Country<br>
+                                    - State<br>
+                                    <br>Indicate in the email that this data will be used for the login and creation of the customer's address in your PrestaShop store through the One Page Checkout PS module. This data is obtained once the client presses the button of <b> login with Paypal </b>.<br>
+                                </li>        
+                            </ul>
+                        </section>
+                        <section id="enable_paypal" class="block-templates">
+                            <h4>
+                                Enable Paypal
+                            </h4>
+                            <p>
+                                When having this option disabled, it is not necessary to delete the <i>Key API</i> and the <i>Secret Key</i>, only enable this option when you need to visualize the button of the application of Paypal.
+                            </p>
+                        </section>
+                        <section id="social_login_id_paypal" class="block-templates">
+                            <h4>
+                                <i>API Key</i> Paypal
+                            </h4>
+                            <p>
+                                In this text field you must enter the <i>API Key</i> of your Paypal application.
+                            </p>
+                        </section>
+                        <section id="social_login_secret_paypal" class="block-templates">
+                            <h4>
+                                <i>Secret Key</i> Paypal
+                            </h4>
+                            <p>
+                                In this text field you must enter the <i>Secret Key</i> of your Paypal application.
+                            </p>
+                        </section>
+                        <section id="tab_biocryptology" class="block-templates">
+                            <h3>
+                                <img src="screenshots/social_login/biocryptology/btn_biocryptology.png" height="18" style="width: 13px;"/> Biocryptology
+                            </h3>
+                            <div class="tree">
+                                <img src="screenshots/tab_biocryptology_en.png">
+                            </div>
+                        </section>
+                        <section id="how_to_biocryptology" class="block-templates">
+                            <h4>How to create your domain in <b>Biocryptology</b>?</h4>
+                             <ul>
+                                <li>Go to <a href="https://biocryptology.com/" target="_blank">https://biocryptology.com/</a>, click the <b>My domains</b> button and log in to Biocryptology</li>
+                                <li>
+                                    Follow the image steps:<br>
+                                    <div class="tree"><img src="screenshots/social_login/biocryptology/bc1_es.png"></div>
+                                </li>
+                                <li>
+                                    Click on the <b>+Add domains</b> button in the upper right part of the screen.
+                                    <div class="tree"><img src="screenshots/social_login/biocryptology/bc2_es.png"></div>
+                                </li>
+                                <li>
+                                    In this window, enter your domain address and an optional short description.
+                                    <div class="tree"><img src="screenshots/social_login/biocryptology/bc3_es.png"></div>
+                                </li>
+                                <li>
+                                    The following window will appear, where you can copy the code and click on the <b>Close</b> button.
+                                    <div class="tree"><img src="screenshots/social_login/biocryptology/bc4_es.png"></div>
+                                </li>
+                                <li>
+                                    In this window, your domain is created, click to modify it.
+                                    <div class="tree"><img src="screenshots/social_login/biocryptology/bc5_es.png"></div>
+                                </li>
+                                <li>
+                                    Click on the <b>Add plugin</b> button in the Plugins field.
+                                    <div class="tree"><img src="screenshots/social_login/biocryptology/bc6_es.png"></div>
+                                </li>
+                                <li>
+                                    In this window, you can change the image (optional), name of the plugin (visible), select Generate secret key, place the URl of privacy policy of your store. Also add post login and post logout URL. Finally, click on the <b>SAVE</b> button.
+                                    <div class="tree"><img src="screenshots/social_login/biocryptology/bc7_es.png"></div>
+                                </li>
+                                <li>
+                                    When adding a <b>post login</b>, type the <b>Post login URLs</b> that correspond to the <b>Add post login URL</b> and the <b>post logout</b> that corresponds to the <b>Add post logout URL</b> of the application.<br>
+                                    <div class="tree"><img src="screenshots/social_login/biocryptology/bc8_es.png"></div>
+                                </li>
+                                <li>
+                                    Select the <b>Edit</b> option of the plugin you have created.<br>
+                                    <div class="tree"><img src="screenshots/social_login/biocryptology/bc9_es.png"></div>
+                                </li>
+                                <li>
+                                    This window will appear, with the <b>API Key</b> corresponding to the <b>Client ID</b> and the <b>Secret Key</b> corresponding to the <b>Secret key</b> of the application.
+                                    <div class="tree"><img src="screenshots/social_login/biocryptology/bc10_es.png"></div>
+                                </li>
+                            </ul>  
+                        </section>
+                        <section id="enable_biocryptology" class="block-templates">
+                            <h4>
+                                Enable Biocryptology
+                            </h4>
+                            <p>
+                                When having this option disabled, it is not necessary to delete the <i>Key API</i> and the <i>Secret Key</i>, only enable this option when you need to visualize the button of the application of Biocryptology.
+                            </p>
+                        </section>
+                        <section id="social_login_id_biocryptology" class="block-templates">
+                            <h4>
+                                <i>API Key</i> Biocryptology
+                            </h4>
+                            <p>
+                                In this text field you must enter the <i>API Key</i> of your Biocryptology application.
+                            </p>
+                        </section>
+                        <section id="social_login_secret_biocryptology" class="block-templates">
+                            <h4>
+                                <i>Secret Key</i> Biocryptology
+                            </h4>
+                            <p>
+                                In this text field you must enter the <i>Secret Key</i> of your Biocryptology application.
+                            </p>
+                        </section>
+                        <section id="tab_statistics" class="block-templates">
+                            <h3>
+                                <i class="fa fa-line-chart fa-1x"></i> 
+                                Statistics
+                            </h3>
+                            <p>
+                                In this section you can see a pie chart showing the number of connections per social network (Facebook, Google, Paypal, Biocryptology) of the module.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/tab_statistics_en.png">
+                            </div>
+                            <div class="alert alert-info">
+                                <i class="fa fa-info-circle"></i> &nbsp; When there are no statistics, the following message is displayed 
+                                "There is no data to display, there are no connections through social networks or you have not configured the login through them."
+                            </div>
+                        </section>
+                        <section id="tab_information" class="block-templates">
+                            <h3>
+                                <i class="fa fa-globe fa-1x"></i>
+                                Information
+                            </h3>
+                            <p>
+                                In this section, you configure the CRON task to eliminate the empty addresses created by the module in your store.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/tab_information_en.png">
+                            </div>
+                        </section>
+                        <section id="tab_translate" class="block-templates">
+                            <h3>
+                                <i class="fa fa-globe fa-1x"></i>
+                                Translate
+                            </h3>
+                            <p>
+                                In this section are configured translations of the module.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/tab_translate_en.png">
+                            </div>
+                        </section>
+                        <section id="select_language" class="block-templates">
+                            <h4>
+                                Choose a language
+                            </h4>
+                            <p>
+                                In this drop-down list select the language to translate. After you have selected an option,
+                                the form each file of the module are filled with the previously saved values. If there are
+                                no values, the form fields will be blank.
+                            </p>
+                        </section>
+                        <section id="save" class="block-templates">
+                            <h4>
+                                Save
+                            </h4>
+                            <p>
+                                This button allows you to save the translation done.
+                            </p>
+                        </section>
+                        <section id="save_download" class="block-templates">
+                            <h4>
+                                Save and Download
+                            </h4>
+                            <p>
+                                This button allows you to save and download a .php file with the translation done.
+                            </p>
+                        </section>
+                        <section id="share_translation" class="block-templates">
+                            <h4>
+                                Share us your translation
+                            </h4>
+                            <p>
+                                By clicking this button is sent to us (info@presteamshop.com) the translation made
+                                to selected language in option <b>Choose a language</b>.
+                            </p>
+                            <div class="alert alert-info">
+                                <i class="fa fa-info-circle"></i> &nbsp; If you share your translation with us we will
+                                consider it for future upgrades of the module.
+                            </div>
+                        </section>
+                        <section id="expand" class="block-templates">
+                            <h4>
+                                Expand all
+                            </h4>
+                            <p>
+                                This button allows you to expand the files of this page.
+                            </p>
+                        </section>
+                        <section id="collapse" class="block-templates">
+                            <h4>
+                                Collapse all
+                            </h4>
+                            <p>
+                                This button allows you to collapse the files of this page.
+                            </p>
+                        </section>
+                        <section id="tab_code_editors" class="block-templates">
+                            <h3>
+                                <i class="fa fa-code fa-1x"></i>
+                                Code Editors
+                            </h3>
+                            <p>
+                                In this section you can add or modify css and javascript code of the module files without the need for direct access to these.
+                                For example: To modify css code enter the <b>CSS</b> section, locate the file that you want to edit, enter the css code and press the <b>Save</b> button.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/tab_code_editors_en.png">
+                            </div>
+                        </section>
+                        <section id="tab_suggestions" class="block-templates">
+                            <h3>
+                                <i class="fa fa-pencil fa-1x"></i>
+                                Suggestions
+                            </h3>
+                            <p>
+                                This section allows you to communicate with us either to report problems
+                                and  tell us your doubts, or to share with us your  suggestions, functionalities
+                                and opinions about the module.
+                            </p>
+                            <div class="tree">
+                                <img src="screenshots/tab_suggestions_en.png">
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

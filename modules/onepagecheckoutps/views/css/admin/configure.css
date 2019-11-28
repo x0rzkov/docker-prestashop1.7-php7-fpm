@@ -1,0 +1,403 @@
+/**
+ * We offer the best and most useful modules PrestaShop and modifications for your online store.
+ *
+ * We are experts and professionals in PrestaShop
+ *
+ * @category  PrestaShop
+ * @category  Module
+ * @author    PresTeamShop.com <support@presteamshop.com>
+ * @copyright 2011-2019 PresTeamShop
+ * @license   see file: LICENSE.txt
+ */
+
+.translatable-field textarea {
+    font-size: 16px !important;
+}
+
+#table-required-fields #field_1 td > span.has-action,
+#table-required-fields #field_9 td > span.has-action,
+#table-required-fields #field_13 td > span.has-action,
+#table-required-fields #field_29 td > span.has-action
+{
+    display: none;
+}
+
+.pts.bootstrap #opc_modal .modal-dialog .modal-body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.pts.bootstrap #opc_modal .modal-dialog {
+    left: auto !important;
+    z-index: 1040;
+}
+
+.modal-backdrop {
+    z-index: 1030;
+}
+
+.modal-backdrop, .modal-backdrop.fade.in {
+    opacity: 0.8;
+}
+
+.pts #opc_modal i.fa-pts {
+    margin-right: 5px;
+}
+
+.pts .nested_fields_position li.placeholder:before {
+    content: "\f061";
+    font-family: fontawesome;
+    color: #d02a2c;
+}
+
+.pts .nested_fields_position > li > ol > li > label {
+    cursor: move;
+}
+
+.pts .nested_fields_position > li > ol > li.placeholder,
+.pts .nested_fields_position > li > ol > li {
+    display: inline-block;
+    margin: 3px !important;
+}
+
+.pts .nested_fields_position > li.placeholder {
+    display: block;
+}
+
+.pts .nested_fields_position li.li-row {
+    padding: 0 !important;
+    margin: 15px 0 !important;
+}
+
+.pts .nested_fields_position li.li-row ol.ol-row {
+    width: 100% !important;
+    height: 100% !important;
+    padding: 12px !important;
+    margin: 0 !important;
+}
+
+.pts .panel .nested_fields_position.list-group .list-group-item:last-child {
+    border-bottom: 1px solid #dddddd !important;
+}
+.pts .panel .nested_fields_position.list-group .list-group-item {
+    border-width: 1px !important;
+}
+
+.pts .nested_fields_position li.li-row ol.ol-row li label {
+    white-space: pre-wrap;
+}
+
+.pts .carrier_container label,
+.pts .nested_fields_position li label {
+    width: auto !important;
+}
+
+.pts .input-group input {
+    /*min-height: 30px;*/
+}
+
+.colorpicker.dropdown-menu.colorpicker-visible {
+    position: absolute;
+}
+
+.pts.bootstrap .carrier_container .checkbox-inline {
+    margin-left: 10px;
+}
+
+.pts #payment-images-container .panel-body {
+    padding: 1em 0 !important;
+}
+
+.pts .payment_container .img-thumbnail {
+    margin-bottom: 1em;
+}
+
+.pts table tr.success > td {
+    background-color: #dff0d8;
+}
+
+.pts table tr.primary > td {
+    background-color: #d9edf7;
+    color: #3a87ad;
+}
+
+.pts .input-switch {
+    min-width: 100px !important;
+}
+
+.pts .translatable-flags button.dropdown-toggle i.fa-pts-flag {
+    margin-right: 0 !important;
+}
+
+.pts .translatable-flags button.dropdown-toggle span.caret {
+    margin-left: 2px;
+}
+
+.pts .translatable-flags button.dropdown-toggle {
+    padding: 6px 4px;
+}
+
+.pts .translatable-flags {
+    padding-left: 8px;
+}
+
+.modal-backdrop {
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.pts .form-horizontal label.control-label {
+    /*padding-top: 0 !important;*/
+    font-weight: normal !important;
+}
+
+.pts .pts-tooltip {
+    /*float: right !important;*/
+}
+
+.pts .pts-tooltip .btn-popover {
+    padding: 5px;
+    width: 40px;
+    max-width: 40px;
+    min-width: 40px;
+}
+
+.pts #payment-images-container > div {
+    display: inline;
+}
+.pts #payment-images-container:after,
+.pts #payment-images-container:before
+{
+    content: "" !important;
+    display: none;
+}
+
+.pts .payment_container .translatable-field:after,
+.pts .payment_container .translatable-field:before
+{
+    content: "" !important;
+    display: none;
+}
+
+.pts #btn-update_field_options,
+.pts #btn-update_field {
+    margin-bottom: 1rem;
+}
+
+.pts .nav-tabs li a i.fa-pts{
+    font-style: normal;
+}
+
+.pts .nav-tabs li a {
+    font-size: 0.8rem;
+    padding: 6px 11px;
+}
+
+.pts .input-group-addon {
+    padding: 4px 8px;
+}
+
+.pts #table-field-options td {
+    padding: 2px;
+}
+
+.pts #table-field-options {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.pts #table-field-options .translatable-field div > input {
+    height: 100%;
+}
+
+#top_container .panel-body.nopadding {
+    padding: 20px !important;
+}
+
+#btn-manage_field_options {
+    margin-bottom: 10px;
+}
+
+.pts .pts-image-change-container img {
+    height: 53px;
+    max-height: 53px;
+}
+
+.pts .fa-pts-biocryptology {
+	background-image: url('../../img/social/btn_biocryptology.png');
+	height: 18px;
+	width: 13px;
+	background-repeat: no-repeat;
+}
+
+@media (min-width: 992px) {
+    .pts .col-md-offset-0 {
+        margin-left: 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .pts .required_field {
+        margin-top: 1em;
+    }
+    .pts #btn-update_ship_pay {
+        width: 100%;
+        clear: both;
+    }
+
+    .pts .modal-body {
+        max-height: 500px;
+        overflow-y: auto;
+    }
+
+    .pts #pts-container-credits {
+        margin-top: 2em;
+    }
+}
+
+@media (min-width: 768px) {
+    .pts .pts-tooltip.hidden-xs {
+        display: flex !important;
+    }
+}
+
+#tab-suggestions .alert::before {
+    content: "";
+}
+#tab-suggestions .alert{
+    width: 70% !important;
+    font-size: 22px;
+    font-weight: 200;
+    margin: 15px auto;
+}
+#tab-suggestions .alert.alert-success{
+    padding: 10px 4%;
+}
+#tab-suggestions .alert.alert-info{
+    padding: 10px 5%;
+}
+#tab-suggestions .content-text-suggestions {
+    padding-top: 4%;
+}
+
+div#tab-suggestions a#suggestions-opinions,
+div#tab-suggestions a#suggestions-contact
+{
+    text-decoration: underline;
+}
+
+div#tab-suggestions a#suggestions-contact {
+    font-weight: normal;
+    color: #468847;
+}
+
+/*css 15*/
+div#tab-translate div#content_translations div.content_translations {
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1), 0 0 0 3px #fff inset;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+div#tab-translate div#content_translations div.content_translations div.panel-heading {
+    border-color: -moz-use-text-color -moz-use-text-color #eee;
+    border-style: none none solid;
+    border-width: medium medium 1px;
+}
+
+div#tab-translate div#content_translations div.content_translations div.panel-footer {
+    background-color: #fff;
+}
+
+div#tab-translate .form-inline .form-group .form-control {
+    width: auto;
+}
+/*css 15*/
+
+div#tab-translate div.panel div.panel-collapse div.panel-body input.input-error-translate {
+    background-color: #fbb;
+}
+div#tab-translate div.panel div.panel-heading .panel-title {
+    word-wrap: break-word;
+}
+
+div#tab-translate div.table-responsive table.table tr td.input_content_translation {
+    min-width: 400px;
+}
+div#tab-translate div.table-responsive table.table tr td {
+    white-space: normal;
+}
+div#tab-translate div#panel_group_translations div.panel div.panel-footer {
+    margin: 6px 0;
+    padding: 0 7px;
+    background: none;
+}
+div#tab-translate div#panel_group_translations div.panel {
+    padding: 15px 12px 0px 12px;
+}
+div#tab-translate #content_translations .panel-title{
+    padding: 10px 0;
+}
+
+div#tab-faqs .panel-title{
+    padding: 10px 0;
+}
+div#tab-faqs .panel-title span{
+    padding: 0;
+}
+
+div#tab-code_editors .col-md-12 .col-md-12 > h4{
+    text-transform: uppercase;
+}
+div#tab-code_editors form.form-code-editors{
+    margin-bottom: 2%;
+}
+
+div.tab-content div#tab-code_editors .linedwrap {
+    width: 100% !important;
+}
+
+div#tab-register .btn-delete-address{
+    float: left !important;
+}
+
+#table-required-fields td span.cursor-pointer { background: none; }
+
+@media only screen and (max-width: 613px) {
+    div.tab-content div#tab-code_editors .lines {
+        width: 15% !important;
+    }
+    div.tab-content div#tab-code_editors .linedwrap textarea {
+        width: 82% !important;
+    }
+}
+
+@media only screen and (max-width: 1307px) and (min-width: 614px)  {
+    div.tab-content div#tab-code_editors .lines {
+        width: 8% !important;
+    }
+    div.tab-content div#tab-code_editors .linedwrap textarea {
+        width: 90% !important;
+    }
+}
+@media only screen and (max-width: 1386px) and (min-width: 1308px)  {
+    div.tab-content div#tab-code_editors .lines {
+        width: 4% !important;
+    }
+    div.tab-content div#tab-code_editors .linedwrap textarea {
+        width: 95% !important;
+    }
+}
+
+@media only screen and (min-width: 1387px)  {
+    div.tab-content div#tab-code_editors .lines {
+        width: 4% !important;
+    }
+    div.tab-content div#tab-code_editors .linedwrap textarea {
+        width: 95% !important;
+    }
+}

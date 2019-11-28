@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS `PREFIX_opc_field`;
+DROP TABLE IF EXISTS `PREFIX_opc_field_lang`;
+DROP TABLE IF EXISTS `PREFIX_opc_field_shop`;
+DROP TABLE IF EXISTS `PREFIX_opc_field_option`;
+DROP TABLE IF EXISTS `PREFIX_opc_field_option_lang`;
+DROP TABLE IF EXISTS `PREFIX_opc_payment`;
+DROP TABLE IF EXISTS `PREFIX_opc_payment_lang`;
+DROP TABLE IF EXISTS `PREFIX_opc_payment_shop`;
+DROP TABLE IF EXISTS `PREFIX_opc_social_network`;
+DROP TABLE IF EXISTS `PREFIX_opc_field_customer`;
