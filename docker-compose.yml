@@ -138,11 +138,11 @@ services:
 
 volumes:
     app:
-      #driver: local
-      #driver_opts:
-      #  type: none
-      #  o: bind
-      #  device: ${PWD}/httpdocs
+      driver: local
+      driver_opts:
+        type: none
+        o: bind
+        device: ${PWD}/httpdocs/current
     db-data:
     esdata:
       driver: local
