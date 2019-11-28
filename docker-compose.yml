@@ -100,7 +100,18 @@ services:
       image: docker.elastic.co/kibana/kibana:7.0.1
       container_name: kibana
       ports:
-        - 5601:5601
+      - 5601:5601
+      depends_on:
+      - elasticsearch
+
+    #manticoresearch:
+    #  build: manticoresearch
+    #  ports:
+    #  - 9306:9306
+    #  volumes:
+    #  - mtdata:/var/lib/manticore/data
+    #  - mtdata:/var/log/manticore
+    #  - ${PWD}/manticoresearch/sphinx.conf:/etc/sphinxsearch/sphinx.conf
 
     phpmyadmin:
       image: phpmyadmin/phpmyadmin
@@ -134,6 +145,8 @@ volumes:
       #  device: ${PWD}/httpdocs
     db-data:
     esdata:
+      driver: local
+    mtdata:
       driver: local
 
 #networks:
