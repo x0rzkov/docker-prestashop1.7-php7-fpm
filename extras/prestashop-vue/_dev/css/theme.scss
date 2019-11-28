@@ -1,0 +1,108 @@
+@import '~bootstrap/scss/bootstrap';
+@import 'partials/commons';
+@import 'partials/inverse';
+@import 'components/product-share-btns.scss';
+@import 'components/blockcart.scss';
+@import 'components/user-info.scss';
+@import 'components/searchbar.scss';
+@import 'components/banner';
+@import 'components/products-limit.scss';
+@import 'components/category-cover.scss';
+@import 'components/scrollbar.scss';
+@import 'components/topmenu.scss';
+@import 'components/product-miniature.scss';
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+i {
+  pointer-events: none;
+}
+.pop-out-enter-active,
+.pop-out-leave-active {
+  transition: all 0.5s;
+}
+.pop-out-enter,
+.pop-out-leave-active {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+#wrapper {
+  flex-grow: 1;
+}
+
+.page-header {
+  h1:empty {
+    display: none;
+  }
+}
+
+.product-miniature {
+  text-align: center;
+}
+
+.product-list-thumb {
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: #fff;
+  
+  @include media-breakpoint-up(md) {
+    position: absolute;
+  }
+
+  &::-webkit-scrollbar-button {
+    width: 2px;
+    height: 0;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background-color: #ccc;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: darken(#ccc, 20%);
+  }
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  img {
+    max-width: 40px;
+    margin: 0 auto 10px;
+    border: 1px solid #ccc;
+
+    &.active {
+      border-color: black;
+    }
+  }
+}
+
+.product-thumbnail {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: white;
+  transition: all ease-out 0.3s;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
