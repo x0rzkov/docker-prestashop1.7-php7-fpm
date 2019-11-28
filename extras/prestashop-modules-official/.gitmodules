@@ -1,0 +1,777 @@
+[submodule "alliedwallet/backward_compatibility"]
+	path = alliedwallet/backward_compatibility
+	url = https://github.com/PrestaShop/PrestaShop-backward_compatibility
+[submodule "buyster/backward_compatibility"]
+	path = buyster/backward_compatibility
+	url = https://github.com/PrestaShop/PrestaShop-backward_compatibility
+[submodule "canadapost/backward_compatibility"]
+	path = canadapost/backward_compatibility
+	url = https://github.com/PrestaShop/PrestaShop-backward_compatibility
+[submodule "cloudcache/backward_compatibility"]
+	path = cloudcache/backward_compatibility
+	url = https://github.com/PrestaShop/PrestaShop-backward_compatibility
+[submodule "dibs/backward_compatibility"]
+	path = dibs/backward_compatibility
+	url = https://github.com/PrestaShop/PrestaShop-backward_compatibility
+[submodule "jirafe/backward_compatibility"]
+	path = jirafe/backward_compatibility
+	url = https://github.com/PrestaShop/PrestaShop-backward_compatibility
+[submodule "mailjet/backward_compatibility"]
+	path = mailjet/backward_compatibility
+	url = https://github.com/PrestaShop/PrestaShop-backward_compatibility
+[submodule "paysafecard/backward_compatibility"]
+	path = paysafecard/backward_compatibility
+	url = https://github.com/PrestaShop/PrestaShop-backward_compatibility
+[submodule "shipwire/backward_compatibility"]
+	path = shipwire/backward_compatibility
+	url = https://github.com/PrestaShop/PrestaShop-backward_compatibility
+[submodule "trustedshops/backward_compatibility"]
+	path = trustedshops/backward_compatibility
+	url = https://github.com/PrestaShop/PrestaShop-backward_compatibility
+[submodule "ferbuy/backward_compatibility"]
+	path = ferbuy/backward_compatibility
+	url = https://github.com/PrestaShop/PrestaShop-backward_compatibility
+[submodule "paypalusa/backward_compatibility"]
+	path = paypalusa/backward_compatibility
+	url = https://github.com/PrestaShop/PrestaShop-backward_compatibility
+[submodule "bankwire"]
+	path = bankwire
+	url = https://github.com/PrestaShop/bankwire.git
+[submodule "blockadvertising"]
+	path = blockadvertising
+	url = https://github.com/PrestaShop/blockadvertising.git
+[submodule "blockbanner"]
+	path = blockbanner
+	url = https://github.com/PrestaShop/blockbanner.git
+[submodule "blockbestsellers"]
+	path = blockbestsellers
+	url = https://github.com/PrestaShop/blockbestsellers.git
+[submodule "blockcart"]
+	path = blockcart
+	url = https://github.com/PrestaShop/blockcart.git
+[submodule "blockcategories"]
+	path = blockcategories
+	url = https://github.com/PrestaShop/blockcategories.git
+[submodule "blockcms"]
+	path = blockcms
+	url = https://github.com/PrestaShop/blockcms.git
+[submodule "blockcmsinfo"]
+	path = blockcmsinfo
+	url = https://github.com/PrestaShop/blockcmsinfo.git
+[submodule "blockcontact"]
+	path = blockcontact
+	url = https://github.com/PrestaShop/blockcontact.git
+[submodule "blockcontactinfos"]
+	path = blockcontactinfos
+	url = https://github.com/PrestaShop/blockcontactinfos.git
+[submodule "blockcurrencies"]
+	path = blockcurrencies
+	url = https://github.com/PrestaShop/blockcurrencies.git
+[submodule "blockcustomerprivacy"]
+	path = blockcustomerprivacy
+	url = https://github.com/PrestaShop/blockcustomerprivacy.git
+[submodule "blockfacebook"]
+	path = blockfacebook
+	url = https://github.com/PrestaShop/blockfacebook.git
+[submodule "blocklanguages"]
+	path = blocklanguages
+	url = https://github.com/PrestaShop/blocklanguages.git
+[submodule "blocklayered"]
+	path = blocklayered
+	url = https://github.com/PrestaShop/blocklayered.git
+[submodule "blocklink"]
+	path = blocklink
+	url = https://github.com/PrestaShop/blocklink.git
+[submodule "blockmanufacturer"]
+	path = blockmanufacturer
+	url = https://github.com/PrestaShop/blockmanufacturer.git
+[submodule "blockmyaccount"]
+	path = blockmyaccount
+	url = https://github.com/PrestaShop/blockmyaccount.git
+[submodule "blockmyaccountfooter"]
+	path = blockmyaccountfooter
+	url = https://github.com/PrestaShop/blockmyaccountfooter.git
+[submodule "blocknewproducts"]
+	path = blocknewproducts
+	url = https://github.com/PrestaShop/blocknewproducts.git
+[submodule "blocknewsletter"]
+	path = blocknewsletter
+	url = https://github.com/PrestaShop/blocknewsletter.git
+[submodule "blockpaymentlogo"]
+	path = blockpaymentlogo
+	url = https://github.com/PrestaShop/blockpaymentlogo.git
+[submodule "blockpermanentlinks"]
+	path = blockpermanentlinks
+	url = https://github.com/PrestaShop/blockpermanentlinks.git
+[submodule "blockreinsurance"]
+	path = blockreinsurance
+	url = https://github.com/PrestaShop/blockreinsurance.git
+[submodule "blockrss"]
+	path = blockrss
+	url = https://github.com/PrestaShop/blockrss.git
+[submodule "blocksearch"]
+	path = blocksearch
+	url = https://github.com/PrestaShop/blocksearch.git
+[submodule "blocksharefb"]
+	path = blocksharefb
+	url = https://github.com/PrestaShop/blocksharefb.git
+[submodule "blocksocial"]
+	path = blocksocial
+	url = https://github.com/PrestaShop/blocksocial.git
+[submodule "blockspecials"]
+	path = blockspecials
+	url = https://github.com/PrestaShop/blockspecials.git
+[submodule "blockstore"]
+	path = blockstore
+	url = https://github.com/PrestaShop/blockstore.git
+[submodule "blocksupplier"]
+	path = blocksupplier
+	url = https://github.com/PrestaShop/blocksupplier.git
+[submodule "blocktags"]
+	path = blocktags
+	url = https://github.com/PrestaShop/blocktags.git
+[submodule "blocktopmenu"]
+	path = blocktopmenu
+	url = https://github.com/PrestaShop/blocktopmenu.git
+[submodule "blockuserinfo"]
+	path = blockuserinfo
+	url = https://github.com/PrestaShop/blockuserinfo.git
+[submodule "blockviewed"]
+	path = blockviewed
+	url = https://github.com/PrestaShop/blockviewed.git
+[submodule "cheque"]
+	path = cheque
+	url = https://github.com/PrestaShop/cheque.git
+[submodule "crossselling"]
+	path = crossselling
+	url = https://github.com/PrestaShop/crossselling.git
+[submodule "dashactivity"]
+	path = dashactivity
+	url = https://github.com/PrestaShop/dashactivity.git
+[submodule "dashgoals"]
+	path = dashgoals
+	url = https://github.com/PrestaShop/dashgoals
+[submodule "dashproducts"]
+	path = dashproducts
+	url = https://github.com/PrestaShop/dashproducts.git
+[submodule "dashtrends"]
+	path = dashtrends
+	url = https://github.com/PrestaShop/dashtrends.git
+[submodule "graphnvd3"]
+	path = graphnvd3
+	url = https://github.com/PrestaShop/graphnvd3.git
+[submodule "gridhtml"]
+	path = gridhtml
+	url = https://github.com/PrestaShop/gridhtml.git
+[submodule "homefeatured"]
+	path = homefeatured
+	url = https://github.com/PrestaShop/homefeatured.git
+[submodule "homeslider"]
+	path = homeslider
+	url = https://github.com/PrestaShop/homeslider.git
+[submodule "pagesnotfound"]
+	path = pagesnotfound
+	url = https://github.com/PrestaShop/pagesnotfound.git
+[submodule "productpaymentlogos"]
+	path = productpaymentlogos
+	url = https://github.com/PrestaShop/productpaymentlogos.git
+[submodule "productscategory"]
+	path = productscategory
+	url = https://github.com/PrestaShop/productscategory.git
+[submodule "producttooltip"]
+	path = producttooltip
+	url = https://github.com/PrestaShop/producttooltip.git
+[submodule "sekeywords"]
+	path = sekeywords
+	url = https://github.com/PrestaShop/sekeywords.git
+[submodule "socialsharing"]
+	path = socialsharing
+	url = https://github.com/PrestaShop/socialsharing.git
+[submodule "statsbestcategories"]
+	path = statsbestcategories
+	url = https://github.com/PrestaShop/statsbestcategories.git
+[submodule "statsbestcustomers"]
+	path = statsbestcustomers
+	url = https://github.com/PrestaShop/statsbestcustomers.git
+[submodule "statsbestmanufacturers"]
+	path = statsbestmanufacturers
+	url = https://github.com/PrestaShop/statsbestmanufacturers.git
+[submodule "statsbestproducts"]
+	path = statsbestproducts
+	url = https://github.com/PrestaShop/statsbestproducts.git
+[submodule "statsbestsuppliers"]
+	path = statsbestsuppliers
+	url = https://github.com/PrestaShop/statsbestsuppliers.git
+[submodule "statsbestvouchers"]
+	path = statsbestvouchers
+	url = https://github.com/PrestaShop/statsbestvouchers.git
+[submodule "statscarrier"]
+	path = statscarrier
+	url = https://github.com/PrestaShop/statscarrier.git
+[submodule "statscatalog"]
+	path = statscatalog
+	url = https://github.com/PrestaShop/statscatalog.git
+[submodule "statscheckup"]
+	path = statscheckup
+	url = https://github.com/PrestaShop/statscheckup.git
+[submodule "statsdata"]
+	path = statsdata
+	url = https://github.com/PrestaShop/statsdata.git
+[submodule "statsequipment"]
+	path = statsequipment
+	url = https://github.com/PrestaShop/statsequipment.git
+[submodule "statsforecast"]
+	path = statsforecast
+	url = https://github.com/PrestaShop/statsforecast.git
+[submodule "statslive"]
+	path = statslive
+	url = https://github.com/PrestaShop/statslive.git
+[submodule "statsnewsletter"]
+	path = statsnewsletter
+	url = https://github.com/PrestaShop/statsnewsletter.git
+[submodule "statsorigin"]
+	path = statsorigin
+	url = https://github.com/PrestaShop/statsorigin.git
+[submodule "statspersonalinfos"]
+	path = statspersonalinfos
+	url = https://github.com/PrestaShop/statspersonalinfos.git
+[submodule "statsproduct"]
+	path = statsproduct
+	url = https://github.com/PrestaShop/statsproduct.git
+[submodule "statsregistrations"]
+	path = statsregistrations
+	url = https://github.com/PrestaShop/statsregistrations.git
+[submodule "statssales"]
+	path = statssales
+	url = https://github.com/PrestaShop/statssales.git
+[submodule "statssearch"]
+	path = statssearch
+	url = https://github.com/PrestaShop/statssearch.git
+[submodule "statsstock"]
+	path = statsstock
+	url = https://github.com/PrestaShop/statsstock.git
+[submodule "statsvisits"]
+	path = statsvisits
+	url = https://github.com/PrestaShop/statsvisits.git
+[submodule "trackingfront"]
+	path = trackingfront
+	url = https://github.com/PrestaShop/trackingfront.git
+[submodule "vatnumber"]
+	path = vatnumber
+	url = https://github.com/PrestaShop/vatnumber.git
+[submodule "blockwishlist"]
+	path = blockwishlist
+	url = https://github.com/PrestaShop/blockwishlist.git
+[submodule "carriercompare"]
+	path = carriercompare
+	url = https://github.com/PrestaShop/carriercompare.git
+[submodule "cashondelivery"]
+	path = cashondelivery
+	url = https://github.com/PrestaShop/cashondelivery.git
+[submodule "dateofdelivery"]
+	path = dateofdelivery
+	url = https://github.com/PrestaShop/dateofdelivery.git
+[submodule "editorial"]
+	path = editorial
+	url = https://github.com/PrestaShop/editorial.git
+[submodule "favoriteproducts"]
+	path = favoriteproducts
+	url = https://github.com/PrestaShop/favoriteproducts.git
+[submodule "feeder"]
+	path = feeder
+	url = https://github.com/PrestaShop/feeder.git
+[submodule "followup"]
+	path = followup
+	url = https://github.com/PrestaShop/followup.git
+[submodule "gamification"]
+	path = gamification
+	url = https://github.com/PrestaShop/gamification.git
+[submodule "gapi"]
+	path = gapi
+	url = https://github.com/PrestaShop/gapi.git
+[submodule "loyalty"]
+	path = loyalty
+	url = https://github.com/PrestaShop/loyalty.git
+[submodule "mailalerts"]
+	path = mailalerts
+	url = https://github.com/PrestaShop/mailalerts.git
+[submodule "newsletter"]
+	path = newsletter
+	url = https://github.com/PrestaShop/newsletter.git
+[submodule "productcomments"]
+	path = productcomments
+	url = https://github.com/PrestaShop/productcomments.git
+[submodule "pscleaner"]
+	path = pscleaner
+	url = https://github.com/PrestaShop/pscleaner.git
+[submodule "referralprogram"]
+	path = referralprogram
+	url = https://github.com/PrestaShop/referralprogram.git
+[submodule "sendtoafriend"]
+	path = sendtoafriend
+	url = https://github.com/PrestaShop/sendtoafriend.git
+[submodule "backwardcompatibility"]
+	path = backwardcompatibility
+	url = https://github.com/PrestaShop/backwardcompatibility.git
+[submodule "themeinstallator"]
+	path = themeinstallator
+	url = https://github.com/PrestaShop/themeinstallator.git
+[submodule "autoupgrade"]
+	path = autoupgrade
+	url = https://github.com/PrestaShop/autoupgrade.git
+[submodule "watermark"]
+	path = watermark
+	url = https://github.com/PrestaShop/watermark.git
+[submodule "gsitemap"]
+	path = gsitemap
+	url = https://github.com/PrestaShop/gsitemap.git
+[submodule "cronjobs"]
+	path = cronjobs
+	url = https://github.com/PrestaShop/cronjobs
+[submodule "onboarding"]
+	path = onboarding
+	url = https://github.com/PrestaShop/onboarding.git
+[submodule "themeconfigurator"]
+	path = themeconfigurator
+	url = https://github.com/PrestaShop/themeconfigurator.git
+[submodule "authorizeaim"]
+	path = authorizeaim
+	url = https://github.com/PrestaShop/authorizeaim
+[submodule "avalaratax"]
+	path = avalaratax
+	url = https://github.com/PrestaShop/avalaratax.git
+[submodule "boxdropshipment"]
+	path = boxdropshipment
+	url = https://github.com/PrestaShop/boxdropshipment
+[submodule "desjardins"]
+	path = desjardins
+	url = https://github.com/PrestaShop/desjardins
+[submodule "ecopresto"]
+	path = ecopresto
+	url = https://github.com/PrestaShop/ecopresto
+[submodule "fedexcarrier"]
+	path = fedexcarrier
+	url = https://github.com/PrestaShop/fedexcarrier
+[submodule "fianetfraud"]
+	path = fianetfraud
+	url = https://github.com/PrestaShop/fianetfraud
+[submodule "firstdata"]
+	path = firstdata
+	url = https://github.com/PrestaShop/firstdata
+[submodule "gadwords"]
+	path = gadwords
+	url = https://github.com/PrestaShop/gadwords
+[submodule "ganalytics"]
+	path = ganalytics
+	url = https://github.com/PrestaShop/ganalytics
+[submodule "gointerpay"]
+	path = gointerpay
+	url = https://github.com/PrestaShop/gointerpay
+[submodule "kiala"]
+	path = kiala
+	url = https://github.com/PrestaShop/kiala
+[submodule "kialasmall"]
+	path = kialasmall
+	url = https://github.com/PrestaShop/kialasmall
+[submodule "merchantware"]
+	path = merchantware
+	url = https://github.com/PrestaShop/merchantware
+[submodule "mondialrelay"]
+	path = mondialrelay
+	url = https://github.com/PrestaShop/mondialrelay
+[submodule "ogone"]
+	path = ogone
+	url = https://github.com/PrestaShop/ogone
+[submodule "prestafraud"]
+	path = prestafraud
+	url = https://github.com/PrestaShop/prestafraud
+[submodule "shopgate"]
+	path = shopgate
+	url = https://github.com/PrestaShop/shopgate
+[submodule "simplifycommerce"]
+	path = simplifycommerce
+	url = https://github.com/PrestaShop/simplifycommerce
+[submodule "tntcarrier"]
+	path = tntcarrier
+	url = https://github.com/PrestaShop/tntcarrier
+[submodule "twenga"]
+	path = twenga
+	url = https://github.com/PrestaShop/twenga
+[submodule "upscarrier"]
+	path = upscarrier
+	url = https://github.com/PrestaShop/upscarrier
+[submodule "yotpo"]
+	path = yotpo
+	url = https://github.com/PrestaShop/yotpo
+[submodule "uspscarrier"]
+	path = uspscarrier
+	url = https://github.com/PrestaShop/uspscarrier
+[submodule "fianetsceau"]
+	path = fianetsceau
+	url = https://github.com/PrestaShop/fianetsceau
+[submodule "socolissimo"]
+	path = socolissimo
+	url = https://github.com/PrestaShop/socolissimo
+[submodule "pigmbhpaymill"]
+	path = pigmbhpaymill
+	url = https://github.com/PrestaShop/pigmbhpaymill
+[submodule "vtpayment"]
+	path = vtpayment
+	url = https://github.com/PrestaShop/vtpayment.git
+[submodule "yousticeresolutionsystem"]
+	path = yousticeresolutionsystem
+	url = https://github.com/PrestaShop/yousticeresolutionsystem.git
+[submodule "hipay"]
+	path = hipay
+	url = https://github.com/PrestaShop/hipay
+[submodule "envoimoinscher"]
+	path = envoimoinscher
+	url = https://github.com/PrestaShop/envoimoinscher.git
+[submodule "pagseguro"]
+	path = pagseguro
+	url = https://github.com/PrestaShop/pagseguro
+[submodule "realexredirect"]
+	path = realexredirect
+	url = https://github.com/PrestaShop/realexredirect.git
+[submodule "seur"]
+	path = seur
+	url = https://github.com/PrestaShop/seur.git
+[submodule "klikandpay"]
+	path = klikandpay
+	url = https://github.com/PrestaShop/klikandpay.git
+[submodule "payulatam"]
+	path = payulatam
+	url = https://github.com/PrestaShop/payulatam
+[submodule "textmaster"]
+	path = textmaster
+	url = https://github.com/PrestaShop/textmaster
+[submodule "dpdpoland"]
+	path = dpdpoland
+	url = https://github.com/PrestaShop/dpdpoland.git
+[submodule "clickline"]
+	path = clickline
+	url = https://github.com/PrestaShop/clickline.git
+[submodule "erpillicopresta"]
+	path = erpillicopresta
+	url = https://github.com/PrestaShop/erpillicopresta.git
+[submodule "loyaltylion"]
+	path = loyaltylion
+	url = https://github.com/PrestaShop/loyaltylion.git
+[submodule "bluesnap"]
+	path = bluesnap
+	url = https://github.com/PrestaShop/bluesnap.git
+[submodule "pssupport"]
+	path = pssupport
+	url = https://github.com/PrestaShop/pssupport
+[submodule "sellstrom"]
+	path = sellstrom
+	url = https://github.com/PrestaShop/sellstrom.git
+[submodule "nostotagging"]
+	path = nostotagging
+	url = https://github.com/PrestaShop/nostotagging.git
+[submodule "paypalmx"]
+	path = paypalmx
+	url = https://github.com/PrestaShop/paypalmx.git
+[submodule "powatag"]
+	path = powatag
+	url = https://github.com/PrestaShop/powatag
+[submodule "olark"]
+	path = olark
+	url = https://github.com/PrestaShop/olark.git
+[submodule "brinkscheckout"]
+	path = brinkscheckout
+	url = https://github.com/PrestaShop/brinkscheckout.git
+[submodule "trustedshops"]
+	path = trustedshops
+	url = https://github.com/PrestaShop/trustedshops.git
+[submodule "dotpay"]
+	path = dotpay
+	url = https://github.com/PrestaShop/dotpay.git
+[submodule "psphipay"]
+	path = psphipay
+	url = https://github.com/PrestaShop/psphipay.git
+[submodule "sarbacanedesktop"]
+	path = sarbacanedesktop
+	url = https://github.com/PrestaShop/sarbacanedesktop.git
+[submodule "prestashippingeasy"]
+	path = prestashippingeasy
+	url = https://github.com/PrestaShop/prestashippingeasy.git
+[submodule "paypal"]
+	path = paypal
+	url = https://github.com/PrestaShop/paypal.git
+[submodule "prestastats"]
+	path = prestastats
+	url = https://github.com/PrestaShop/prestastats.git
+[submodule "globkurier"]
+	path = globkurier
+	url = https://github.com/PrestaShop/globkurier.git
+[submodule "reforestaction"]
+	path = reforestaction
+	url = https://github.com/PrestaShop/reforestaction.git
+[submodule "expressmailing"]
+	path = expressmailing
+	url = https://github.com/PrestaShop/expressmailing.git
+[submodule "mailjet"]
+	path = mailjet
+	url = https://github.com/PrestaShop/mailjet.git
+[submodule "bpostshm"]
+	path = bpostshm
+	url = https://github.com/PrestaShop/bpostshm.git
+[submodule "ovhhosting"]
+	path = ovhhosting
+	url = https://github.com/PrestaShop/ovhhosting.git
+[submodule "dpdfrance"]
+	path = dpdfrance
+	url = https://github.com/PrestaShop/dpdfrance.git
+[submodule "mercadopagobr"]
+	path = mercadopagobr
+	url = https://github.com/PrestaShop/mercadopagobr.git
+[submodule "a2hosting"]
+	path = a2hosting
+	url = https://github.com/PrestaShop/a2hosting.git
+[submodule "gapps"]
+	path = gapps
+	url = https://github.com/PrestaShop/gapps.git
+[submodule "chronopost"]
+	path = chronopost
+	url = https://github.com/PrestaShop/chronopost.git
+[submodule "dpdgroup"]
+	path = dpdgroup
+	url = https://github.com/PrestaShop/dpdgroup.git
+[submodule "zeleriscarrier"]
+	path = zeleriscarrier
+	url = https://github.com/PrestaShop/zeleriscarrier.git
+[submodule "nimblepayment"]
+	path = nimblepayment
+	url = https://github.com/PrestaShop/nimblepayment.git
+[submodule "protectedshops"]
+	path = protectedshops
+	url = https://github.com/PrestaShop/protectedshops.git
+[submodule "advancedeucompliance"]
+	path = advancedeucompliance
+	url = https://github.com/PrestaShop/advancedeucompliance
+[submodule "eurovatgenerator"]
+	path = eurovatgenerator
+	url = https://github.com/PrestaShop/eurovatgenerator
+[submodule "famebit"]
+	path = famebit
+	url = https://github.com/PrestaShop/famebit.git
+[submodule "shiptomyid"]
+	path = shiptomyid
+	url = https://github.com/PrestaShop/shiptomyid.git
+[submodule "lendingclub"]
+	path = lendingclub
+	url = https://github.com/PrestaShop/lendingclub.git
+[submodule "mobfirst"]
+	path = mobfirst
+	url = https://github.com/PrestaShop/mobfirst.git
+[submodule "liveperson"]
+	path = liveperson
+	url = https://github.com/PrestaShop/liveperson.git
+[submodule "stampsdotcom"]
+	path = stampsdotcom
+	url = https://github.com/PrestaShop/stampsdotcom.git
+[submodule "stickngo"]
+	path = stickngo
+	url = https://github.com/PrestaShop/stickngo.git
+[submodule "securitypatch"]
+	path = securitypatch
+	url = https://github.com/PrestaShop/securitypatch
+[submodule "openpayprestashop"]
+	path = openpayprestashop
+	url = https://github.com/PrestaShop/openpayprestashop.git
+[submodule "mediafinanz"]
+	path = mediafinanz
+	url = https://github.com/PrestaShop/mediafinanz.git
+[submodule "creditfr"]
+	path = creditfr
+	url = https://github.com/PrestaShop/creditfr.git
+[submodule "oneandonehosting"]
+	path = oneandonehosting
+	url = https://github.com/PrestaShop/oneandonehosting.git
+[submodule "convermax"]
+	path = convermax
+	url = https://github.com/PrestaShop/convermax.git
+[submodule "checkyourdata"]
+	path = checkyourdata
+	url = https://github.com/PrestaShop/checkyourdata.git
+[submodule "remarkety"]
+	path = remarkety
+	url = https://github.com/PrestaShop/remarkety.git
+[submodule "alipay"]
+	path = alipay
+	url = https://github.com/PrestaShop/alipay.git
+[submodule "safeshops"]
+	path = safeshops
+	url = https://github.com/PrestaShop/safeshops.git
+[submodule "becommerce"]
+	path = becommerce
+	url = https://github.com/PrestaShop/becommerce.git
+[submodule "storecommander"]
+	path = storecommander
+	url = https://github.com/PrestaShop/storecommander.git
+[submodule "twengafeed"]
+	path = twengafeed
+	url = https://github.com/PrestaShop/twengafeed.git
+[submodule "hipaymobileivr"]
+	path = hipaymobileivr
+	url = https://github.com/PrestaShop/hipaymobileivr.git
+[submodule "twengabid"]
+	path = twengabid
+	url = https://github.com/PrestaShop/twengabid.git
+[submodule "ps_sharebuttons"]
+	path = ps_sharebuttons
+	url = https://github.com/PrestaShop/ps_sharebuttons.git
+[submodule "ps_socialfollow"]
+	path = ps_socialfollow
+	url = https://github.com/PrestaShop/ps_socialfollow.git
+[submodule "ps_customtext"]
+	path = ps_customtext
+	url = https://github.com/PrestaShop/ps_customtext.git
+[submodule "ps_contactinfo"]
+	path = ps_contactinfo
+	url = https://github.com/PrestaShop/ps_contactinfo.git
+[submodule "ps_emailsubscription"]
+	path = ps_emailsubscription
+	url = https://github.com/PrestaShop/ps_emailsubscription.git
+[submodule "ps_banner"]
+	path = ps_banner
+	url = https://github.com/PrestaShop/ps_banner.git
+[submodule "ps_featuredproducts"]
+	path = ps_featuredproducts
+	url = https://github.com/PrestaShop/ps_featuredproducts.git
+[submodule "ps_imageslider"]
+	path = ps_imageslider
+	url = https://github.com/PrestaShop/ps_imageslider.git
+[submodule "ps_mainmenu"]
+	path = ps_mainmenu
+	url = https://github.com/PrestaShop/ps_mainmenu.git
+[submodule "ps_customersignin"]
+	path = ps_customersignin
+	url = https://github.com/PrestaShop/ps_customersignin.git
+[submodule "ps_categorytree"]
+	path = ps_categorytree
+	url = https://github.com/PrestaShop/ps_categorytree.git
+[submodule "blockreassurance"]
+	path = blockreassurance
+	url = https://github.com/PrestaShop/blockreassurance.git
+[submodule "skebby"]
+	path = skebby
+	url = https://github.com/PrestaShop/skebby.git
+[submodule "welcome"]
+	path = welcome
+	url = https://github.com/PrestaShop/welcome.git
+[submodule "ps_legalcompliance"]
+	path = ps_legalcompliance
+	url = https://github.com/PrestaShop/ps_legalcompliance
+[submodule "contactform"]
+	path = contactform
+	url = https://github.com/PrestaShop/contactform
+[submodule "ps_wirepayment"]
+	path = ps_wirepayment
+	url = https://github.com/PrestaShop/ps_wirepayment
+[submodule "ps_shoppingcart"]
+	path = ps_shoppingcart
+	url = https://github.com/PrestaShop/ps_shoppingcart
+[submodule "ps_currencyselector"]
+	path = ps_currencyselector
+	url = https://github.com/PrestaShop/ps_currencyselector
+[submodule "ps_languageselector"]
+	path = ps_languageselector
+	url = https://github.com/PrestaShop/ps_languageselector
+[submodule "ps_facetedsearch"]
+	path = ps_facetedsearch
+	url = https://github.com/PrestaShop/ps_facetedsearch
+[submodule "ps_customeraccountlinks"]
+	path = ps_customeraccountlinks
+	url = https://github.com/PrestaShop/ps_customeraccountlinks/
+[submodule "ps_searchbar"]
+	path = ps_searchbar
+	url = https://github.com/PrestaShop/ps_searchbar
+[submodule "ps_checkpayment"]
+	path = ps_checkpayment
+	url = https://github.com/PrestaShop/ps_checkpayment
+[submodule "ps_linklist"]
+	path = ps_linklist
+	url = https://github.com/PrestaShop/ps_linklist/
+[submodule "ps_emailalerts"]
+	path = ps_emailalerts
+	url = https://github.com/PrestaShop/ps_emailalerts
+[submodule "ps_advertising"]
+	path = ps_advertising
+	url = https://github.com/PrestaShop/ps_advertising.git
+[submodule "ps_bestsellers"]
+	path = ps_bestsellers
+	url = https://github.com/PrestaShop/ps_bestsellers.git
+[submodule "ps_categoryproducts"]
+	path = ps_categoryproducts
+	url = https://github.com/PrestaShop/ps_categoryproducts.git
+[submodule "ps_productinfo"]
+	path = ps_productinfo
+	url = https://github.com/PrestaShop/ps_productinfo.git
+[submodule "ps_rssfeed"]
+	path = ps_rssfeed
+	url = https://github.com/PrestaShop/ps_rssfeed
+[submodule "ps_cashondelivery"]
+	path = ps_cashondelivery
+	url = https://github.com/PrestaShop/ps_cashondelivery
+[submodule "ps_brandlist"]
+	path = ps_brandlist
+	url = https://github.com/PrestaShop/ps_brandlist.git
+[submodule "ps_newproducts"]
+	path = ps_newproducts
+	url = https://github.com/PrestaShop/ps_newproducts.git
+[submodule "ps_supplierlist"]
+	path = ps_supplierlist
+	url = https://github.com/PrestaShop/ps_supplierlist.git
+[submodule "ps_specials"]
+	path = ps_specials
+	url = https://github.com/PrestaShop/ps_specials.git
+[submodule "ps_viewedproduct"]
+	path = ps_viewedproduct
+	url = https://github.com/PrestaShop/ps_viewedproduct.git
+[submodule "ps_crossselling"]
+	path = ps_crossselling
+	url = https://github.com/PrestaShop/ps_crossselling.git
+[submodule "ps_dataprivacy"]
+	path = ps_dataprivacy
+	url = https://github.com/PrestaShop/ps_dataprivacy.git
+[submodule "ps_feeder"]
+	path = ps_feeder
+	url = https://github.com/PrestaShop/ps_feeder.git
+[submodule "ps_reminder"]
+	path = ps_reminder
+	url = https://github.com/PrestaShop/ps_reminder
+[submodule "ps_carriercomparison"]
+	path = ps_carriercomparison
+	url = https://github.com/PrestaShop/ps_carriercomparison.git
+[submodule "ps_emailsmanager"]
+	path = ps_emailsmanager
+	url = https://github.com/PrestaShop/ps_emailsmanager.git
+[submodule "ps_livetranslation"]
+	path = ps_livetranslation
+	url = https://github.com/PrestaShop/ps_livetranslation.git
+[submodule "ps_googleanalytics"]
+	path = ps_googleanalytics
+	url = https://github.com/PrestaShop/ps_googleanalytics.git
+[submodule "firebaseauthenticator"]
+	path = firebaseauthenticator
+	url = https://github.com/PrestaShop/firebaseauthenticator.git
+[submodule "ps_themecusto"]
+	path = ps_themecusto
+	url = https://github.com/PrestaShop/ps_themecusto.git
+[submodule "psgdpr"]
+	path = psgdpr
+	url = https://github.com/PrestaShop/psgdpr.git
+[submodule "ps_faviconnotificationbo"]
+	path = ps_faviconnotificationbo
+	url = https://github.com/PrestaShop/ps_faviconnotificationbo.git
+[submodule "ps_mbo"]
+	path = ps_mbo
+	url = https://github.com/PrestaShop/ps_mbo.git
+[submodule "seoprestamenu"]
+	path = seoprestamenu
+	url = https://github.com/PrestaShop/seoprestamenu.git
+[submodule "ps_buybuttonlite"]
+	path = ps_buybuttonlite
+	url = https://github.com/PrestaShop/ps_buybuttonlite.git
