@@ -51,7 +51,7 @@ services:
       - "8081:80"
       # - "443:443"
       volumes:
-      - app:/app:ro
+      - app:/app:rw
       depends_on:
       - prestashop
       restart: unless-stopped
