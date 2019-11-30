@@ -1,6 +1,6 @@
-version: '3.5'
-
+version: '3.7'
 services:
+
     prestashop:
         build: prestashop
         environment:
@@ -31,10 +31,13 @@ services:
         expose:
             - "9000"
         volumes:
-            - app:/app
+        - ./app:/app
+        # - app:/app
+        # - ./app/modules:/app/modules:rw
         depends_on:
             - db
         restart: unless-stopped
+
     web:
         build: web
         environment:
@@ -45,10 +48,12 @@ services:
             - "8081:80"
             # - "443:443"
         volumes:
-            - app:/app:ro
+        #- app:/app:rw
+        - ./app:/app
         depends_on:
             - prestashop
         restart: unless-stopped
+
     db:
         image: mariadb:latest
         environment:
@@ -56,10 +61,13 @@ services:
             MYSQL_DATABASE: prestashop
             MYSQL_USER: prestashop
             MYSQL_PASSWORD: prestashop
+        ports:
+        - 3306:3306
         volumes:
             - ./db/config:/etc/mysql/conf.d
             - db-data:/var/lib/mysql
         restart: unless-stopped
+
 volumes:
     app:
     db-data:

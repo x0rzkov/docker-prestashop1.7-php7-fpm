@@ -31,7 +31,7 @@ while [ $SQL_S -ne 0 ]; do
   mysql -h "$DB_SERVER" -P $DB_PORT -u "$DB_USER" -p"$DB_PASSWORD" -e "show status" > /dev/null 2>&1
   SQL_S=$?
   echo -n ". "
-  sleep 1
+  sleep 5
 done
 echo ""
 

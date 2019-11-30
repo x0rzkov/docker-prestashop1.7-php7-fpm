@@ -3,8 +3,8 @@ FROM alpine:latest as get-prestashop
 RUN apk --no-cache add wget
 RUN mkdir /tmp/app /tmp/download && \
     cd /tmp/download && \
-    wget https://github.com/PrestaShop/PrestaShop/releases/download/1.7.5.1/prestashop_1.7.5.1.zip && \
-    unzip -q prestashop_1.7.5.1.zip -d . && \
+    wget https://github.com/PrestaShop/PrestaShop/releases/download/1.7.6.2/prestashop_1.7.6.2.zip && \
+    unzip -q prestashop_1.7.6.2.zip -d . && \
     unzip -q prestashop.zip -d /tmp/app
 
 FROM alpine:latest
@@ -34,7 +34,9 @@ RUN apk --no-cache add \
     php7-posix \
     php7-pecl-mcrypt \
     php7-pecl-imagick \
-    icu
+    icu \
+    bash \
+    nano
 
 RUN addgroup prestashop && \
   adduser -HD -G prestashop php
@@ -47,6 +49,9 @@ RUN chmod +x /var/opt/start.sh && \
   rm -f /etc/php7/php-fpm.d/www.conf
 
 EXPOSE 9000
+
+VOLUME /app
 WORKDIR /app
+
 
 CMD ["bash", "/var/opt/start.sh"]
