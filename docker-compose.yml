@@ -31,11 +31,11 @@ services:
         expose:
             - "9000"
         volumes:
-        - ./app:/app
-        # - app:/app
+        # - ./app:/app
+        - app:/app:rw
         # - ./app/modules:/app/modules:rw
         depends_on:
-            - db
+        - db
         restart: unless-stopped
 
     web:
@@ -48,10 +48,11 @@ services:
             - "8081:80"
             # - "443:443"
         volumes:
-        #- app:/app:rw
-        - ./app:/app
+        - app:/app:ro
+        # - ./app/current/modules:/app:rw
+        # - ./app:/app
         depends_on:
-            - prestashop
+        - prestashop
         restart: unless-stopped
 
     db:
@@ -64,10 +65,15 @@ services:
         ports:
         - 3306:3306
         volumes:
-            - ./db/config:/etc/mysql/conf.d
-            - db-data:/var/lib/mysql
+        - ./db/config:/etc/mysql/conf.d
+        - db-data:/var/lib/mysql
         restart: unless-stopped
 
 volumes:
     app:
+      external: true
+      # driver_opts:
+      #   type: none
+      #   o: bind
+      #   device: $PWD/htdocs
     db-data:

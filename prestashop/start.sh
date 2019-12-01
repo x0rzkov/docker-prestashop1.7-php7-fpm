@@ -8,6 +8,9 @@ sed -i -e "s|memory_limit.*|memory_limit = $PHP_MEMORY_LIMIT|" \
   -e "s|max_execution_time.*|max_execution_time = $PHP_MAX_EXECUTION_TIME|" \
   -e "s|max_input_time.*|max_input_time = $PHP_MAX_INPUT_TIME|" /etc/php7/php.ini
 
+# find . -type f -exec touch {} +
+# ln -s /app /opt/app
+
 if [ -f "/app/config/settings.inc.php" ]; then
   echo "Prestashop is already installed."
   php-fpm7
