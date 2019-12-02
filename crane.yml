@@ -1,2 +1,22 @@
 ---
 services:
+
+  prestashop:
+    rm: true
+    interactive: true
+    tty: true
+    volumes:
+    - app:/app
+    - ./htdocs2:/app
+    volume: [".:/app"]
+    workdir: /app
+    share-ssh-socket: true
+    # cmd: ["bash"]
+
+# commands:
+#  test: run crane make test
+
+accelerated-mounts:
+  app:
+    uid: 1000
+    gid: 1000
