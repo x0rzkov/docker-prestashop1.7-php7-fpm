@@ -1,4 +1,7 @@
 #!bin/sh
+
+set -e
+
 #Example:
 #ENV_PASSWORD=secretpassword sh kubernetes/create.sh
 

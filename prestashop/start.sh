@@ -40,6 +40,9 @@ echo ""
 
 echo "* installing..."
 
+# add modules
+
+
 su php -c "php /app/$PS_DIR_INSTALL/index_cli.php \
   --domain=\"$PS_DOMAIN\" \
   --db_server=\"$DB_SERVER\" \

@@ -1,5 +1,7 @@
 #!bin/sh
 
+set -e
+
 export CURRENT_PROJECT=$(gcloud config list | grep "project =" | cut -c 11-)
 
 echo "Do you really want delete $CURRENT_PROJECT? [y/N]"

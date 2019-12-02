@@ -8,6 +8,11 @@ RUN addgroup prestashop && \
   chmod +x /var/opt/start.sh
 
 VOLUME /app
+VOLUME /app/modules
+VOLUME /app/themes
+VOLUME /app/override
+VOLUME /app/img
+
 WORKDIR /app
 
 CMD ["sh", "/var/opt/start.sh"]

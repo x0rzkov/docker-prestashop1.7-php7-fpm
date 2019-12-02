@@ -1,5 +1,6 @@
 version: '3.7'
 services:
+
     prestashop:
       build: 
         context: prestashop
@@ -38,6 +39,7 @@ services:
       depends_on:
       - db
       restart: unless-stopped
+
     web:
       build: web
       environment:
@@ -52,6 +54,7 @@ services:
       depends_on:
       - prestashop
       restart: unless-stopped
+
     db:
       image: mariadb:latest
       environment:
@@ -63,10 +66,15 @@ services:
       - ./db/config:/etc/mysql/conf.d
       - db-data:/var/lib/mysql
       restart: unless-stopped
+
     ftp:
-        image: atmoz/sftp
-        volumes:
-            - app:/home/app
+      image: atmoz/sftp:alpine
+      ports:
+      - "2222:22"
+      volumes:
+      - app:/home/app
+      command: php:prestashop:1001
+
 volumes:
     app:
     db-data:
