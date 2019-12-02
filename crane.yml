@@ -2,16 +2,14 @@
 services:
 
   prestashop:
-    rm: true
+    rm: false
     interactive: true
     tty: true
     volumes:
     - app:/app
-    - ./htdocs2:/app
-    volume: [".:/app"]
+    - ./htdocs.crane:/app
+    volume: ["${PWD}:/app"]
     workdir: /app
-    share-ssh-socket: true
-    # cmd: ["bash"]
 
 # commands:
 #  test: run crane make test
@@ -20,3 +18,5 @@ accelerated-mounts:
   app:
     uid: 1000
     gid: 1000
+
+#REFERENCE: https://www.crane-orchestration.com/docs/config#volumes
