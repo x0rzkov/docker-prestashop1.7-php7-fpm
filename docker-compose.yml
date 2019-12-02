@@ -29,11 +29,9 @@ services:
             PHP_MAX_EXECUTION_TIME: "200"
             PHP_MAX_INPUT_TIME: "60"
         expose:
-            - "9000"
+        - "9000"
         volumes:
-        # - ./app:/app
         - app:/app:rw
-        # - ./app/modules:/app/modules:rw
         depends_on:
         - db
         restart: unless-stopped
@@ -45,12 +43,10 @@ services:
             PS_DIR_INSTALL: install1234
             PS_DIR_ADMIN: admin1234
         ports:
-            - "8081:80"
-            # - "443:443"
+        - "8081:80"
+        # - "443:443"
         volumes:
-        - app:/app:ro
-        # - ./app/current/modules:/app:rw
-        # - ./app:/app
+        - app:/app:rw
         depends_on:
         - prestashop
         restart: unless-stopped
@@ -71,9 +67,8 @@ services:
 
 volumes:
     app:
-      external: true
-      # driver_opts:
-      #   type: none
-      #   o: bind
-      #   device: $PWD/htdocs
+      driver_opts:
+        type: none
+        o: bind
+        device: $PWD/htdocs
     db-data:

@@ -1,1 +1,4 @@
 app/
+.docker-sync
+.docker-sync/
+.docker-sync/*
