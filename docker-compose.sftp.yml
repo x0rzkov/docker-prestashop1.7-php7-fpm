@@ -72,8 +72,8 @@ services:
       ports:
       - "2222:22"
       volumes:
-      - app:/home/app
-      command: php:prestashop:1001
+      - app:/app
+      command: php:prestashop:1000
 
 volumes:
     app:
